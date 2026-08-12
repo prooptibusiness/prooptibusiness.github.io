@@ -1,2 +1,3 @@
-# prooptibusiness.github.io
-Official website for ProOptiBusiness
+# ProOptiBusiness
+
+Static production build for https://prooptibusiness.github.io
