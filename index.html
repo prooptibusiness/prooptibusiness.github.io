@@ -5,12 +5,23 @@ document.addEventListener("click", function (event) {
   if (!anchor || anchor.target === "_blank" || anchor.hasAttribute("download")) return;
   var url = new URL(anchor.href, window.location.href);
   if (url.origin !== window.location.origin) return;
-  if (url.pathname === window.location.pathname && url.search === window.location.search) return;
+  if (url.pathname === window.location.pathname && url.search === window.location.search) {
+    if (!url.hash) return;
+    var targetId = decodeURIComponent(url.hash.slice(1));
+    var hashTarget = document.getElementById(targetId);
+    if (!hashTarget) return;
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    window.history.replaceState(window.history.state, "", url.pathname + url.search + url.hash);
+    hashTarget.scrollIntoView({behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start"});
+    return;
+  }
   if (url.pathname.startsWith("/downloads/") || /\.[a-z0-9]{2,8}$/i.test(url.pathname)) return;
   event.preventDefault();
   event.stopImmediatePropagation();
   window.location.assign(url.pathname + url.search + url.hash);
 }, true);
+</script><script data-pob-theme-init>(function(){try{var t=localStorage.getItem("pob-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.dataset.theme=t;document.documentElement.style.colorScheme=t}catch(e){}})();</script><link rel="stylesheet" href="/assets/pob-enhancements.css"/><script defer src="/assets/pob-enhancements.js"></script><script>
 </script><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="preload" as="image" imageSrcSet="/founder-khanh-hq.webp 640w, /founder-khanh-hq.webp 750w, /founder-khanh-hq.webp 828w, /founder-khanh-hq.webp 1080w, /founder-khanh-hq.webp 1200w, /founder-khanh-hq.webp 1920w, /founder-khanh-hq.webp 2048w" imageSizes="(max-width: 740px) 86vw, (max-width: 1120px) 560px, 38vw" fetchPriority="high"/><link rel="stylesheet" href="/assets/index-CFmk_res.css" data-rsc-css-href="/assets/index-CFmk_res.css" data-precedence="vite-rsc/importer-resources"/><link rel="modulepreload" href="/assets/layout-segment-context-Df2M77PL.js" crossorigin=""/><link rel="modulepreload" href="/assets/rolldown-runtime-S-ySWqyJ.js" crossorigin=""/><link rel="modulepreload" href="/assets/index-CPzwfxj5.js" crossorigin=""/><link rel="modulepreload" href="/assets/framework-CXnKph_e.js" crossorigin=""/><link rel="modulepreload" href="/assets/motion-layer-B1GwCPn1.js" crossorigin=""/><link rel="modulepreload" href="/assets/link-CUv3Fmke.js" crossorigin=""/><link rel="modulepreload" href="/assets/image-FKNNwVfq.js" crossorigin=""/><link rel="modulepreload" href="/assets/growth-navigator-D95ZiYDV.js" crossorigin=""/><title>PoB — Học Marketing, làm cùng AI, tăng trưởng bằng hệ thống</title><meta name="description" content="PoB là hệ sinh thái học và thực hành Marketing, AI và Growth do Hoàng Khánh sáng lập — từ kiến thức nền tảng đến quy trình, công cụ và tư vấn triển khai."/><meta property="og:title" content="PoB — Học Marketing, làm cùng AI, tăng trưởng bằng hệ thống"/><meta property="og:description" content="Kiến thức dễ hiểu, công cụ dùng được và hệ thống tăng trưởng dành cho người làm marketing và doanh nghiệp Việt."/><meta property="og:type" content="website"/><meta property="og:locale" content="vi_VN"/><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="PoB — Học Marketing, làm cùng AI, tăng trưởng bằng hệ thống"/><meta name="twitter:description" content="Kiến thức dễ hiểu, công cụ dùng được và hệ thống tăng trưởng dành cho người làm marketing và doanh nghiệp Việt."/><link rel="shortcut icon" href="https://prooptibusiness.github.io/favicon.svg"/><link rel="icon" href="https://prooptibusiness.github.io/favicon.svg"/><meta name="codex-preview" content="development"/><script>self.__VINEXT_RSC_PARAMS__={}</script><script>self.__VINEXT_RSC_NAV__={"pathname":"/","searchParams":[]}</script><link rel="modulepreload" href="/assets/index-CPzwfxj5.js" />
 <link rel="preload" href="/assets/_vinext_fonts/manrope-76eca2803f7f/manrope-37facb2a.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="preload" href="/assets/_vinext_fonts/manrope-76eca2803f7f/manrope-c9a5f13c.woff2" as="font" type="font/woff2" crossorigin />
