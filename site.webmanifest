@@ -1,0 +1,20 @@
+{
+  "name": "ProOptiBusiness",
+  "short_name": "PoB",
+  "description": "Học Marketing, làm cùng AI, tăng trưởng bằng hệ thống.",
+  "icons": [
+    {
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#6C3BFF",
+  "background_color": "#F7F6FC",
+  "display": "standalone"
+}
