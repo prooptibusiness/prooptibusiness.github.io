@@ -1,9 +1,176 @@
+/* Vietnamese-first typography: self-hosted to avoid third-party font requests. */
+@font-face {
+  font-family: "Be Vietnam Pro";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("./fonts/be-vietnam-pro-vietnamese-400-normal.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Be Vietnam Pro";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("./fonts/be-vietnam-pro-latin-400-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Be Vietnam Pro";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: url("./fonts/be-vietnam-pro-vietnamese-600-normal.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Be Vietnam Pro";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: url("./fonts/be-vietnam-pro-latin-600-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Be Vietnam Pro";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url("./fonts/be-vietnam-pro-vietnamese-700-normal.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Be Vietnam Pro";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url("./fonts/be-vietnam-pro-latin-700-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Be Vietnam Pro";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 800;
+  src: url("./fonts/be-vietnam-pro-vietnamese-800-normal.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: "Be Vietnam Pro";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 800;
+  src: url("./fonts/be-vietnam-pro-latin-800-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 :root {
   --pob-float-bg: rgba(255, 255, 255, 0.94);
   --pob-float-border: rgba(108, 59, 255, 0.16);
   --pob-float-text: #10122a;
   --pob-float-muted: #696779;
   --pob-float-shadow: 0 22px 60px rgba(28, 21, 76, 0.22);
+}
+
+html body {
+  --font-body: "Be Vietnam Pro", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  --font-display: "Be Vietnam Pro", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  font-family: var(--font-body) !important;
+  line-height: 1.65;
+  text-rendering: optimizeLegibility;
+  font-kerning: normal;
+}
+
+html body main :is(h1, h2, h3, h4) {
+  font-family: var(--font-display) !important;
+  letter-spacing: -0.032em !important;
+  line-height: 1.16 !important;
+  text-wrap: balance;
+}
+
+html body :is(.hero h1, .subhero h1, .resource-hero h1) {
+  letter-spacing: -0.042em !important;
+  line-height: 1.08 !important;
+}
+
+html body :is(.article-body h2, .article-index h2) {
+  letter-spacing: -0.028em !important;
+  line-height: 1.18 !important;
+}
+
+html body main p {
+  font-size: clamp(12px, 0.9vw, 14px) !important;
+  line-height: 1.78 !important;
+  letter-spacing: -0.006em;
+}
+
+html body :is(.hero-copy > p, .subhero-copy > p:last-child, .resource-hero > p:not(.eyebrow)) {
+  font-size: clamp(14px, 1.05vw, 17px) !important;
+  line-height: 1.78 !important;
+}
+
+html body main small {
+  font-size: 9.5px !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0.055em !important;
+}
+
+html body :is(.eyebrow, .section-kicker) {
+  font-size: 10px !important;
+  line-height: 1.5;
+  letter-spacing: 0.1em !important;
+}
+
+html body :is(.site-header nav > a, .site-header summary) {
+  font-size: 11px !important;
+  letter-spacing: -0.01em;
+}
+
+html body :is(.header-cta, .button, .text-link) {
+  font-size: 11px !important;
+}
+
+html body :is(.article-body article > div > p, .article-body header p) {
+  font-size: clamp(13px, 0.95vw, 15px) !important;
+  line-height: 1.85 !important;
+}
+
+html body .article-index > a > i {
+  font-size: 10px !important;
+}
+
+html body .article-takeaway strong {
+  font-size: 15px !important;
+  line-height: 1.5 !important;
+}
+
+html body :is(.course-detail-grid li, .ai-ladder li, .offer-list li) {
+  font-size: 11px !important;
+  line-height: 1.75 !important;
+}
+
+html body .site-footer > div {
+  font-size: 10px !important;
+}
+
+html body .site-footer > small {
+  font-size: 9px !important;
+}
+
+html body :is(.pob-contact-head small, .pob-contact-action small) {
+  font-size: 9.5px !important;
+  letter-spacing: 0 !important;
+}
+
+html body .pob-contact-action strong {
+  font-size: 11px;
 }
 
 html[data-theme="dark"] {
