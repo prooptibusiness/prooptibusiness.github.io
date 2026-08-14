@@ -211,3 +211,94 @@ content:
       - name: cta_text
         label: Nội dung CTA
         type: text
+
+  - name: home_settings
+    label: Tùy chỉnh trang chủ
+    type: file
+    path: _data/home.yml
+    format: yaml
+    fields:
+      - name: hero
+        label: Phần mở đầu
+        type: object
+        fields:
+          - name: eyebrow
+            label: Nhãn nhỏ
+            type: string
+            required: true
+          - name: title
+            label: Tiêu đề chính
+            type: string
+            required: true
+            description: Tiêu đề SEO/định vị; phần hiển thị hiện được dàn riêng trong giao diện.
+          - name: description
+            label: Mô tả chính
+            type: text
+            required: true
+      - name: technology
+        label: Hệ sinh thái công nghệ
+        type: object
+        list: true
+        description: Chỉ thêm nền tảng/công cụ PoB thực sự có thể làm việc cùng; không dùng mục này để nhận là đối tác.
+        fields:
+          - name: name
+            label: Tên nền tảng
+            type: string
+            required: true
+          - name: note
+            label: Vai trò
+            type: string
+            required: true
+      - name: milestones
+        label: Cột mốc năng lực
+        type: object
+        list: true
+        fields:
+          - name: number
+            label: Số thứ tự
+            type: string
+            required: true
+          - name: label
+            label: Nhãn ngắn
+            type: string
+            required: true
+          - name: title
+            label: Tiêu đề
+            type: string
+            required: true
+          - name: description
+            label: Mô tả
+            type: text
+            required: true
+      - name: audience_cases
+        label: 10 tình huống điển hình
+        type: object
+        list: true
+        description: Đây là persona/tình huống tổng hợp, không phải testimonial. Chỉ đổi thành lời chứng thực khi có tên và quyền công bố.
+        fields:
+          - name: role
+            label: Vai trò
+            type: string
+            required: true
+          - name: situation
+            label: Tình huống
+            type: text
+            required: true
+          - name: outcome
+            label: Đầu ra cần có
+            type: text
+            required: true
+      - name: founder_stats
+        label: Chỉ số Founder
+        type: object
+        list: true
+        description: Chỉ dùng số có thể giải thích và kiểm chứng; ưu tiên số cấu trúc/năng lực thay vì thành tích chưa có bằng chứng.
+        fields:
+          - name: value
+            label: Giá trị
+            type: string
+            required: true
+          - name: label
+            label: Diễn giải
+            type: string
+            required: true
