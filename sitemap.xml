@@ -4,7 +4,7 @@ permalink: /sitemap.xml
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% assign static_pages = "/|/about/|/courses/|/services/|/resources/|/workshops/|/circle/|/insights/|/blog/" | split: "|" %}
+  {% assign static_pages = "/|/about/|/courses/|/services/|/membership/|/elearning/|/resources/|/workshops/|/circle/|/insights/|/blog/" | split: "|" %}
   {% for item in static_pages %}
   <url>
     <loc>{{ item | absolute_url }}</loc>
