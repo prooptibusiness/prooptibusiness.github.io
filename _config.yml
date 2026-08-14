@@ -1,0 +1,28 @@
+title: ProOptiBusiness
+short_title: PoB
+description: Học Marketing, làm cùng AI, tăng trưởng bằng hệ thống.
+url: https://prooptibusiness.github.io
+baseurl: ""
+lang: vi
+timezone: Asia/Ho_Chi_Minh
+markdown: kramdown
+permalink: /blog/:slug/
+future: false
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: Hoàng Nguyễn Quốc Khánh
+      author_role: Digital Performance Marketing & Growth Lead · Founder PoB
+      image: /pob-learning-lab.webp
+      image_alt: Đội ngũ marketing cùng phân tích dữ liệu và xây hệ thống tăng trưởng
+      published: true
+
+exclude:
+  - README.md
+  - BLOG-CMS.md
+  - .npm-cache
+  - .tools

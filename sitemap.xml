@@ -1,0 +1,24 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% assign static_pages = "/|/about/|/courses/|/services/|/resources/|/workshops/|/circle/|/insights/|/blog/" | split: "|" %}
+  {% for item in static_pages %}
+  <url>
+    <loc>{{ item | absolute_url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    {% if item == "/" %}<priority>1.0</priority>{% elsif item == "/blog/" %}<priority>0.9</priority>{% else %}<priority>0.7</priority>{% endif %}
+  </url>
+  {% endfor %}
+  {% for post in site.posts %}
+  {% if post.published != false %}
+  <url>
+    <loc>{{ post.url | absolute_url }}</loc>
+    <lastmod>{{ post.date_modified | default: post.date | date_to_xmlschema }}</lastmod>
+    <priority>0.8</priority>
+  </url>
+  {% endif %}
+  {% endfor %}
+</urlset>

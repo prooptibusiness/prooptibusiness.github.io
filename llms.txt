@@ -1,0 +1,27 @@
+---
+layout: null
+permalink: /llms.txt
+---
+# ProOptiBusiness
+
+> Nền tảng học Marketing thực chiến, ứng dụng AI và xây dựng hệ thống tăng trưởng dành cho người Việt.
+
+## Nội dung chính
+
+- [Trang chủ]({{ "/" | absolute_url }}): Tổng quan về ProOptiBusiness.
+- [Bài viết]({{ "/blog/" | absolute_url }}): Kiến thức Marketing, AI, Growth và Operations.
+- [Insights]({{ "/insights/" | absolute_url }}): Thư viện câu trả lời ngắn theo vấn đề.
+- [Khóa học]({{ "/courses/" | absolute_url }}): Chương trình học thực chiến.
+- [Tài nguyên]({{ "/resources/" | absolute_url }}): Playbook và công cụ tải về.
+
+## Bài viết mới
+
+{% for post in site.posts limit: 20 %}{% if post.published != false %}- [{{ post.title }}]({{ post.url | absolute_url }}): {{ post.description }}
+{% endif %}{% endfor %}
+
+## Thông tin xuất bản
+
+- Ngôn ngữ chính: Tiếng Việt.
+- Đơn vị xuất bản: ProOptiBusiness.
+- Tác giả chính: Hoàng Nguyễn Quốc Khánh.
+- Website chính thức: {{ "/" | absolute_url }}

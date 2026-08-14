@@ -1,0 +1,213 @@
+media:
+  - name: blog_images
+    label: Ảnh bài viết
+    input: assets/blog
+    output: /assets/blog
+
+settings:
+  content:
+    merge: true
+  commit:
+    identity: app
+    templates:
+      create: "Đăng bài mới: {filename}"
+      update: "Cập nhật bài viết: {filename}"
+      delete: "Xóa bài viết: {filename}"
+      rename: "Đổi đường dẫn bài viết: {oldFilename} → {newFilename}"
+
+content:
+  - name: posts
+    label: Bài viết
+    type: collection
+    path: _posts
+    format: yaml-frontmatter
+    filename:
+      template: "{year}-{month}-{day}-{fields.slug}.md"
+      field: create
+    view:
+      fields: [title, published, featured, date, category]
+      primary: title
+      sort: [date, title, category]
+      search: [title, description, target_query, category, tags]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Tiêu đề bài viết
+        type: string
+        required: true
+        description: Viết rõ lợi ích hoặc câu hỏi chính; chỉ dùng một H1 cho mỗi bài.
+        options:
+          minlength: 20
+          maxlength: 80
+      - name: slug
+        label: Đường dẫn bài viết
+        type: string
+        required: true
+        description: "Viết không dấu, chữ thường và nối bằng dấu gạch ngang. Ví dụ: seo-aeo-geo-la-gi."
+        pattern:
+          regex: "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          message: Chỉ dùng chữ thường không dấu, số và dấu gạch ngang.
+        options:
+          minlength: 3
+          maxlength: 80
+      - name: description
+        label: Mô tả SEO
+        type: text
+        required: true
+        description: Tóm tắt tự nhiên khoảng 140–160 ký tự để dùng cho Google và chia sẻ mạng xã hội.
+        options:
+          minlength: 80
+          maxlength: 170
+      - name: answer_summary
+        label: Câu trả lời ngắn AEO/GEO
+        type: text
+        required: true
+        description: Trả lời trực tiếp câu hỏi chính trong 40–60 từ; đoạn này hiển thị ngay đầu bài.
+        options:
+          minlength: 80
+          maxlength: 420
+      - name: target_query
+        label: Truy vấn trọng tâm
+        type: string
+        required: true
+        description: Cụm từ hoặc câu hỏi người đọc thực sự tìm kiếm.
+      - name: date
+        label: Ngày xuất bản
+        type: date
+        required: true
+        options:
+          time: true
+          format: yyyy-MM-dd'T'HH:mm:ssXXX
+      - name: date_modified
+        label: Ngày cập nhật
+        type: date
+        default: ""
+        options:
+          time: true
+          format: yyyy-MM-dd'T'HH:mm:ssXXX
+      - name: category
+        label: Chuyên mục
+        type: select
+        required: true
+        options:
+          values:
+            - name: chien-luoc
+              label: Chiến lược
+            - name: performance
+              label: Performance Marketing
+            - name: ai-marketing
+              label: AI Marketing
+            - name: van-hanh
+              label: Marketing Operations
+            - name: analytics
+              label: Analytics
+            - name: content-seo
+              label: Content & SEO
+      - name: category_label
+        label: Tên chuyên mục hiển thị
+        type: string
+        required: true
+        description: "Ví dụ: Content & SEO."
+      - name: tags
+        label: Thẻ chủ đề
+        type: select
+        options:
+          multiple: true
+          values: [SEO, AEO, GEO, AI, Growth, Performance, Analytics, Content, SME, Operations, Live Commerce]
+      - name: image
+        label: Ảnh đại diện
+        type: image
+        required: true
+        default: /pob-learning-lab.webp
+        options:
+          media: blog_images
+          extensions: [jpg, jpeg, png, webp]
+          rename: true
+      - name: image_alt
+        label: Mô tả ảnh
+        type: string
+        required: true
+        description: Mô tả đúng nội dung ảnh cho người dùng và công cụ tìm kiếm; không nhồi từ khóa.
+      - name: author
+        label: Tác giả
+        type: string
+        required: true
+        default: Hoàng Nguyễn Quốc Khánh
+      - name: author_role
+        label: Chuyên môn tác giả
+        type: string
+        required: true
+        default: Digital Performance Marketing & Growth Lead · Founder PoB
+      - name: read_time
+        label: Thời gian đọc (phút)
+        type: number
+        required: true
+        default: 8
+        options:
+          min: 1
+          max: 60
+      - name: featured
+        label: Bài nổi bật
+        type: boolean
+        default: false
+      - name: published
+        label: Xuất bản
+        type: boolean
+        default: true
+        description: Tắt để lưu bản nháp; bật và lưu lại để đăng.
+      - name: faq
+        label: Câu hỏi thường gặp
+        type: object
+        list: true
+        fields:
+          - name: question
+            label: Câu hỏi
+            type: string
+            required: true
+          - name: answer
+            label: Câu trả lời
+            type: text
+            required: true
+      - name: body
+        label: Nội dung bài viết
+        type: rich-text
+        required: true
+        description: Dùng H2 cho ý chính, H3 cho ý phụ; thêm bảng, danh sách, ví dụ và nguồn khi phù hợp.
+        options:
+          format: markdown
+          media: blog_images
+          rename: true
+          switcher: true
+
+  - name: blog_settings
+    label: Tùy chỉnh trang bài viết
+    type: file
+    path: _data/blog.yml
+    format: yaml
+    fields:
+      - name: eyebrow
+        label: Nhãn nhỏ
+        type: string
+      - name: title
+        label: Tiêu đề chính
+        type: string
+      - name: accent
+        label: Dòng nhấn màu
+        type: string
+      - name: description
+        label: Mô tả trang
+        type: text
+      - name: seo_title
+        label: Tiêu đề SEO
+        type: string
+      - name: seo_description
+        label: Mô tả SEO
+        type: text
+      - name: cta_title
+        label: Tiêu đề CTA cuối trang
+        type: string
+      - name: cta_text
+        label: Nội dung CTA
+        type: text
