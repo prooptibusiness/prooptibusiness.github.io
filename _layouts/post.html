@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script data-pob-theme-init>(function(){try{var t=localStorage.getItem("pob-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.dataset.theme=t;document.documentElement.style.colorScheme=t}catch(e){}})();</script>
+  <title>{{ page.title | escape }} | PoB</title>
+  <meta name="description" content="{{ page.description | strip_html | strip_newlines | escape }}">
+  <meta name="author" content="{{ page.author | escape }}">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="alternate" type="application/rss+xml" title="PoB Bài viết" href="{{ '/feed.xml' | absolute_url }}">
+
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="ProOptiBusiness">
+  <meta property="og:title" content="{{ page.title | escape }}">
+  <meta property="og:description" content="{{ page.description | strip_html | strip_newlines | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ page.image | absolute_url }}">
+  <meta property="og:image:alt" content="{{ page.image_alt | escape }}">
+  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+  <meta property="article:modified_time" content="{{ page.date_modified | default: page.date | date_to_xmlschema }}">
+  <meta property="article:author" content="{{ page.author | escape }}">
+  <meta property="article:section" content="{{ page.category_label | escape }}">
+  {% for tag in page.tags %}<meta property="article:tag" content="{{ tag | escape }}">{% endfor %}
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title | escape }}">
+  <meta name="twitter:description" content="{{ page.description | strip_html | strip_newlines | escape }}">
+  <meta name="twitter:image" content="{{ page.image | absolute_url }}">
+
+  <link rel="icon" href="/favicon.ico?v=2" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="stylesheet" href="/assets/index-CFmk_res.css">
+  <link rel="stylesheet" href="/assets/pob-enhancements.css">
+  <link rel="stylesheet" href="/assets/pob-blog.css">
+  <script defer src="/assets/pob-enhancements.js"></script>
+  <script defer src="/assets/pob-blog.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "@id": {{ page.url | append: '#article' | absolute_url | jsonify }},
+        "mainEntityOfPage": {"@type": "WebPage", "@id": {{ page.url | absolute_url | jsonify }}},
+        "headline": {{ page.title | jsonify }},
+        "description": {{ page.description | strip_html | strip_newlines | jsonify }},
+        "image": {"@type": "ImageObject", "url": {{ page.image | absolute_url | jsonify }}},
+        "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+        "dateModified": {{ page.date_modified | default: page.date | date_to_xmlschema | jsonify }},
+        "inLanguage": "vi-VN",
+        "articleSection": {{ page.category_label | jsonify }},
+        "keywords": {{ page.tags | jsonify }},
+        "author": {
+          "@type": "Person",
+          "name": {{ page.author | jsonify }},
+          "jobTitle": {{ page.author_role | jsonify }},
+          "url": "https://prooptibusiness.github.io/about/#founder"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://prooptibusiness.github.io/#organization",
+          "name": "ProOptiBusiness",
+          "url": "https://prooptibusiness.github.io/",
+          "logo": {"@type": "ImageObject", "url": "https://prooptibusiness.github.io/favicon-512x512.png"}
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://prooptibusiness.github.io/"},
+          {"@type": "ListItem", "position": 2, "name": "Bài viết", "item": "https://prooptibusiness.github.io/blog/"},
+          {"@type": "ListItem", "position": 3, "name": {{ page.title | jsonify }}, "item": {{ page.url | absolute_url | jsonify }}}
+        ]
+      }{% if page.faq and page.faq.size > 0 %},
+      {
+        "@type": "FAQPage",
+        "mainEntity": [{% for item in page.faq %}
+          {
+            "@type": "Question",
+            "name": {{ item.question | jsonify }},
+            "acceptedAnswer": {"@type": "Answer", "text": {{ item.answer | strip_html | strip_newlines | jsonify }}}
+          }{% unless forloop.last %},{% endunless %}{% endfor %}
+        ]
+      }{% endif %}
+    ]
+  }
+  </script>
+</head>
+<body class="pob-blog-page pob-post-page">
+  <div class="scroll-progress" aria-hidden="true"></div>
+  {% include pob-header.html %}
+
+  <main class="post-main">
+    <header class="post-hero">
+      <nav class="post-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Trang chủ</a><span>›</span><a href="/blog">Bài viết</a><span>›</span><span>{{ page.category_label }}</span>
+      </nav>
+      <div class="post-hero-grid">
+        <div class="post-hero-copy">
+          <div class="post-meta-top"><span>{{ page.category_label }}</span><span>{{ page.read_time }} phút đọc</span></div>
+          <h1>{{ page.title }}</h1>
+          <p class="post-deck">{{ page.description }}</p>
+          <div class="post-byline">
+            <img src="/founder-khanh-hq.webp" alt="Hoàng Nguyễn Quốc Khánh — Founder ProOptiBusiness" width="52" height="52">
+            <div><strong>{{ page.author }}</strong><small>{{ page.author_role }}</small></div>
+            <div class="post-dates"><time datetime="{{ page.date | date_to_xmlschema }}">Đăng {{ page.date | date: '%d/%m/%Y' }}</time><time datetime="{{ page.date_modified | default: page.date | date_to_xmlschema }}">Cập nhật {{ page.date_modified | default: page.date | date: '%d/%m/%Y' }}</time></div>
+          </div>
+        </div>
+        <figure class="post-cover">
+          <img src="{{ page.image }}" alt="{{ page.image_alt | escape }}">
+          <figcaption>{{ page.image_alt }}</figcaption>
+        </figure>
+      </div>
+    </header>
+
+    <div class="post-layout">
+      <aside class="post-aside" aria-label="Thông tin bài viết">
+        <div class="post-aside-card">
+          <span>TRUY VẤN TRỌNG TÂM</span>
+          <strong>{{ page.target_query }}</strong>
+        </div>
+        <div class="post-aside-card post-aside-standard">
+          <span>CHUẨN NỘI DUNG POB</span>
+          <ul><li>Trả lời trực tiếp</li><li>Có trải nghiệm hoặc nguồn</li><li>Cấu trúc dễ quét</li><li>Có ngày cập nhật</li></ul>
+        </div>
+        <button class="post-share-button" type="button" data-share-title="{{ page.title | escape }}" data-share-url="{{ page.url | absolute_url }}">Chia sẻ bài viết <i>↗</i></button>
+      </aside>
+
+      <article class="post-article">
+        <section class="post-answer" aria-labelledby="cau-tra-loi-ngan">
+          <span>TRẢ LỜI NGẮN</span>
+          <h2 id="cau-tra-loi-ngan">{{ page.target_query }}</h2>
+          <p>{{ page.answer_summary }}</p>
+        </section>
+
+        <div class="post-content">
+          {{ content }}
+        </div>
+
+        {% if page.faq and page.faq.size > 0 %}
+        <section class="post-faq" aria-labelledby="faq-title">
+          <span class="post-section-label">CÂU HỎI THƯỜNG GẶP</span>
+          <h2 id="faq-title">Những câu hỏi nên rõ trước khi áp dụng</h2>
+          <div class="post-faq-list">
+            {% for item in page.faq %}
+            <details>
+              <summary>{{ item.question }}<i aria-hidden="true">+</i></summary>
+              <p>{{ item.answer }}</p>
+            </details>
+            {% endfor %}
+          </div>
+        </section>
+        {% endif %}
+
+        <section class="post-author-card">
+          <img src="/founder-khanh-hq.webp" alt="Hoàng Nguyễn Quốc Khánh" width="112" height="112">
+          <div><span>TÁC GIẢ</span><h2>{{ page.author }}</h2><p>{{ page.author_role }}. Chia sẻ từ kinh nghiệm triển khai Performance Marketing, Growth, AI, Analytics và Marketing Operations.</p><a href="/about/#founder">Xem hồ sơ chuyên môn <i>↗</i></a></div>
+        </section>
+      </article>
+    </div>
+
+    <section class="blog-related">
+      <div><span>ĐỌC TIẾP</span><h2>Bài viết mới từ PoB</h2></div>
+      <div class="blog-related-grid">
+        {% assign related_count = 0 %}
+        {% for post in site.posts %}
+          {% if post.url != page.url and related_count < 3 %}
+          <a href="{{ post.url }}"><small>{{ post.category_label }}</small><strong>{{ post.title }}</strong><span>Đọc bài →</span></a>
+          {% assign related_count = related_count | plus: 1 %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="blog-bottom-cta">
+      <span>FROM INSIGHT TO SYSTEM</span>
+      <h2>{{ site.data.blog.cta_title }}</h2>
+      <p>{{ site.data.blog.cta_text }}</p>
+      <a href="https://m.me/Prooptibusiness" target="_blank" rel="noreferrer">Trao đổi với PoB <i>↗</i></a>
+    </section>
+  </main>
+
+  {% include pob-footer.html %}
+</body>
+</html>
+
