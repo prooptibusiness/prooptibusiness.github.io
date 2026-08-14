@@ -163,6 +163,20 @@
       desktopMenu.insertBefore(desktopLink, desktopMenu.firstChild);
     }
 
+    if (desktopMenu && !desktopMenu.querySelector('a[href="/membership"], a[href="/membership/"]')) {
+      var membershipLink = document.createElement("a");
+      membershipLink.href = "/membership";
+      membershipLink.innerHTML = "<strong>PoB Membership</strong><small>Hệ sinh thái học, làm và review</small>";
+      desktopMenu.appendChild(membershipLink);
+    }
+
+    if (desktopMenu && !desktopMenu.querySelector('a[href="/elearning"], a[href="/elearning/"]')) {
+      var elearningLink = document.createElement("a");
+      elearningLink.href = "/elearning";
+      elearningLink.innerHTML = "<strong>E-learning</strong><small>Bản mô phỏng không gian học trực tuyến</small>";
+      desktopMenu.appendChild(elearningLink);
+    }
+
     var mobileMenu = document.querySelector(".mobile-menu > div");
     if (mobileMenu && !mobileMenu.querySelector('a[href="/blog"], a[href="/blog/"]')) {
       var mobileLink = document.createElement("a");
@@ -171,12 +185,41 @@
       mobileMenu.insertBefore(mobileLink, mobileMenu.querySelector('a[href="/insights"]'));
     }
 
+    if (mobileMenu && !mobileMenu.querySelector('a[href="/membership"], a[href="/membership/"]')) {
+      var mobileMembership = document.createElement("a");
+      mobileMembership.href = "/membership";
+      mobileMembership.innerHTML = "PoB Membership <i aria-hidden=\"true\">→</i>";
+      mobileMenu.insertBefore(mobileMembership, mobileMenu.querySelector('a[href="/insights"]'));
+    }
+
+    if (mobileMenu && !mobileMenu.querySelector('a[href="/elearning"], a[href="/elearning/"]')) {
+      var mobileElearning = document.createElement("a");
+      mobileElearning.href = "/elearning";
+      mobileElearning.innerHTML = "E-learning <i aria-hidden=\"true\">→</i>";
+      mobileMenu.insertBefore(mobileElearning, mobileMenu.querySelector('a[href="/insights"]'));
+    }
+
     var footerLinks = document.querySelector(".site-footer > div");
     if (footerLinks && !footerLinks.querySelector('a[href="/blog"], a[href="/blog/"]')) {
       var footerLink = document.createElement("a");
       footerLink.href = blogHref;
       footerLink.textContent = "Bài viết";
       footerLinks.insertBefore(footerLink, footerLinks.querySelector('a[href="/insights"]'));
+    }
+
+
+    if (footerLinks && !footerLinks.querySelector('a[href="/membership"], a[href="/membership/"]')) {
+      var footerMembership = document.createElement("a");
+      footerMembership.href = "/membership";
+      footerMembership.textContent = "Membership";
+      footerLinks.insertBefore(footerMembership, footerLinks.querySelector('a[href="/insights"]'));
+    }
+
+    if (footerLinks && !footerLinks.querySelector('a[href="/elearning"], a[href="/elearning/"]')) {
+      var footerElearning = document.createElement("a");
+      footerElearning.href = "/elearning";
+      footerElearning.textContent = "E-learning";
+      footerLinks.insertBefore(footerElearning, footerLinks.querySelector('a[href="/insights"]'));
     }
   }
 
