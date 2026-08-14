@@ -181,8 +181,11 @@
   }
 
   function initializeEnhancements() {
-    buildBlogNavigation();
     window.requestAnimationFrame(buildFloatingTools);
+
+    // The existing pages hydrate with React. Wait until hydration settles
+    // before enhancing their server-rendered navigation to avoid mismatches.
+    window.setTimeout(buildBlogNavigation, 1200);
   }
 
   if (document.readyState === "loading") {
