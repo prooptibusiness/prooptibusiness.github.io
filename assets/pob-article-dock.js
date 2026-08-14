@@ -15,7 +15,7 @@
       '</div>' +
       '<button class="pob-article-toggle" type="button" aria-controls="pob-article-panel" aria-expanded="false">' +
         '<span class="pob-article-toggle-icon">' + bookIcon + '</span>' +
-        '<span class="pob-article-toggle-copy"><small>BÀI AI MỚI</small><strong>Đọc briefing mới nhất</strong></span>' +
+        '<span class="pob-article-toggle-copy"><small>BÀI VIẾT MỚI</small><strong>Đọc briefing mới nhất</strong></span>' +
         '<i aria-hidden="true">↑</i>' +
       '</button>';
     document.body.appendChild(dock);
