@@ -9,8 +9,8 @@ date_modified: 2026-08-14 00:07:00 +0700
 category: ai-marketing
 category_label: AI & Automation
 tags: ["Google AI","Gemini","Google Workspace","Managed Agents"]
-image: /pob-learning-lab.webp
-image_alt: "Sơ đồ hệ thống AI, dữ liệu và quy trình vận hành dành cho doanh nghiệp"
+image: /assets/blog/he-sinh-thai-google-ai-2026.webp
+image_alt: "Hệ sinh thái AI dạng campus kết nối tìm kiếm, sáng tạo, workspace và cloud"
 author: Hoàng Nguyễn Quốc Khánh
 author_role: Digital Performance Marketing & Growth Lead · Founder PoB
 read_time: 10

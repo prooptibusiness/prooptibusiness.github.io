@@ -9,8 +9,8 @@ date_modified: 2026-08-14 00:18:00 +0700
 category: ai-marketing
 category_label: AI & Automation
 tags: ["Peter Steinberger","OpenClaw","Self Healing Software","AI Coding Agent"]
-image: /pob-learning-lab.webp
-image_alt: "Sơ đồ hệ thống AI, dữ liệu và quy trình vận hành dành cho doanh nghiệp"
+image: /assets/blog/peter-steinberger-openclaw-agent-tu-sua-phan-mem.webp
+image_alt: "Kỹ sư giám sát AI agent sửa lỗi phần mềm an toàn trong môi trường sandbox"
 author: Hoàng Nguyễn Quốc Khánh
 author_role: Digital Performance Marketing & Growth Lead · Founder PoB
 read_time: 10

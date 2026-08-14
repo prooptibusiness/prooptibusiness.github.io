@@ -9,8 +9,8 @@ date_modified: 2026-08-14 00:13:00 +0700
 category: ai-marketing
 category_label: AI & Automation
 tags: ["Reverse Information Paradox","Satya Nadella","Enterprise AI","Data Sovereignty"]
-image: /pob-learning-lab.webp
-image_alt: "Sơ đồ hệ thống AI, dữ liệu và quy trình vận hành dành cho doanh nghiệp"
+image: /assets/blog/nghich-ly-thong-tin-dao-nguoc.webp
+image_alt: "Dòng thông tin khổng lồ được lọc qua kính phóng đại thành một nguồn đáng tin cậy"
 author: Hoàng Nguyễn Quốc Khánh
 author_role: Digital Performance Marketing & Growth Lead · Founder PoB
 read_time: 10

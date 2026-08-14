@@ -9,8 +9,8 @@ date_modified: 2026-08-14 00:16:00 +0700
 category: ai-marketing
 category_label: AI & Automation
 tags: ["Neuralink","Brain Computer Interface","BCI","Neurotechnology"]
-image: /pob-learning-lab.webp
-image_alt: "Sơ đồ hệ thống AI, dữ liệu và quy trình vận hành dành cho doanh nghiệp"
+image: /assets/blog/neuralink-giao-dien-nao-may-tinh.webp
+image_alt: "Người dùng điều khiển con trỏ máy tính bằng tín hiệu giao diện não máy tính"
 author: Hoàng Nguyễn Quốc Khánh
 author_role: Digital Performance Marketing & Growth Lead · Founder PoB
 read_time: 10

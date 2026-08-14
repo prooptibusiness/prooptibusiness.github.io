@@ -9,8 +9,8 @@ date_modified: 2026-08-14 00:11:00 +0700
 category: ai-marketing
 category_label: AI & Automation
 tags: ["xAI","Grok","Grok Build","AI Coworker"]
-image: /pob-learning-lab.webp
-image_alt: "Sơ đồ hệ thống AI, dữ liệu và quy trình vận hành dành cho doanh nghiệp"
+image: /assets/blog/xai-grok-dong-nghiep-ai.webp
+image_alt: "Chuyên gia Việt Nam cộng tác trực tiếp với đồng nghiệp AI trên dự án chung"
 author: Hoàng Nguyễn Quốc Khánh
 author_role: Digital Performance Marketing & Growth Lead · Founder PoB
 read_time: 9

@@ -9,8 +9,8 @@ date_modified: 2026-08-14 00:09:00 +0700
 category: ai-marketing
 category_label: AI & Automation
 tags: ["OpenClaw","Open Source AI","Personal AI Agent","Self Hosted AI"]
-image: /pob-learning-lab.webp
-image_alt: "Sơ đồ hệ thống AI, dữ liệu và quy trình vận hành dành cho doanh nghiệp"
+image: /assets/blog/he-sinh-thai-openclaw.webp
+image_alt: "Cánh tay robot kết nối các mô-đun AI trong phòng thí nghiệm mở"
 author: Hoàng Nguyễn Quốc Khánh
 author_role: Digital Performance Marketing & Growth Lead · Founder PoB
 read_time: 10

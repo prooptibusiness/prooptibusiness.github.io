@@ -9,8 +9,8 @@ date_modified: 2026-08-14T09:00:00+07:00
 category: content-seo
 category_label: "Content & SEO"
 tags: [SEO, AEO, GEO, AI, Content]
-image: /pob-learning-lab.webp
-image_alt: "Đội ngũ marketing cùng phân tích dữ liệu và xây chiến lược nội dung"
+image: /assets/blog/seo-aeo-geo-2026.webp
+image_alt: "Tài liệu chuyên gia kết nối với tìm kiếm, câu trả lời AI và mạng tri thức tạo sinh"
 author: Hoàng Nguyễn Quốc Khánh
 author_role: "Digital Performance Marketing & Growth Lead · Founder PoB"
 read_time: 13
@@ -194,4 +194,3 @@ Với PoB, tiêu chuẩn xuất bản không phải “đã đủ từ khóa ch�
 - [Google Search Central — Article structured data](https://developers.google.com/search/docs/appearance/structured-data/article)
 - [Google Search Central — General structured data guidelines](https://developers.google.com/search/docs/appearance/structured-data/sd-policies)
 - [Google Search Central — Documentation updates 2026](https://developers.google.com/search/updates)
-

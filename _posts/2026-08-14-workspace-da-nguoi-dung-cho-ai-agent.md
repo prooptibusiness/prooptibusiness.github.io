@@ -9,8 +9,8 @@ date_modified: 2026-08-14 00:15:00 +0700
 category: ai-marketing
 category_label: AI & Automation
 tags: ["Multi User AI","Agent Workspace","RBAC","AI Audit Log"]
-image: /pob-learning-lab.webp
-image_alt: "Sơ đồ hệ thống AI, dữ liệu và quy trình vận hành dành cho doanh nghiệp"
+image: /assets/blog/workspace-da-nguoi-dung-cho-ai-agent.webp
+image_alt: "Nhóm làm việc đa người dùng nhận các lớp dữ liệu AI khác nhau theo quyền"
 author: Hoàng Nguyễn Quốc Khánh
 author_role: Digital Performance Marketing & Growth Lead · Founder PoB
 read_time: 10

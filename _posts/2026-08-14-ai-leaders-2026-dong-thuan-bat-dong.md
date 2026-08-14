@@ -9,8 +9,8 @@ date_modified: 2026-08-14 00:06:00 +0700
 category: ai-marketing
 category_label: AI & Automation
 tags: ["AI Leaders 2026","AI Strategy","AI Agents","Frontier AI"]
-image: /pob-learning-lab.webp
-image_alt: "Sơ đồ hệ thống AI, dữ liệu và quy trình vận hành dành cho doanh nghiệp"
+image: /assets/blog/ai-leaders-2026-dong-thuan-bat-dong.webp
+image_alt: "Bốn lãnh đạo công nghệ tranh luận quanh lõi AI phát sáng tại bàn chiến lược"
 author: Hoàng Nguyễn Quốc Khánh
 author_role: Digital Performance Marketing & Growth Lead · Founder PoB
 read_time: 11

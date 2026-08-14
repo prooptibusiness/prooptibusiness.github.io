@@ -9,8 +9,8 @@ date_modified: 2026-08-14 00:12:00 +0700
 category: ai-marketing
 category_label: AI & Automation
 tags: ["Satya Nadella","Microsoft AI","AI Ecosystem","Copilot"]
-image: /pob-learning-lab.webp
-image_alt: "Sơ đồ hệ thống AI, dữ liệu và quy trình vận hành dành cho doanh nghiệp"
+image: /assets/blog/satya-nadella-he-sinh-thai-ai.webp
+image_alt: "Hệ sinh thái AI doanh nghiệp kết nối cloud, bảo mật, agent và phân tích"
 author: Hoàng Nguyễn Quốc Khánh
 author_role: Digital Performance Marketing & Growth Lead · Founder PoB
 read_time: 10

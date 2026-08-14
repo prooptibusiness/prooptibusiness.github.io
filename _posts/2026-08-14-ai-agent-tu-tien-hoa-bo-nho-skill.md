@@ -9,8 +9,8 @@ date_modified: 2026-08-14 00:03:00 +0700
 category: ai-marketing
 category_label: AI & Automation
 tags: ["AI Agent","Agent Memory","AI Skills","Self Improving Agent"]
-image: /pob-learning-lab.webp
-image_alt: "Sơ đồ hệ thống AI, dữ liệu và quy trình vận hành dành cho doanh nghiệp"
+image: /assets/blog/ai-agent-tu-tien-hoa-bo-nho-skill.webp
+image_alt: "Trợ lý AI lắp ghép các khối bộ nhớ và kỹ năng trong phòng thí nghiệm tương lai"
 author: Hoàng Nguyễn Quốc Khánh
 author_role: Digital Performance Marketing & Growth Lead · Founder PoB
 read_time: 9

@@ -9,8 +9,8 @@ date_modified: 2026-08-14 00:05:00 +0700
 category: ai-marketing
 category_label: AI & Automation
 tags: ["AI Agent Architecture","Agent Operations","AI Workflow","Observability"]
-image: /pob-learning-lab.webp
-image_alt: "Sơ đồ hệ thống AI, dữ liệu và quy trình vận hành dành cho doanh nghiệp"
+image: /assets/blog/cac-lop-van-hanh-ai-agent-2026.webp
+image_alt: "Kiến trúc AI agent nhiều tầng bằng kính trong trung tâm điều hành"
 author: Hoàng Nguyễn Quốc Khánh
 author_role: Digital Performance Marketing & Growth Lead · Founder PoB
 read_time: 9

@@ -9,8 +9,8 @@ date_modified: 2026-08-14 00:04:00 +0700
 category: ai-marketing
 category_label: AI & Automation
 tags: ["Frontier AI","AI Governance","AI Risk","NIST AI RMF"]
-image: /pob-learning-lab.webp
-image_alt: "Sơ đồ hệ thống AI, dữ liệu và quy trình vận hành dành cho doanh nghiệp"
+image: /assets/blog/quan-tri-frontier-ai-2026.webp
+image_alt: "Nhóm quản trị giám sát lõi AI được bao quanh bởi các lớp kiểm soát an toàn"
 author: Hoàng Nguyễn Quốc Khánh
 author_role: Digital Performance Marketing & Growth Lead · Founder PoB
 read_time: 11

@@ -1554,6 +1554,27 @@ Agent có thể rút ngắn đoạn từ alert đến một PR có bằng chứn
   },
 ];
 
+const imageAltBySlug = {
+  "ai-agent-tu-tien-hoa-bo-nho-skill": "Trợ lý AI lắp ghép các khối bộ nhớ và kỹ năng trong phòng thí nghiệm tương lai",
+  "ai-leaders-2026-dong-thuan-bat-dong": "Bốn lãnh đạo công nghệ tranh luận quanh lõi AI phát sáng tại bàn chiến lược",
+  "ai-workspace-lop-context-cong-ty": "Nhóm chuyên gia Việt Nam cộng tác với không gian tri thức AI nhiều lớp",
+  "ban-do-model-ai-2026": "Bộ định tuyến AI kết nối nhiều mô hình với các nhóm công việc khác nhau",
+  "cac-lop-van-hanh-ai-agent-2026": "Kiến trúc AI agent nhiều tầng bằng kính trong trung tâm điều hành",
+  "claude-code-playbook-thuc-chien": "Lập trình viên Việt Nam làm việc cùng trợ lý AI trên quy trình code và kiểm thử",
+  "he-sinh-thai-google-ai-2026": "Hệ sinh thái AI dạng campus kết nối tìm kiếm, sáng tạo, workspace và cloud",
+  "he-sinh-thai-openclaw": "Cánh tay robot kết nối các mô-đun AI trong phòng thí nghiệm mở",
+  "jensen-huang-nha-may-token-ai": "Nhà máy token AI kết nối năng lượng, chip, trung tâm dữ liệu và ứng dụng",
+  "neuralink-giao-dien-nao-may-tinh": "Người dùng điều khiển con trỏ máy tính bằng tín hiệu giao diện não máy tính",
+  "nghich-ly-thong-tin-dao-nguoc": "Dòng thông tin khổng lồ được lọc qua kính phóng đại thành một nguồn đáng tin cậy",
+  "peter-steinberger-openclaw-agent-tu-sua-phan-mem": "Kỹ sư giám sát AI agent sửa lỗi phần mềm an toàn trong môi trường sandbox",
+  "quan-tri-frontier-ai-2026": "Nhóm quản trị giám sát lõi AI được bao quanh bởi các lớp kiểm soát an toàn",
+  "riley-brown-hoc-chatgpt-work-61-phut": "Nhà sáng tạo học quy trình AI theo ba giai đoạn trong studio",
+  "satya-nadella-he-sinh-thai-ai": "Hệ sinh thái AI doanh nghiệp kết nối cloud, bảo mật, agent và phân tích",
+  "the-bugged-dev-dung-trai-nghiem-3d-bang-ai": "Nhà phát triển biến bản phác thảo thành thành phố 3D tương tác bằng AI",
+  "workspace-da-nguoi-dung-cho-ai-agent": "Nhóm làm việc đa người dùng nhận các lớp dữ liệu AI khác nhau theo quyền",
+  "xai-grok-dong-nghiep-ai": "Chuyên gia Việt Nam cộng tác trực tiếp với đồng nghiệp AI trên dự án chung",
+};
+
 function yamlString(value) {
   return JSON.stringify(value);
 }
@@ -1574,8 +1595,8 @@ date_modified: 2026-08-14 00:${minute}:00 +0700
 category: ai-marketing
 category_label: AI & Automation
 tags: ${JSON.stringify(article.tags)}
-image: /pob-learning-lab.webp
-image_alt: ${yamlString("Sơ đồ hệ thống AI, dữ liệu và quy trình vận hành dành cho doanh nghiệp")}
+image: /assets/blog/${article.slug}.webp
+image_alt: ${yamlString(imageAltBySlug[article.slug] || article.title)}
 author: Hoàng Nguyễn Quốc Khánh
 author_role: Digital Performance Marketing & Growth Lead · Founder PoB
 read_time: ${article.readTime}

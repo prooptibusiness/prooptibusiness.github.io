@@ -9,8 +9,8 @@ date_modified: 2026-08-14 00:14:00 +0700
 category: ai-marketing
 category_label: AI & Automation
 tags: ["The Bugged Dev","AI Coding","Three.js","Gemini"]
-image: /pob-learning-lab.webp
-image_alt: "Sơ đồ hệ thống AI, dữ liệu và quy trình vận hành dành cho doanh nghiệp"
+image: /assets/blog/the-bugged-dev-dung-trai-nghiem-3d-bang-ai.webp
+image_alt: "Nhà phát triển biến bản phác thảo thành thành phố 3D tương tác bằng AI"
 author: Hoàng Nguyễn Quốc Khánh
 author_role: Digital Performance Marketing & Growth Lead · Founder PoB
 read_time: 9

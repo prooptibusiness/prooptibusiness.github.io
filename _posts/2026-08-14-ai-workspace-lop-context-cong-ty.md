@@ -9,8 +9,8 @@ date_modified: 2026-08-14 00:01:00 +0700
 category: ai-marketing
 category_label: AI & Automation
 tags: ["AI Workspace","Enterprise AI","Context Engineering","AI Governance"]
-image: /pob-learning-lab.webp
-image_alt: "Sơ đồ hệ thống AI, dữ liệu và quy trình vận hành dành cho doanh nghiệp"
+image: /assets/blog/ai-workspace-lop-context-cong-ty.webp
+image_alt: "Nhóm chuyên gia Việt Nam cộng tác với không gian tri thức AI nhiều lớp"
 author: Hoàng Nguyễn Quốc Khánh
 author_role: Digital Performance Marketing & Growth Lead · Founder PoB
 read_time: 9

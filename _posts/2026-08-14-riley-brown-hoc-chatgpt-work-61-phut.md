@@ -9,8 +9,8 @@ date_modified: 2026-08-14 00:10:00 +0700
 category: ai-marketing
 category_label: AI & Automation
 tags: ["Riley Brown","ChatGPT Workflow","AI Learning","AI Automation"]
-image: /pob-learning-lab.webp
-image_alt: "Sơ đồ hệ thống AI, dữ liệu và quy trình vận hành dành cho doanh nghiệp"
+image: /assets/blog/riley-brown-hoc-chatgpt-work-61-phut.webp
+image_alt: "Nhà sáng tạo học quy trình AI theo ba giai đoạn trong studio"
 author: Hoàng Nguyễn Quốc Khánh
 author_role: Digital Performance Marketing & Growth Lead · Founder PoB
 read_time: 9
