@@ -1,0 +1,95 @@
+---
+layout: null
+permalink: /elearning/
+---
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PoB E-learning — Bản mô phỏng trải nghiệm học trực tuyến</title>
+  <meta name="description" content="Khám phá bản mô phỏng PoB E-learning với lesson player, 12 learning labs, tài liệu thực hành, đầu ra và nhịp review minh bạch.">
+  <link rel="canonical" href="{{ '/elearning/' | absolute_url }}">
+  <meta property="og:title" content="PoB E-learning — Học trực tuyến theo đầu ra">
+  <meta property="og:description" content="Bản demo trải nghiệm học: module, lesson, template, case và review.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/favicon.ico?v=3" sizes="any">
+  <link rel="icon" href="/favicon.svg?v=3" type="image/svg+xml">
+  <script data-pob-theme-init>(function(){try{var t=localStorage.getItem("pob-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.dataset.theme=t;document.documentElement.style.colorScheme=t}catch(e){}})();</script>
+  <link rel="stylesheet" href="/assets/pob-enhancements.css">
+  <link rel="stylesheet" href="/assets/pob-experience.css">
+  <script defer src="/assets/pob-enhancements.js"></script>
+  <script defer src="/assets/pob-experience.js"></script>
+</head>
+<body class="pob-experience">
+  {% include pob-header.html %}
+  <main>
+    <section class="xp-page-hero">
+      <div class="xp-shell" data-reveal>
+        <p class="xp-kicker">POB E-LEARNING · EXPERIENCE DEMO</p>
+        <h1>Học trực tuyến nhưng không học theo kiểu <em>“bật video rồi để đó”.</em></h1>
+        <p>Mỗi bài học được thiết kế quanh một quyết định hoặc đầu ra: xem ngắn, dùng template, làm case, tự kiểm tra rồi mang tới nhịp review khi cần.</p>
+        <div class="xp-page-actions"><a class="xp-button xp-button-primary" href="#learning-demo">Mở lesson player demo ↓</a><a class="xp-button" href="/courses">Xem lộ trình hiện có ↗</a></div>
+        <div class="xp-status-note"><span>▶</span><span><strong>Trạng thái thật:</strong> đây là bản mô phỏng giao diện học, chưa phải cổng LMS có tài khoản và chưa có khóa nào được mô tả là đã mở bán. Nội dung chính thức sẽ cập nhật theo từng chương trình.</span></div>
+      </div>
+    </section>
+
+    <section class="xp-section" id="learning-demo">
+      <div class="xp-shell">
+        <div class="xp-section-heading" data-reveal><div><p class="xp-kicker">LESSON PLAYER DEMO</p><h2 class="xp-section-title">Một màn hình — đủ để biết <em>đang học gì và làm ra gì.</em></h2></div><p>Bấm từng bài ở cột bên phải; tên module, thời lượng và đầu ra sẽ đổi ngay mà không chuyển trang.</p></div>
+        <div class="xp-elearning-demo" data-reveal>
+          <div class="xp-lesson-stage">
+            <div class="xp-video-mock"><span class="xp-play">▶</span><div class="xp-video-label"><small data-current-module>MODULE 01 · MARKETING CLARITY</small><strong data-current-lesson>Lập bản đồ từ mục tiêu kinh doanh đến Marketing</strong></div></div>
+            <div class="xp-lesson-meta"><span>◎ Hoàng Khánh</span><span>◷ <b data-current-duration>18 phút</b></span><span>▣ <b data-current-outcome>Growth & Marketing Map</b></span><span>✓ Bản demo giao diện</span></div>
+          </div>
+          <aside class="xp-module-list" aria-label="Danh sách bài học demo">
+            <strong>Bài học trong module</strong>
+            <button class="xp-module-button is-active" type="button" data-module="MODULE 01 · MARKETING CLARITY" data-lesson-title="Lập bản đồ từ mục tiêu kinh doanh đến Marketing" data-duration="18 phút" data-outcome="Growth & Marketing Map"><span>01</span><span><strong>Business goal → Marketing goal</strong><small>18 phút · Template</small></span></button>
+            <button class="xp-module-button" type="button" data-module="MODULE 01 · MARKETING CLARITY" data-lesson-title="Đọc khách hàng, offer và funnel trên cùng một trang" data-duration="24 phút" data-outcome="Customer–Offer–Funnel Canvas"><span>02</span><span><strong>Customer · Offer · Funnel</strong><small>24 phút · Canvas</small></span></button>
+            <button class="xp-module-button" type="button" data-module="MODULE 02 · CONTENT SYSTEM" data-lesson-title="Xây trụ cột nội dung từ quyết định của khách hàng" data-duration="21 phút" data-outcome="Content Pillar Matrix"><span>03</span><span><strong>Content pillar system</strong><small>21 phút · Matrix</small></span></button>
+            <button class="xp-module-button" type="button" data-module="MODULE 03 · PERFORMANCE" data-lesson-title="Viết giả thuyết creative trước khi chạy test" data-duration="17 phút" data-outcome="Creative Testing Board"><span>04</span><span><strong>Creative hypothesis</strong><small>17 phút · Testing board</small></span></button>
+            <button class="xp-module-button" type="button" data-module="MODULE 04 · ANALYTICS" data-lesson-title="Biến dashboard thành báo cáo quyết định" data-duration="26 phút" data-outcome="Weekly Decision Memo"><span>05</span><span><strong>Dashboard → Decision</strong><small>26 phút · Decision memo</small></span></button>
+            <button class="xp-module-button" type="button" data-module="MODULE 05 · APPLIED AI" data-lesson-title="Thiết kế AI companion có context và review gate" data-duration="29 phút" data-outcome="Role-based AI Blueprint"><span>06</span><span><strong>AI companion blueprint</strong><small>29 phút · Blueprint</small></span></button>
+            <button class="xp-module-button" type="button" data-module="MODULE 06 · LIVE COMMERCE" data-lesson-title="Tạo run of show và hệ thống hậu kiểm phiên live" data-duration="22 phút" data-outcome="Live Runbook"><span>07</span><span><strong>Live Ops runbook</strong><small>22 phút · Runbook</small></span></button>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="xp-section">
+      <div class="xp-shell">
+        <div class="xp-section-heading" data-reveal><div><p class="xp-kicker">12 LEARNING LABS · ROADMAP</p><h2 class="xp-section-title">Toàn bộ hệ học <em>từ nền tảng đến vận hành.</em></h2></div><p>Đây là bản đồ nội dung dự kiến, không phải danh sách khóa đã mở bán. Mỗi lab sẽ có trang trạng thái riêng khi syllabus và đầu ra hoàn thiện.</p></div>
+        <div class="xp-course-grid">
+          <article class="xp-course-card" data-reveal><span>01</span><small>BUSINESS</small><h3>SME Growth Foundation</h3><p>Business model, customer, offer, growth map và roadmap 90 ngày.</p></article>
+          <article class="xp-course-card" data-reveal><span>02</span><small>MARKETING</small><h3>Marketing Clarity</h3><p>Research, positioning, funnel, plan, budget và measurement.</p></article>
+          <article class="xp-course-card" data-reveal><span>03</span><small>CONTENT</small><h3>Content System Lab</h3><p>Topic system, brief, editorial workflow và phân phối đa kênh.</p></article>
+          <article class="xp-course-card" data-reveal><span>04</span><small>PERFORMANCE</small><h3>Multi-social Ads Lab</h3><p>Media plan, tracking, creative test và báo cáo quyết định.</p></article>
+          <article class="xp-course-card" data-reveal><span>05</span><small>META</small><h3>Meta Ads Decision Lab</h3><p>Cấu trúc, tín hiệu, testing và ngưỡng tăng–sửa–dừng.</p></article>
+          <article class="xp-course-card" data-reveal><span>06</span><small>TIKTOK</small><h3>TikTok Growth Lab</h3><p>Content–commerce loop, ads, creator và live ecosystem.</p></article>
+          <article class="xp-course-card" data-reveal><span>07</span><small>GOOGLE</small><h3>Search Intent & Ads</h3><p>Intent, keyword, landing page, tracking và quality loop.</p></article>
+          <article class="xp-course-card" data-reveal><span>08</span><small>COMMERCE</small><h3>Marketplace Growth</h3><p>Shopee ecosystem, offer, traffic, conversion và campaign rhythm.</p></article>
+          <article class="xp-course-card" data-reveal><span>09</span><small>APPLIED AI</small><h3>AI for Work</h3><p>Context, kiểm chứng, research, content, spreadsheet và web app.</p></article>
+          <article class="xp-course-card" data-reveal><span>10</span><small>AI OPERATIONS</small><h3>Role-based AI System</h3><p>Knowledge base, companion, workflow, governance và review gate.</p></article>
+          <article class="xp-course-card" data-reveal><span>11</span><small>LIVE COMMERCE</small><h3>Facebook & TikTok Live Ops</h3><p>Setup, scene, run of show, phân vai, retention và debrief.</p></article>
+          <article class="xp-course-card" data-reveal><span>12</span><small>OPERATIONS</small><h3>Marketing Operating System</h3><p>Planning, owner, calendar, budget, KPI, SOP và review cadence.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="xp-section">
+      <div class="xp-shell">
+        <div class="xp-section-heading" data-reveal><div><p class="xp-kicker">MỖI BÀI HỌC CÓ GÌ?</p><h2 class="xp-section-title">Không chỉ video. Có <em>bộ công cụ để làm.</em></h2></div></div>
+        <div class="xp-learning-benefits">
+          <article class="xp-benefit-card" data-reveal><span class="xp-benefit-icon">01</span><small>BEFORE</small><h3>Context & diagnostic</h3><p>Biết bài này giải vấn đề nào, cần đầu vào gì và không áp dụng khi nào.</p></article>
+          <article class="xp-benefit-card" data-reveal><span class="xp-benefit-icon">02</span><small>DURING</small><h3>Case & decision</h3><p>Phân tích bối cảnh, tự chọn hướng và đối chiếu framework.</p></article>
+          <article class="xp-benefit-card" data-reveal><span class="xp-benefit-icon">03</span><small>BUILD</small><h3>Template & output</h3><p>Dùng canvas, workbook hoặc checklist để hoàn thành đầu ra.</p></article>
+          <article class="xp-benefit-card" data-reveal><span class="xp-benefit-icon">04</span><small>AFTER</small><h3>Rubric & review</h3><p>Tự kiểm tra, ghi điều chưa chắc và mang đúng điểm kẹt tới phiên review.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="xp-cta-section"><div class="xp-shell xp-cta" data-reveal><div><p class="xp-kicker">BUILD IN PUBLIC</p><h2>Đây là bản demo. Lộ trình thật vẫn được hoàn thiện theo đầu ra.</h2><p>Bạn có thể dùng Resource Hub ngay bây giờ hoặc theo dõi trang khóa học để biết tuyến nào đã đủ syllabus, case và format mở.</p></div><div class="xp-cta-actions"><a class="xp-button" href="/courses">Xem trạng thái lộ trình ↗</a><a class="xp-button" href="/resources">Học thử bằng tài nguyên →</a></div></div></section>
+  </main>
+  {% include pob-footer.html %}
+</body>
+</html>
