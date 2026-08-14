@@ -39,7 +39,7 @@
   <link rel="stylesheet" href="/assets/index-CFmk_res.css">
   <link rel="stylesheet" href="/assets/pob-enhancements.css">
   <link rel="stylesheet" href="/assets/pob-blog.css">
-  <script defer src="/assets/pob-enhancements.js"></script>
+  <script defer src="/assets/pob-enhancements.js"></script><script defer src="/assets/pob-article-dock.js"></script>
   <script defer src="/assets/pob-blog.js"></script>
 
   <script type="application/ld+json">
@@ -55,9 +55,15 @@
         "image": {"@type": "ImageObject", "url": {{ page.image | absolute_url | jsonify }}},
         "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
         "dateModified": {{ page.date_modified | default: page.date | date_to_xmlschema | jsonify }},
+        "timeRequired": {{ page.read_time | prepend: 'PT' | append: 'M' | jsonify }},
         "inLanguage": "vi-VN",
         "articleSection": {{ page.category_label | jsonify }},
         "keywords": {{ page.tags | jsonify }},
+        "isPartOf": {
+          "@type": "Blog",
+          "@id": "https://prooptibusiness.github.io/blog/#blog",
+          "name": "Bài viết ProOptiBusiness"
+        },
         "author": {
           "@type": "Person",
           "name": {{ page.author | jsonify }},
@@ -131,10 +137,18 @@
           <span>CHUẨN NỘI DUNG POB</span>
           <ul><li>Trả lời trực tiếp</li><li>Có trải nghiệm hoặc nguồn</li><li>Cấu trúc dễ quét</li><li>Có ngày cập nhật</li></ul>
         </div>
+        <nav class="post-toc post-aside-card" aria-label="Mục lục bài viết">
+          <span>TRONG BÀI NÀY</span>
+          <ol data-post-toc-list></ol>
+        </nav>
         <button class="post-share-button" type="button" data-share-title="{{ page.title | escape }}" data-share-url="{{ page.url | absolute_url }}">Chia sẻ bài viết <i>↗</i></button>
       </aside>
 
       <article class="post-article">
+        <details class="post-toc-mobile">
+          <summary><span>Mục lục bài viết</span><i aria-hidden="true">＋</i></summary>
+          <ol data-post-toc-list></ol>
+        </details>
         <section class="post-answer" aria-labelledby="cau-tra-loi-ngan">
           <span>TRẢ LỜI NGẮN</span>
           <h2 id="cau-tra-loi-ngan">{{ page.target_query }}</h2>
@@ -144,6 +158,17 @@
         <div class="post-content">
           {{ content }}
         </div>
+
+        <nav class="post-cluster" aria-label="Chuyên mục AI nên đọc tiếp">
+          <span>AI KNOWLEDGE CLUSTER</span>
+          <h2>Đọc theo hệ thống, không đọc rời từng bài</h2>
+          <div>
+            <a href="/blog/ai-workspace-lop-context-cong-ty/"><small>01 · CONTEXT</small><strong>AI Workspace &amp; context công ty</strong><i>→</i></a>
+            <a href="/blog/ban-do-model-ai-2026/"><small>02 · MODELS</small><strong>Bản đồ model AI 2026</strong><i>→</i></a>
+            <a href="/blog/cac-lop-van-hanh-ai-agent-2026/"><small>03 · OPERATIONS</small><strong>7 lớp vận hành AI agent</strong><i>→</i></a>
+            <a href="/blog/quan-tri-frontier-ai-2026/"><small>04 · GOVERNANCE</small><strong>Bản đồ quản trị Frontier AI</strong><i>→</i></a>
+          </div>
+        </nav>
 
         {% if page.faq and page.faq.size > 0 %}
         <section class="post-faq" aria-labelledby="faq-title">
@@ -191,4 +216,3 @@
   {% include pob-footer.html %}
 </body>
 </html>
-

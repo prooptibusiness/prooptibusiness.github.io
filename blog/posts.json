@@ -1,0 +1,14 @@
+---
+layout: null
+permalink: /blog/posts.json
+---
+[
+{% for post in site.posts limit: 8 %}{% if post.published != false %}  {
+    "title": {{ post.title | jsonify }},
+    "url": {{ post.url | jsonify }},
+    "category": {{ post.category_label | jsonify }},
+    "description": {{ post.description | strip_html | strip_newlines | jsonify }},
+    "readTime": {{ post.read_time | jsonify }},
+    "date": {{ post.date | date: '%d/%m/%Y' | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+{% endif %}{% endfor %}]

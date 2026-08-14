@@ -73,9 +73,107 @@
     });
   }
 
+  function slugifyHeading(value) {
+    return String(value || "")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/đ/g, "d")
+      .replace(/Đ/g, "D")
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "") || "muc-bai-viet";
+  }
+
+  function setupTableOfContents() {
+    var article = document.querySelector(".post-content");
+    if (!article) return;
+
+    var headings = Array.prototype.slice.call(article.querySelectorAll("h2, h3"));
+    var lists = Array.prototype.slice.call(document.querySelectorAll("[data-post-toc-list]"));
+    var desktopToc = document.querySelector(".post-toc");
+    var mobileToc = document.querySelector(".post-toc-mobile");
+
+    if (headings.length < 2) {
+      if (desktopToc) desktopToc.hidden = true;
+      if (mobileToc) mobileToc.hidden = true;
+      return;
+    }
+
+    var used = {};
+    headings.forEach(function (heading) {
+      var base = heading.id || slugifyHeading(heading.textContent);
+      var id = base;
+      var number = 2;
+      while (used[id] || (document.getElementById(id) && document.getElementById(id) !== heading)) {
+        id = base + "-" + number;
+        number += 1;
+      }
+      used[id] = true;
+      heading.id = id;
+    });
+
+    lists.forEach(function (list) {
+      headings.forEach(function (heading) {
+        var item = document.createElement("li");
+        var link = document.createElement("a");
+        item.className = heading.tagName === "H3" ? "toc-level-3" : "toc-level-2";
+        link.href = "#" + heading.id;
+        link.textContent = heading.textContent;
+        link.setAttribute("data-toc-target", heading.id);
+        item.appendChild(link);
+        list.appendChild(item);
+      });
+    });
+
+    var tocLinks = Array.prototype.slice.call(document.querySelectorAll("[data-toc-target]"));
+    function setActive(id) {
+      tocLinks.forEach(function (link) {
+        var active = link.getAttribute("data-toc-target") === id;
+        link.classList.toggle("is-active", active);
+        if (active) link.setAttribute("aria-current", "location");
+        else link.removeAttribute("aria-current");
+      });
+    }
+
+    tocLinks.forEach(function (link) {
+      link.addEventListener("click", function (event) {
+        var target = document.getElementById(link.getAttribute("data-toc-target"));
+        if (!target) return;
+        event.preventDefault();
+        window.history.pushState(null, "", "#" + target.id);
+        target.scrollIntoView({
+          behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
+          block: "start"
+        });
+        setActive(target.id);
+        if (mobileToc) mobileToc.open = false;
+      });
+    });
+
+    var ticking = false;
+    function updateActiveHeading() {
+      var current = headings[0];
+      var marker = Math.min(window.innerHeight * 0.32, 190);
+      headings.forEach(function (heading) {
+        if (heading.getBoundingClientRect().top <= marker) current = heading;
+      });
+      setActive(current.id);
+      ticking = false;
+    }
+
+    window.addEventListener("scroll", function () {
+      if (!ticking) {
+        ticking = true;
+        window.requestAnimationFrame(updateActiveHeading);
+      }
+    }, { passive: true });
+    updateActiveHeading();
+  }
+
   function initializeBlog() {
     setupBlogFilters();
     setupShareButton();
+    setupTableOfContents();
   }
 
   if (document.readyState === "loading") {
