@@ -1,126 +1,110 @@
-<!DOCTYPE html><html lang="vi"><head><script data-pob-static-navigation>
-document.addEventListener("click", function (event) {
-  if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-  var anchor = event.target instanceof Element ? event.target.closest("a[href]") : null;
-  if (!anchor || anchor.target === "_blank" || anchor.hasAttribute("download")) return;
-  var url = new URL(anchor.href, window.location.href);
-  if (url.origin !== window.location.origin) return;
-  if (url.pathname === window.location.pathname && url.search === window.location.search) {
-    if (!url.hash) return;
-    var targetId = decodeURIComponent(url.hash.slice(1));
-    var hashTarget = document.getElementById(targetId);
-    if (!hashTarget) return;
-    event.preventDefault();
-    event.stopImmediatePropagation();
-    window.history.replaceState(window.history.state, "", url.pathname + url.search + url.hash);
-    hashTarget.scrollIntoView({behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start"});
-    return;
+---
+layout: null
+permalink: /about/
+---
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Về PoB & Founder Hoàng Khánh | ProOptiBusiness</title>
+  <meta name="description" content="Tìm hiểu câu chuyện ProOptiBusiness, năng lực, cách làm và nguyên tắc minh bạch của Founder Hoàng Nguyễn Quốc Khánh.">
+  <link rel="canonical" href="{{ '/about/' | absolute_url }}">
+  <meta property="og:title" content="Về PoB & Founder Hoàng Khánh">
+  <meta property="og:description" content="Không dạy một hình ảnh lý tưởng. Chia sẻ từ việc đã làm.">
+  <meta property="og:type" content="profile">
+  <meta property="og:image" content="{{ '/founder-khanh-hq.webp' | absolute_url }}">
+  <link rel="icon" href="/favicon.ico?v=3" sizes="any">
+  <link rel="icon" href="/favicon.svg?v=3" type="image/svg+xml">
+  <script data-pob-theme-init>(function(){try{var t=localStorage.getItem("pob-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.dataset.theme=t;document.documentElement.style.colorScheme=t}catch(e){}})();</script>
+  <link rel="stylesheet" href="/assets/pob-enhancements.css">
+  <link rel="stylesheet" href="/assets/pob-experience.css">
+  <script defer src="/assets/pob-enhancements.js"></script>
+  <script defer src="/assets/pob-experience.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Hoàng Nguyễn Quốc Khánh",
+    "jobTitle": "Digital Performance Marketing & Growth Lead",
+    "worksFor": {"@type": "Organization", "name": "ProOptiBusiness", "url": "{{ '/' | absolute_url }}"},
+    "image": "{{ '/founder-khanh-hq.webp' | absolute_url }}",
+    "knowsAbout": ["Business Growth", "Marketing Strategy", "Performance Advertising", "Applied AI", "Live Commerce", "Marketing Analytics", "Marketing Operations"]
   }
-  if (url.pathname.startsWith("/downloads/") || /\.[a-z0-9]{2,8}$/i.test(url.pathname)) return;
-  event.preventDefault();
-  event.stopImmediatePropagation();
-  window.location.assign(url.pathname + url.search + url.hash);
-}, true);
-</script><script data-pob-theme-init>(function(){try{var t=localStorage.getItem("pob-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.dataset.theme=t;document.documentElement.style.colorScheme=t}catch(e){}})();</script><link rel="stylesheet" href="/assets/pob-enhancements.css"/><script defer src="/assets/pob-enhancements.js"></script><script>
-</script><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/assets/index-CFmk_res.css" data-rsc-css-href="/assets/index-CFmk_res.css" data-precedence="vite-rsc/importer-resources"/><link rel="modulepreload" href="/assets/layout-segment-context-Df2M77PL.js" crossorigin=""/><link rel="modulepreload" href="/assets/rolldown-runtime-S-ySWqyJ.js" crossorigin=""/><link rel="modulepreload" href="/assets/index-CPzwfxj5.js" crossorigin=""/><link rel="modulepreload" href="/assets/framework-CXnKph_e.js" crossorigin=""/><link rel="modulepreload" href="/assets/motion-layer-B1GwCPn1.js" crossorigin=""/><link rel="modulepreload" href="/assets/link-CUv3Fmke.js" crossorigin=""/><link rel="modulepreload" href="/assets/image-FKNNwVfq.js" crossorigin=""/><title>Về PoB &amp; Founder Hoàng Khánh | PoB</title><meta name="description" content="Câu chuyện ProOptiBusiness và Founder Hoàng Khánh: Business Growth, Performance Marketing, Applied AI, Analytics, Livestream và vận hành cho SME."/><meta property="og:title" content="PoB — Học Marketing, làm cùng AI, tăng trưởng bằng hệ thống"/><meta property="og:description" content="Kiến thức dễ hiểu, công cụ dùng được và hệ thống tăng trưởng dành cho người làm marketing và doanh nghiệp Việt."/><meta property="og:type" content="website"/><meta property="og:locale" content="vi_VN"/><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="PoB — Học Marketing, làm cùng AI, tăng trưởng bằng hệ thống"/><meta name="twitter:description" content="Kiến thức dễ hiểu, công cụ dùng được và hệ thống tăng trưởng dành cho người làm marketing và doanh nghiệp Việt."/><link rel="icon" href="/favicon.ico?v=2" sizes="any"/><link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2"/><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2"/><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2"/><link rel="manifest" href="/site.webmanifest"/><meta name="codex-preview" content="development"/><script>self.__VINEXT_RSC_PARAMS__={}</script><script>self.__VINEXT_RSC_NAV__={"pathname":"/about","searchParams":[]}</script><link rel="modulepreload" href="/assets/index-CPzwfxj5.js" />
-<link rel="preload" href="/assets/_vinext_fonts/manrope-76eca2803f7f/manrope-37facb2a.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/assets/_vinext_fonts/manrope-76eca2803f7f/manrope-c9a5f13c.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/assets/_vinext_fonts/manrope-76eca2803f7f/manrope-f00fa027.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/assets/_vinext_fonts/manrope-76eca2803f7f/manrope-bd6e7fdc.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/assets/_vinext_fonts/manrope-76eca2803f7f/manrope-76dcfc73.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/assets/_vinext_fonts/manrope-76eca2803f7f/manrope-81401990.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/assets/_vinext_fonts/space-grotesk-feef4dc31705/space-grotesk-53435720.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/assets/_vinext_fonts/space-grotesk-feef4dc31705/space-grotesk-e911c2d9.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/assets/_vinext_fonts/space-grotesk-feef4dc31705/space-grotesk-a57c9413.woff2" as="font" type="font/woff2" crossorigin />
-<style data-vinext-fonts>/* cyrillic-ext */
-@font-face {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 200 800;
-  font-display: swap;
-  src: url(/assets/_vinext_fonts/manrope-76eca2803f7f/manrope-37facb2a.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 200 800;
-  font-display: swap;
-  src: url(/assets/_vinext_fonts/manrope-76eca2803f7f/manrope-c9a5f13c.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek */
-@font-face {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 200 800;
-  font-display: swap;
-  src: url(/assets/_vinext_fonts/manrope-76eca2803f7f/manrope-f00fa027.woff2) format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 200 800;
-  font-display: swap;
-  src: url(/assets/_vinext_fonts/manrope-76eca2803f7f/manrope-bd6e7fdc.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 200 800;
-  font-display: swap;
-  src: url(/assets/_vinext_fonts/manrope-76eca2803f7f/manrope-76dcfc73.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 200 800;
-  font-display: swap;
-  src: url(/assets/_vinext_fonts/manrope-76eca2803f7f/manrope-81401990.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
+  </script>
+</head>
+<body class="pob-experience">
+  {% include pob-header.html %}
+  <main>
+    <section class="xp-page-hero">
+      <div class="xp-shell" data-reveal>
+        <p class="xp-kicker">ABOUT PROOPTIBUSINESS</p>
+        <h1>Marketing nên làm đội ngũ tự tin hơn — <em>không phụ thuộc hơn.</em></h1>
+        <p>PoB là một Founder-led Business Growth, Marketing & Applied AI Lab: giải thích kiến thức đủ rõ để dùng, xây công cụ đủ thực tế để làm và đồng hành đủ sâu để cách nghĩ trở thành hệ thống.</p>
+        <div class="xp-page-actions"><a class="xp-button xp-button-primary" href="#founder">Gặp Founder PoB ↓</a><a class="xp-button" href="/resources">Dùng tài nguyên trước ↗</a></div>
+      </div>
+    </section>
 
-.__font_manrope_0zk4e8n { font-family: 'Manrope', sans-serif; }
+    <section class="xp-section" id="founder">
+      <div class="xp-shell xp-founder-deep">
+        <div class="xp-founder-deep-visual" data-reveal><img src="/founder-khanh-hq.webp" alt="Hoàng Nguyễn Quốc Khánh — Founder ProOptiBusiness" width="1122" height="1402"><div class="xp-founder-deep-badge"><strong>Hoàng Nguyễn Quốc Khánh</strong><span>Founder · Growth Partner · Digital Performance Marketing & Growth Lead</span></div></div>
+        <div class="xp-founder-copy" data-reveal>
+          <p class="xp-kicker">FOUNDER NOTE</p>
+          <h2>“Mình muốn kiến thức đi được tới công việc thật.”</h2>
+          <p>Hơn 4 năm làm việc với quảng cáo đa kênh, content, e-commerce, live commerce, planning, analytics và reporting giúp Khánh thấy một pattern rất rõ: đội ngũ tăng tốc tốt nhất khi hiểu cùng một logic.</p>
+          <p>Vấn đề thường không nằm ở thiếu công cụ. Nó nằm ở khoảng cách giữa mục tiêu kinh doanh, điều team đang làm, dữ liệu đang có và cách một quyết định được đưa ra. PoB được xây để thu hẹp khoảng cách đó.</p>
+          <p>Khi đào tạo, mỗi khái niệm phải đi tới case, template hoặc đầu ra. Khi đồng hành dịch vụ, mỗi dự án phải để lại knowledge base, SOP, dashboard, decision log hoặc năng lực mà đội ngũ tiếp tục dùng.</p>
+          <div class="xp-founder-stats">{% for item in site.data.home.founder_stats %}<article><strong>{{ item.value }}</strong><span>{{ item.label }}</span></article>{% endfor %}</div>
+          <div class="xp-capability-list"><span>Meta · Google · TikTok · Shopee · Zalo</span><span>Live Commerce</span><span>Analytics</span><span>Applied AI</span><span>Marketing Operations</span></div>
+        </div>
+      </div>
+    </section>
 
-.__variable_manrope_0zk4e8n { --font-body: 'Manrope', sans-serif; }
+    <section class="xp-section">
+      <div class="xp-shell">
+        <div class="xp-section-heading" data-reveal><div><p class="xp-kicker">NĂNG LỰC KẾT NỐI</p><h2 class="xp-section-title">Không nhìn Marketing như <em>những kênh rời nhau.</em></h2></div><p>PoB đặt từng kỹ năng vào cùng một hệ: mục tiêu → khách hàng → offer → thu hút → chuyển đổi → giữ chân → dữ liệu → cách đội ngũ phối hợp.</p></div>
+        <div class="xp-deliverable-grid">
+          <article data-reveal><span>01</span><h3>Business Growth</h3><p>Business model, growth map, KPI và roadmap 30/60/90 ngày.</p></article>
+          <article data-reveal><span>02</span><h3>Marketing Strategy</h3><p>Research, positioning, offer, funnel, plan và budget.</p></article>
+          <article data-reveal><span>03</span><h3>Performance Ads</h3><p>Meta, TikTok, Google, Shopee, Zalo, tracking và testing.</p></article>
+          <article data-reveal><span>04</span><h3>Applied AI</h3><p>Context, research, content, spreadsheet, workflow và agent.</p></article>
+          <article data-reveal><span>05</span><h3>Live Commerce</h3><p>Setup, scene, run of show, team role, data và debrief.</p></article>
+          <article data-reveal><span>06</span><h3>Marketing Operations</h3><p>Owner, calendar, SOP, knowledge base, dashboard và review.</p></article>
+        </div>
+      </div>
+    </section>
 
-/* vietnamese */
-@font-face {
-  font-family: 'Space Grotesk';
-  font-style: normal;
-  font-weight: 300 700;
-  font-display: swap;
-  src: url(/assets/_vinext_fonts/space-grotesk-feef4dc31705/space-grotesk-53435720.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Space Grotesk';
-  font-style: normal;
-  font-weight: 300 700;
-  font-display: swap;
-  src: url(/assets/_vinext_fonts/space-grotesk-feef4dc31705/space-grotesk-e911c2d9.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Space Grotesk';
-  font-style: normal;
-  font-weight: 300 700;
-  font-display: swap;
-  src: url(/assets/_vinext_fonts/space-grotesk-feef4dc31705/space-grotesk-a57c9413.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
+    <section class="xp-section">
+      <div class="xp-shell">
+        <div class="xp-section-heading" data-reveal><div><p class="xp-kicker">CỘT MỐC NĂNG LỰC</p><h2 class="xp-section-title">Một hành trình học cách <em>nối mọi thứ lại.</em></h2></div><p>Không dùng timeline để tô thành tích. Mỗi cột mốc nói về năng lực và cách nhìn được tích lũy.</p></div>
+        <div class="xp-milestones">{% for item in site.data.home.milestones %}<article class="xp-milestone" data-reveal><strong>{{ item.number }}</strong><span>{{ item.label }}</span><div><h3>{{ item.title }}</h3><p>{{ item.description }}</p></div></article>{% endfor %}</div>
+      </div>
+    </section>
 
-.__font_space_grotesk_0cjbj2p { font-family: 'Space Grotesk', sans-serif; }
+    <section class="xp-section">
+      <div class="xp-shell">
+        <div class="xp-section-heading" data-reveal><div><p class="xp-kicker">BỐN GIÁ TRỊ GIỮ POB ĐI ĐÚNG HƯỚNG</p><h2 class="xp-section-title">Mềm trong cách nói. <em>Chặt trong cách làm.</em></h2></div></div>
+        <div class="xp-learning-benefits">
+          <article class="xp-benefit-card" data-reveal><span class="xp-benefit-icon">01</span><small>CLARITY</small><h3>Làm rõ trước</h3><p>Không nhảy vào giải pháp khi chưa hiểu vấn đề, dữ liệu và giới hạn.</p></article>
+          <article class="xp-benefit-card" data-reveal><span class="xp-benefit-icon">02</span><small>GENEROSITY</small><h3>Cho trước, bán sau</h3><p>Tài nguyên miễn phí vẫn phải giúp ai đó hoàn thành một việc cụ thể.</p></article>
+          <article class="xp-benefit-card" data-reveal><span class="xp-benefit-icon">03</span><small>INTEGRITY</small><h3>Không bịa social proof</h3><p>Chỉ dùng case, logo, số liệu và phản hồi khi có bằng chứng và quyền công bố.</p></article>
+          <article class="xp-benefit-card" data-reveal><span class="xp-benefit-icon">04</span><small>PRACTICALITY</small><h3>Đầu ra nhìn thấy được</h3><p>Template, workflow, dashboard, SOP, case hoặc một quyết định rõ hơn.</p></article>
+        </div>
+      </div>
+    </section>
 
-.__variable_space_grotesk_0cjbj2p { --font-display: 'Space Grotesk', sans-serif; }
-</style>
-</head><body class="__variable_manrope_0zk4e8n __variable_space_grotesk_0cjbj2p"><div class="scroll-progress" aria-hidden="true"></div><main class="subpage about-page"><header class="site-header"><a href="/" class="brand" aria-label="ProOptiBusiness - Trang chủ"><span class="brand-mark">P</span><span><strong>ProOptiBusiness</strong><small>Learn · Apply · Grow</small></span></a><nav aria-label="Điều hướng chính"><a href="/about">Về PoB</a><a href="/courses">Học cùng PoB</a><a href="/services">Dịch vụ</a><a href="/resources">Tài nguyên</a><details><summary>Khám phá <span>⌄</span></summary><div><a href="/workshops"><strong>Workshop</strong><small>Học trực tiếp qua bài toán thật</small></a><a href="/circle"><strong>PoB Circle</strong><small>Cộng đồng học và làm Marketing</small></a><a href="/insights"><strong>Insights</strong><small>Góc nhìn chuyên sâu từ PoB</small></a></div></details></nav><a class="header-cta" href="https://m.me/Prooptibusiness" target="_blank" rel="noreferrer">Trao đổi bài toán <span aria-hidden="true">↗</span></a><details class="mobile-menu"><summary aria-label="Mở menu"><span></span><span></span><span></span></summary><div><a href="/about">Về PoB <i>→</i></a><a href="/courses">Học cùng PoB <i>→</i></a><a href="/services">Dịch vụ <i>→</i></a><a href="/resources">Resource Hub <i>→</i></a><a href="/workshops">Workshop <i>→</i></a><a href="/circle">PoB Circle <i>→</i></a><a href="/insights">Insights <i>→</i></a></div></details></header><section class="subhero subhero-about"><div class="subhero-copy" data-reveal="true"><p class="eyebrow"><span></span> ABOUT PROOPTIBUSINESS</p><h1>Marketing nên làm đội ngũ<br/><em>tự tin hơn,</em> không phụ thuộc hơn.</h1><p>PoB là một Founder-led Business Growth, Marketing &amp; Applied AI Lab: chia sẻ kiến thức có thể áp dụng, xây công cụ dùng được và đồng hành khi doanh nghiệp cần biến cách nghĩ thành hệ thống.</p></div><div class="about-symbol" aria-hidden="true"><span>P</span><i></i><i></i><i></i></div></section><section class="story-grid"><div data-reveal="true"><p class="section-kicker">VÌ SAO POB TỒN TẠI?</p><h2>Khoảng cách lớn nhất không nằm giữa doanh nghiệp và công cụ.</h2></div><div data-reveal="true"><p>Nó nằm giữa <strong>biết</strong> và <strong>làm được</strong>.</p><p>Doanh nghiệp có thể mua thêm phần mềm, chạy thêm kênh, dùng thêm AI — nhưng nếu mục tiêu, dữ liệu và cách ra quyết định chưa nối với nhau, mọi thứ chỉ trở nên bận hơn.</p><p>PoB chọn đứng ở khoảng giữa đó: giải thích đủ rõ để đội ngũ hiểu, thiết kế đủ thực tế để đội ngũ làm, và đo đủ chặt để biết mình đang tiến lên hay chỉ đang hoạt động.</p></div></section><section class="about-founder"><div class="about-founder-photo" data-reveal="true"><img src="/founder-khanh-hq.webp" alt="Hoàng Khánh — Founder PoB" width="1122" height="1402" loading="lazy" decoding="async" srcSet="/founder-khanh-hq.webp 640w, /founder-khanh-hq.webp 750w, /founder-khanh-hq.webp 828w, /founder-khanh-hq.webp 1080w, /founder-khanh-hq.webp 1200w, /founder-khanh-hq.webp 1920w, /founder-khanh-hq.webp 2048w" sizes="(max-width: 740px) 90vw, 44vw" data-nimg="1"/><span>HOÀNG KHÁNH<small>FOUNDER · GROWTH PARTNER</small></span></div><div class="about-founder-copy" data-reveal="true"><p class="section-kicker">FOUNDER NOTE</p><h2>“Mình muốn kiến thức<br/>đi được tới <em>công việc thật.</em>”</h2><p>Mình là Hoàng Khánh — Digital Performance Marketing &amp; Growth Lead. Hơn 4 năm làm việc với quảng cáo đa kênh, content, e-commerce, live commerce, planning và reporting giúp mình thấy một pattern rất rõ: đội ngũ tăng tốc tốt nhất khi hiểu cùng một logic.</p><p>PoB vì thế không tách “đào tạo” khỏi “triển khai”. Mỗi tài nguyên đều dẫn tới một hành động; mỗi dịch vụ đều để lại một cách làm mà đội ngũ có thể tiếp tục sử dụng.</p><div class="founder-tags"><span>Meta · Google · TikTok · Shopee · Zalo</span><span>Live Commerce</span><span>Analytics</span><span>Applied AI</span><span>Marketing Operations</span></div></div></section><section class="capability-section"><div data-reveal="true"><p class="section-kicker light">NĂNG LỰC POB KẾT NỐI</p><h2>Không nhìn Marketing<br/>như những kênh <em>rời nhau.</em></h2><p>PoB đặt từng kỹ năng vào cùng một hệ: mục tiêu kinh doanh → khách hàng → offer → thu hút → chuyển đổi → giữ chân → dữ liệu → cách đội ngũ phối hợp.</p></div><div class="capability-map"><article data-reveal="true"><span>0<!-- -->1</span><strong>Business Growth</strong></article><article data-reveal="true"><span>0<!-- -->2</span><strong>Marketing Strategy</strong></article><article data-reveal="true"><span>0<!-- -->3</span><strong>Performance Ads</strong></article><article data-reveal="true"><span>0<!-- -->4</span><strong>AI for Work</strong></article><article data-reveal="true"><span>0<!-- -->5</span><strong>Live Commerce</strong></article><article data-reveal="true"><span>0<!-- -->6</span><strong>Analytics</strong></article><article data-reveal="true"><span>0<!-- -->7</span><strong>Operations</strong></article></div></section><section class="values-section"><div class="section-heading" data-reveal="true"><div><p class="section-kicker">BỐN GIÁ TRỊ GIỮ POB ĐI ĐÚNG HƯỚNG</p><h2>Mềm trong cách nói.<br/><em>Chặt trong cách làm.</em></h2></div></div><div class="value-grid"><article data-reveal="true"><span>01</span><h3>Clarity</h3><p>Làm rõ vấn đề trước khi chọn giải pháp.</p></article><article data-reveal="true"><span>02</span><h3>Generosity</h3><p>Chia sẻ đủ giá trị trước khi nói tới bán hàng.</p></article><article data-reveal="true"><span>03</span><h3>Integrity</h3><p>Không bịa thành tích, không hứa kết quả ngoài quyền kiểm soát.</p></article><article data-reveal="true"><span>04</span><h3>Practicality</h3><p>Mỗi đầu ra phải giúp ai đó làm một việc cụ thể.</p></article></div></section><section class="subpage-cta"><p>Muốn bắt đầu bằng một thứ dùng được ngay?</p><h2>Ghé PoB Resource Hub.</h2><a href="/resources" class="button button-primary">Khám phá tài nguyên miễn phí <span>↗</span></a></section><footer class="site-footer"><a href="/" class="brand brand-footer"><span class="brand-mark">P</span><span><strong>ProOptiBusiness</strong><small>Learn · Apply · Grow</small></span></a><p>Rõ chiến lược · Giỏi thực thi · Tăng trưởng có hệ thống.</p><div><a href="/about">Về PoB</a><a href="/courses">Khoá học</a><a href="/services">Dịch vụ</a><a href="/workshops">Workshop</a><a href="/resources">Resource Hub</a><a href="/insights">Insights</a><a href="https://www.facebook.com/Prooptibusiness" target="_blank" rel="noreferrer">Facebook</a></div><small>© 2026 ProOptiBusiness · Founder-led Business Growth, Marketing &amp; Applied AI Lab.</small></footer></main><script id="_R_">import("/assets/index-CPzwfxj5.js")</script></body></html><script>self.__VINEXT_RSC_CHUNKS__=self.__VINEXT_RSC_CHUNKS__||[];self.__VINEXT_RSC_CHUNKS__.push("2:I[\"20947dca18c2\",[],\"default\",1]\n3:I[\"8c0f216c4604\",[],\"Children\",1]\n4:I[\"15c18cfaeeff\",[],\"LayoutSegmentProvider\",1]\n5:I[\"8c0f216c4604\",[],\"Slot\",1]\n6:I[\"593f344dc510\",[],\"RedirectBoundary\",1]\n:HL[\"/assets/index-CFmk_res.css\",\"style\"]\n")</script><script>self.__VINEXT_RSC_CHUNKS__=self.__VINEXT_RSC_CHUNKS__||[];self.__VINEXT_RSC_CHUNKS__.push("0:{\"__route\":\"route:/about\",\"__interceptionContext\":null,\"__layoutIds\":[\"layout:/\"],\"__rootLayout\":\"/\",\"page:/about\":\"$L1\",\"layout:/\":[[[[\"$\",\"link\",\"css:/assets/index-CFmk_res.css\",{\"rel\":\"stylesheet\",\"precedence\":\"vite-rsc/importer-resources\",\"href\":\"/assets/index-CFmk_res.css\",\"data-rsc-css-href\":\"/assets/index-CFmk_res.css\"}],\"$undefined\"],[\"$\",\"html\",null,{\"lang\":\"vi\",\"children\":[\"$\",\"body\",null,{\"className\":\"__variable_manrope_0zk4e8n __variable_space_grotesk_0cjbj2p\",\"children\":[[\"$\",\"$L2\",null,{}],[\"$\",\"div\",null,{\"className\":\"scroll-progress\",\"aria-hidden\":\"true\"}],[\"$\",\"$L3\",null,{}]]}]}]],null],\"route:/about\":[[[\"$\",\"meta\",null,{\"charSet\":\"utf-8\"}],[[\"$\",\"title\",\"0\",{\"children\":\"Về PoB \u0026 Founder Hoàng Khánh | PoB\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Câu chuyện ProOptiBusiness và Founder Hoàng Khánh: Business Growth, Performance Marketing, Applied AI, Analytics, Livestream và vận hành cho SME.\"}],[\"$\",\"meta\",\"2\",{\"property\":\"og:title\",\"content\":\"PoB — Học Marketing, làm cùng AI, tăng trưởng bằng hệ thống\"}],[\"$\",\"meta\",\"3\",{\"property\":\"og:description\",\"content\":\"Kiến thức dễ hiểu, công cụ dùng được và hệ thống tăng trưởng dành cho người làm marketing và doanh nghiệp Việt.\"}],[\"$\",\"meta\",\"4\",{\"property\":\"og:type\",\"content\":\"website\"}],[\"$\",\"meta\",\"5\",{\"property\":\"og:locale\",\"content\":\"vi_VN\"}],[\"$\",\"meta\",\"6\",{\"name\":\"twitter:card\",\"content\":\"summary\"}],[\"$\",\"meta\",\"7\",{\"name\":\"twitter:title\",\"content\":\"PoB — Học Marketing, làm cùng AI, tăng trưởng bằng hệ thống\"}],[\"$\",\"meta\",\"8\",{\"name\":\"twitter:description\",\"content\":\"Kiến thức dễ hiểu, công cụ dùng được và hệ thống tăng trưởng dành cho người làm marketing và doanh nghiệp Việt.\"}],[\"$\",\"link\",\"9\",{\"rel\":\"shortcut icon\",\"href\":\"/favicon.svg?v=2\"}],[\"$\",\"link\",\"10\",{\"rel\":\"icon\",\"href\":\"/favicon.svg?v=2\"}],[\"$\",\"meta\",\"11\",{\"name\":\"codex-preview\",\"content\":\"development\"}]],[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]],[\"$\",\"$L4\",null,{\"segmentMap\":{\"children\":[\"about\"]},\"children\":[\"$\",\"$L5\",null,{\"id\":\"layout:/\",\"parallelSlots\":\"$undefined\",\"children\":[\"$\",\"$L6\",null,{\"children\":[\"$\",\"$L4\",null,{\"segmentMap\":{\"children\":[]},\"children\":[\"$\",\"$L5\",null,{\"id\":\"page:/about\"}]}]}]}]}]],\"__layoutFlags\":{\"layout:/\":\"s\"},\"__artifactCompatibility\":{\"schemaVersion\":1,\"graphVersion\":\"app-route-graph:pxgtdg7iy2mv\",\"deploymentVersion\":\"1d204dc7-9cc0-4984-a22b-8822d3d6a4da\",\"appElementsSchemaVersion\":1,\"rscPayloadSchemaVersion\":1,\"rootBoundaryId\":\"/\",\"renderEpoch\":null}}\n")</script><script>self.__VINEXT_RSC_CHUNKS__=self.__VINEXT_RSC_CHUNKS__||[];self.__VINEXT_RSC_CHUNKS__.push("7:I[\"c2747888630f\",[],\"default\",1]\n8:I[\"9fb86276be8f\",[],\"default\",1]\n")</script><script>self.__VINEXT_RSC_CHUNKS__=self.__VINEXT_RSC_CHUNKS__||[];self.__VINEXT_RSC_CHUNKS__.push("1:[\"$\",\"main\",null,{\"className\":\"subpage about-page\",\"children\":[[\"$\",\"header\",null,{\"className\":\"site-header\",\"children\":[[\"$\",\"$L7\",null,{\"className\":\"brand\",\"href\":\"/\",\"aria-label\":\"ProOptiBusiness - Trang chủ\",\"children\":[[\"$\",\"span\",null,{\"className\":\"brand-mark\",\"children\":\"P\"}],[\"$\",\"span\",null,{\"children\":[[\"$\",\"strong\",null,{\"children\":\"ProOptiBusiness\"}],[\"$\",\"small\",null,{\"children\":\"Learn · Apply · Grow\"}]]}]]}],[\"$\",\"nav\",null,{\"aria-label\":\"Điều hướng chính\",\"children\":[[\"$\",\"$L7\",null,{\"href\":\"/about\",\"children\":\"Về PoB\"}],[\"$\",\"$L7\",null,{\"href\":\"/courses\",\"children\":\"Học cùng PoB\"}],[\"$\",\"$L7\",null,{\"href\":\"/services\",\"children\":\"Dịch vụ\"}],[\"$\",\"$L7\",null,{\"href\":\"/resources\",\"children\":\"Tài nguyên\"}],[\"$\",\"details\",null,{\"children\":[[\"$\",\"summary\",null,{\"children\":[\"Khám phá \",[\"$\",\"span\",null,{\"children\":\"⌄\"}]]}],[\"$\",\"div\",null,{\"children\":[[\"$\",\"$L7\",null,{\"href\":\"/workshops\",\"children\":[[\"$\",\"strong\",null,{\"children\":\"Workshop\"}],[\"$\",\"small\",null,{\"children\":\"Học trực tiếp qua bài toán thật\"}]]}],[\"$\",\"$L7\",null,{\"href\":\"/circle\",\"children\":[[\"$\",\"strong\",null,{\"children\":\"PoB Circle\"}],[\"$\",\"small\",null,{\"children\":\"Cộng đồng học và làm Marketing\"}]]}],[\"$\",\"$L7\",null,{\"href\":\"/insights\",\"children\":[[\"$\",\"strong\",null,{\"children\":\"Insights\"}],[\"$\",\"small\",null,{\"children\":\"Góc nhìn chuyên sâu từ PoB\"}]]}]]}]]}]]}],[\"$\",\"a\",null,{\"className\":\"header-cta\",\"href\":\"https://m.me/Prooptibusiness\",\"target\":\"_blank\",\"rel\":\"noreferrer\",\"children\":[\"Trao đổi bài toán \",[\"$\",\"span\",null,{\"aria-hidden\":\"true\",\"children\":\"↗\"}]]}],[\"$\",\"details\",null,{\"className\":\"mobile-menu\",\"children\":[[\"$\",\"summary\",null,{\"aria-label\":\"Mở menu\",\"children\":[[\"$\",\"span\",null,{}],[\"$\",\"span\",null,{}],[\"$\",\"span\",null,{}]]}],[\"$\",\"div\",null,{\"children\":[[\"$\",\"$L7\",null,{\"href\":\"/about\",\"children\":[\"Về PoB \",[\"$\",\"i\",null,{\"children\":\"→\"}]]}],[\"$\",\"$L7\",null,{\"href\":\"/courses\",\"children\":[\"Học cùng PoB \",[\"$\",\"i\",null,{\"children\":\"→\"}]]}],[\"$\",\"$L7\",null,{\"href\":\"/services\",\"children\":[\"Dịch vụ \",[\"$\",\"i\",null,{\"children\":\"→\"}]]}],[\"$\",\"$L7\",null,{\"href\":\"/resources\",\"children\":[\"Resource Hub \",[\"$\",\"i\",null,{\"children\":\"→\"}]]}],[\"$\",\"$L7\",null,{\"href\":\"/workshops\",\"children\":[\"Workshop \",[\"$\",\"i\",null,{\"children\":\"→\"}]]}],[\"$\",\"$L7\",null,{\"href\":\"/circle\",\"children\":[\"PoB Circle \",[\"$\",\"i\",null,{\"children\":\"→\"}]]}],[\"$\",\"$L7\",null,{\"href\":\"/insights\",\"children\":[\"Insights \",[\"$\",\"i\",null,{\"children\":\"→\"}]]}]]}]]}]]}],[\"$\",\"section\",null,{\"className\":\"subhero subhero-about\",\"children\":[[\"$\",\"div\",null,{\"className\":\"subhero-copy\",\"data-reveal\":true,\"children\":[[\"$\",\"p\",null,{\"className\":\"eyebrow\",\"children\":[[\"$\",\"span\",null,{}],\" ABOUT PROOPTIBUSINESS\"]}],[\"$\",\"h1\",null,{\"children\":[\"Marketing nên làm đội ngũ\",[\"$\",\"br\",null,{}],[\"$\",\"em\",null,{\"children\":\"tự tin hơn,\"}],\" không phụ thuộc hơn.\"]}],[\"$\",\"p\",null,{\"children\":\"PoB là một Founder-led Business Growth, Marketing \u0026 Applied AI Lab: chia sẻ kiến thức có thể áp dụng, xây công cụ dùng được và đồng hành khi doanh nghiệp cần biến cách nghĩ thành hệ thống.\"}]]}],[\"$\",\"div\",null,{\"className\":\"about-symbol\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"span\",null,{\"children\":\"P\"}],[\"$\",\"i\",null,{}],[\"$\",\"i\",null,{}],[\"$\",\"i\",null,{}]]}]]}],[\"$\",\"section\",null,{\"className\":\"story-grid\",\"children\":[[\"$\",\"div\",null,{\"data-reveal\":true,\"children\":[[\"$\",\"p\",null,{\"className\":\"section-kicker\",\"children\":\"VÌ SAO POB TỒN TẠI?\"}],[\"$\",\"h2\",null,{\"children\":\"Khoảng cách lớn nhất không nằm giữa doanh nghiệp và công cụ.\"}]]}],[\"$\",\"div\",null,{\"data-reveal\":true,\"children\":[[\"$\",\"p\",null,{\"children\":[\"Nó nằm giữa \",[\"$\",\"strong\",null,{\"children\":\"biết\"}],\" và \",[\"$\",\"strong\",null,{\"children\":\"làm được\"}],\".\"]}],[\"$\",\"p\",null,{\"children\":\"Doanh nghiệp có thể mua thêm phần mềm, chạy thêm kênh, dùng thêm AI — nhưng nếu mục tiêu, dữ liệu và cách ra quyết định chưa nối với nhau, mọi thứ chỉ trở nên bận hơn.\"}],[\"$\",\"p\",null,{\"children\":\"PoB chọn đứng ở khoảng giữa đó: giải thích đủ rõ để đội ngũ hiểu, thiết kế đủ thực tế để đội ngũ làm, và đo đủ chặt để biết mình đang tiến lên hay chỉ đang hoạt động.\"}]]}]]}],[\"$\",\"section\",null,{\"className\":\"about-founder\",\"children\":[[\"$\",\"div\",null,{\"className\":\"about-founder-photo\",\"data-reveal\":true,\"children\":[[\"$\",\"$L8\",null,{\"src\":\"/founder-khanh-hq.webp\",\"alt\":\"Hoàng Khánh — Founder PoB\",\"width\":1122,\"height\":1402,\"sizes\":\"(max-width: 740px) 90vw, 44vw\",\"unoptimized\":true}],[\"$\",\"span\",null,{\"children\":[\"HOÀNG KHÁNH\",[\"$\",\"small\",null,{\"children\":\"FOUNDER · GROWTH PARTNER\"}]]}]]}],[\"$\",\"div\",null,{\"className\":\"about-founder-copy\",\"data-reveal\":true,\"children\":[[\"$\",\"p\",null,{\"className\":\"section-kicker\",\"children\":\"FOUNDER NOTE\"}],[\"$\",\"h2\",null,{\"children\":[\"“Mình muốn kiến thức\",[\"$\",\"br\",null,{}],\"đi được tới \",[\"$\",\"em\",null,{\"children\":\"công việc thật.\"}],\"”\"]}],[\"$\",\"p\",null,{\"children\":\"Mình là Hoàng Khánh — Digital Performance Marketing \u0026 Growth Lead. Hơn 4 năm làm việc với quảng cáo đa kênh, content, e-commerce, live commerce, planning và reporting giúp mình thấy một pattern rất rõ: đội ngũ tăng tốc tốt nhất khi hiểu cùng một logic.\"}],\"$L9\",\"$La\"]}]]}],\"$Lb\",\"$Lc\",\"$Ld\",\"$Le\"]}]\n")</script><script>self.__VINEXT_RSC_CHUNKS__=self.__VINEXT_RSC_CHUNKS__||[];self.__VINEXT_RSC_CHUNKS__.push("9:[\"$\",\"p\",null,{\"children\":\"PoB vì thế không tách “đào tạo” khỏi “triển khai”. Mỗi tài nguyên đều dẫn tới một hành động; mỗi dịch vụ đều để lại một cách làm mà đội ngũ có thể tiếp tục sử dụng.\"}]\na:[\"$\",\"div\",null,{\"className\":\"founder-tags\",\"children\":[[\"$\",\"span\",null,{\"children\":\"Meta · Google · TikTok · Shopee · Zalo\"}],[\"$\",\"span\",null,{\"children\":\"Live Commerce\"}],[\"$\",\"span\",null,{\"children\":\"Analytics\"}],[\"$\",\"span\",null,{\"children\":\"Applied AI\"}],[\"$\",\"span\",null,{\"children\":\"Marketing Operations\"}]]}]\n")</script><script>self.__VINEXT_RSC_CHUNKS__=self.__VINEXT_RSC_CHUNKS__||[];self.__VINEXT_RSC_CHUNKS__.push("b:[\"$\",\"section\",null,{\"className\":\"capability-section\",\"children\":[[\"$\",\"div\",null,{\"data-reveal\":true,\"children\":[[\"$\",\"p\",null,{\"className\":\"section-kicker light\",\"children\":\"NĂNG LỰC POB KẾT NỐI\"}],[\"$\",\"h2\",null,{\"children\":[\"Không nhìn Marketing\",[\"$\",\"br\",null,{}],\"như những kênh \",[\"$\",\"em\",null,{\"children\":\"rời nhau.\"}]]}],[\"$\",\"p\",null,{\"children\":\"PoB đặt từng kỹ năng vào cùng một hệ: mục tiêu kinh doanh → khách hàng → offer → thu hút → chuyển đổi → giữ chân → dữ liệu → cách đội ngũ phối hợp.\"}]]}],[\"$\",\"div\",null,{\"className\":\"capability-map\",\"children\":[[\"$\",\"article\",\"Business Growth\",{\"data-reveal\":true,\"children\":[[\"$\",\"span\",null,{\"children\":[\"0\",1]}],[\"$\",\"strong\",null,{\"children\":\"Business Growth\"}]]}],[\"$\",\"article\",\"Marketing Strategy\",{\"data-reveal\":true,\"children\":[[\"$\",\"span\",null,{\"children\":[\"0\",2]}],[\"$\",\"strong\",null,{\"children\":\"Marketing Strategy\"}]]}],[\"$\",\"article\",\"Performance Ads\",{\"data-reveal\":true,\"children\":[[\"$\",\"span\",null,{\"children\":[\"0\",3]}],[\"$\",\"strong\",null,{\"children\":\"Performance Ads\"}]]}],[\"$\",\"article\",\"AI for Work\",{\"data-reveal\":true,\"children\":[[\"$\",\"span\",null,{\"children\":[\"0\",4]}],[\"$\",\"strong\",null,{\"children\":\"AI for Work\"}]]}],[\"$\",\"article\",\"Live Commerce\",{\"data-reveal\":true,\"children\":[[\"$\",\"span\",null,{\"children\":[\"0\",5]}],[\"$\",\"strong\",null,{\"children\":\"Live Commerce\"}]]}],[\"$\",\"article\",\"Analytics\",{\"data-reveal\":true,\"children\":[[\"$\",\"span\",null,{\"children\":[\"0\",6]}],[\"$\",\"strong\",null,{\"children\":\"Analytics\"}]]}],[\"$\",\"article\",\"Operations\",{\"data-reveal\":true,\"children\":[[\"$\",\"span\",null,{\"children\":[\"0\",7]}],[\"$\",\"strong\",null,{\"children\":\"Operations\"}]]}]]}]]}]\nc:[\"$\",\"section\",null,{\"className\":\"values-section\",\"children\":[[\"$\",\"div\",null,{\"className\":\"section-heading\",\"data-reveal\":true,\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"p\",null,{\"className\":\"section-kicker\",\"children\":\"BỐN GIÁ TRỊ GIỮ POB ĐI ĐÚNG HƯỚNG\"}],[\"$\",\"h2\",null,{\"children\":[\"Mềm trong cách nói.\",[\"$\",\"br\",null,{}],[\"$\",\"em\",null,{\"children\":\"Chặt trong cách làm.\"}]]}]]}]}],[\"$\",\"div\",null,{\"className\":\"value-grid\",\"children\":[[\"$\",\"article\",\"01\",{\"data-reveal\":true,\"children\":[[\"$\",\"span\",null,{\"children\":\"01\"}],[\"$\",\"h3\",null,{\"children\":\"Clarity\"}],[\"$\",\"p\",null,{\"children\":\"Làm rõ vấn đề trước khi chọn giải pháp.\"}]]}],[\"$\",\"article\",\"02\",{\"data-reveal\":true,\"children\":[[\"$\",\"span\",null,{\"children\":\"02\"}],[\"$\",\"h3\",null,{\"children\":\"Generosity\"}],[\"$\",\"p\",null,{\"children\":\"Chia sẻ đủ giá trị trước khi nói tới bán hàng.\"}]]}],[\"$\",\"article\",\"03\",{\"data-reveal\":true,\"children\":[[\"$\",\"span\",null,{\"children\":\"03\"}],[\"$\",\"h3\",null,{\"children\":\"Integrity\"}],[\"$\",\"p\",null,{\"children\":\"Không bịa thành tích, không hứa kết quả ngoài quyền kiểm soát.\"}]]}],[\"$\",\"article\",\"04\",{\"data-reveal\":true,\"children\":[[\"$\",\"span\",null,{\"children\":\"04\"}],[\"$\",\"h3\",null,{\"children\":\"Practicality\"}],[\"$\",\"p\",null,{\"children\":\"Mỗi đầu ra phải giúp ai đó làm một việc cụ thể.\"}]]}]]}]]}]\nd:[\"$\",\"section\",null,{\"className\":\"subpage-cta\",\"children\":[[\"$\",\"p\",null,{\"children\":\"Muốn bắt đầu bằng một thứ dùng được ngay?\"}],[\"$\",\"h2\",null,{\"children\":\"Ghé PoB Resource Hub.\"}],[\"$\",\"$L7\",null,{\"className\":\"button button-primary\",\"href\":\"/resources\",\"children\":[\"Khám phá tài nguyên miễn phí \",[\"$\",\"span\",null,{\"children\":\"↗\"}]]}]]}]\n")</script><script>self.__VINEXT_RSC_CHUNKS__=self.__VINEXT_RSC_CHUNKS__||[];self.__VINEXT_RSC_CHUNKS__.push("e:[\"$\",\"footer\",null,{\"className\":\"site-footer\",\"children\":[[\"$\",\"$L7\",null,{\"className\":\"brand brand-footer\",\"href\":\"/\",\"children\":[[\"$\",\"span\",null,{\"className\":\"brand-mark\",\"children\":\"P\"}],[\"$\",\"span\",null,{\"children\":[[\"$\",\"strong\",null,{\"children\":\"ProOptiBusiness\"}],[\"$\",\"small\",null,{\"children\":\"Learn · Apply · Grow\"}]]}]]}],[\"$\",\"p\",null,{\"children\":\"Rõ chiến lược · Giỏi thực thi · Tăng trưởng có hệ thống.\"}],[\"$\",\"div\",null,{\"children\":[[\"$\",\"$L7\",null,{\"href\":\"/about\",\"children\":\"Về PoB\"}],[\"$\",\"$L7\",null,{\"href\":\"/courses\",\"children\":\"Khoá học\"}],[\"$\",\"$L7\",null,{\"href\":\"/services\",\"children\":\"Dịch vụ\"}],[\"$\",\"$L7\",null,{\"href\":\"/workshops\",\"children\":\"Workshop\"}],[\"$\",\"$L7\",null,{\"href\":\"/resources\",\"children\":\"Resource Hub\"}],[\"$\",\"$L7\",null,{\"href\":\"/insights\",\"children\":\"Insights\"}],[\"$\",\"a\",null,{\"href\":\"https://www.facebook.com/Prooptibusiness\",\"target\":\"_blank\",\"rel\":\"noreferrer\",\"children\":\"Facebook\"}]]}],[\"$\",\"small\",null,{\"children\":\"© 2026 ProOptiBusiness · Founder-led Business Growth, Marketing \u0026 Applied AI Lab.\"}]]}]\n")</script><script>self.__VINEXT_RSC_DONE__=true</script>
+    <section class="xp-section">
+      <div class="xp-shell">
+        <div class="xp-section-heading" data-reveal><div><p class="xp-kicker">TRUST LEDGER</p><h2 class="xp-section-title">Niềm tin được xây bằng <em>thứ có thể kiểm tra.</em></h2></div><p>PoB không mượn logo thương hiệu, danh xưng học viên hay con số đẹp để lấp khoảng trống bằng chứng.</p></div>
+        <div class="xp-fit-grid">
+          <article data-reveal><h3>PoB sẽ công bố</h3><ul><li>Framework, template, công cụ và cách sử dụng thật.</li><li>Case mô phỏng được ghi nhãn rõ ràng.</li><li>Case thật khi khách hàng đồng ý phạm vi công khai.</li><li>Founder profile với kinh nghiệm và phạm vi năng lực có thể giải thích.</li></ul></article>
+          <article data-reveal><h3>PoB sẽ không làm</h3><ul><li>Gọi nền tảng công nghệ là “đối tác” nếu không có quan hệ chính thức.</li><li>Bịa testimonial, tên, ảnh hoặc vai trò người học.</li><li>Hứa KPI nằm ngoài quyền kiểm soát.</li><li>Mô tả roadmap tương lai như quyền lợi đã được phát hành.</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="xp-cta-section"><div class="xp-shell xp-cta" data-reveal><div><p class="xp-kicker">START WITH SOMETHING USEFUL</p><h2>Muốn bắt đầu bằng một thứ dùng được ngay?</h2><p>Ghé Resource Hub để dùng workbook, calculator, blueprint và case mô phỏng trước khi nghĩ tới việc mua bất kỳ thứ gì.</p></div><div class="xp-cta-actions"><a class="xp-button" href="/resources">Khám phá tài nguyên miễn phí ↗</a><a class="xp-button" href="https://m.me/Prooptibusiness" target="_blank" rel="noreferrer">Trao đổi với Khánh →</a></div></div></section>
+  </main>
+  {% include pob-footer.html %}
+</body>
+</html>
