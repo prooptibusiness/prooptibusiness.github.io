@@ -1418,6 +1418,17 @@ button.xp-system-node.is-active {
   color: #d6d2df;
 }
 
+.xp-next-card .xp-button {
+  position: relative;
+  z-index: 1;
+}
+
+.xp-next-card:nth-child(2) .xp-button {
+  border-color: rgba(255, 255, 255, 0.72);
+  background: #fff;
+  color: #17172b;
+}
+
 .xp-next-card li::before {
   color: var(--xp-cyan);
   content: "✓";

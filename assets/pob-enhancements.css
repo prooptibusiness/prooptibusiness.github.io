@@ -439,6 +439,24 @@ html[data-theme="dark"] select {
   padding: 0;
 }
 
+.pob-back-to-top {
+  width: 52px;
+  min-width: 52px;
+  padding: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(8px);
+  transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.pob-back-to-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
 .pob-theme-toggle .pob-icon-sun,
 html[data-theme="dark"] .pob-theme-toggle .pob-icon-moon {
   display: none;
@@ -562,6 +580,7 @@ html[data-theme="dark"] .pob-theme-toggle .pob-icon-sun {
   gap: 10px;
   max-width: min(390px, calc(100vw - 36px));
   font-family: var(--font-body), sans-serif;
+  pointer-events: none;
 }
 
 .pob-article-toggle {
@@ -580,6 +599,7 @@ html[data-theme="dark"] .pob-theme-toggle .pob-icon-sun {
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   cursor: pointer;
+  pointer-events: auto;
   text-align: left;
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
@@ -653,6 +673,7 @@ html[data-theme="dark"] .pob-theme-toggle .pob-icon-sun {
   box-shadow: var(--pob-float-shadow);
   -webkit-backdrop-filter: blur(22px);
   backdrop-filter: blur(22px);
+  pointer-events: auto;
   transform-origin: bottom left;
   transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s ease;
 }
@@ -753,6 +774,12 @@ html[data-theme="dark"] .pob-theme-toggle .pob-icon-sun {
   .pob-theme-toggle {
     width: 49px;
     min-width: 49px;
+  }
+
+  .pob-back-to-top {
+    width: 49px;
+    min-width: 49px;
+    padding: 0;
   }
 
   .pob-contact-toggle span {

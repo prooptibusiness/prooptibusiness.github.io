@@ -87,6 +87,7 @@
     var icons = {
       moon: '<svg class="pob-icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 15.2A8.4 8.4 0 0 1 8.8 4 8.5 8.5 0 1 0 20 15.2Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>',
       sun: '<svg class="pob-icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="3.5" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2M12 19.5v2M4.5 12h-2M21.5 12h-2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M18.7 5.3l-1.4 1.4M6.7 17.3l-1.4 1.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>',
+      up: '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5M6.5 10.5 12 5l5.5 5.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>',
       chat: '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 11.4a7.6 7.6 0 0 1-8 7.6 9 9 0 0 1-3.2-.6L4 20l1.6-4.1A7.4 7.4 0 0 1 4 11.4a7.6 7.6 0 0 1 8-7.6 7.6 7.6 0 0 1 8 7.6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.3 11.7h.1M12 11.7h.1M15.7 11.7h.1" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>',
       messenger: '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 11.5c0 4.8-4 8.5-9 8.5-1 0-2-.2-2.9-.4L5 21.8l.7-3.9A8.1 8.1 0 0 1 3 11.5C3 6.7 7 3 12 3s9 3.7 9 8.5Z" fill="currentColor"/><path d="m7.2 14 3.1-3.3 2.1 1.7 4.4-2.5-3.1 3.3-2.1-1.7L7.2 14Z" fill="white"/></svg>',
       email: '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3" stroke="currentColor" stroke-width="1.8"/><path d="m5 8 7 5 7-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>'
@@ -101,6 +102,7 @@
     tools.className = "pob-floating-tools";
     tools.setAttribute("aria-label", "Tiện ích website");
     tools.innerHTML =
+      '<button class="pob-float-button pob-back-to-top" type="button" aria-label="Trở về đầu trang" title="Trở về đầu trang">' + icon("up") + '</button>' +
       '<button class="pob-float-button pob-theme-toggle" type="button">' + icon("moon") + icon("sun") + '</button>' +
       '<div class="pob-contact-panel" id="pob-contact-panel" hidden>' +
         '<div class="pob-contact-head"><strong>Chào bạn, PoB đây 👋</strong><small>Chọn kênh thuận tiện để trao đổi bài toán.</small></div>' +
@@ -119,11 +121,33 @@
 
     document.body.appendChild(tools);
 
+    var backToTop = tools.querySelector(".pob-back-to-top");
     var themeToggle = tools.querySelector(".pob-theme-toggle");
     var contactToggle = tools.querySelector(".pob-contact-toggle");
     var panel = tools.querySelector(".pob-contact-panel");
 
     applyTheme(root.dataset.theme || preferredTheme(), false);
+
+    var scrollFrame = 0;
+    function updateBackToTop() {
+      backToTop.classList.toggle("is-visible", window.scrollY > Math.max(420, window.innerHeight * 0.65));
+    }
+
+    window.addEventListener("scroll", function () {
+      if (scrollFrame) return;
+      scrollFrame = window.requestAnimationFrame(function () {
+        scrollFrame = 0;
+        updateBackToTop();
+      });
+    }, { passive: true });
+
+    backToTop.addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"
+      });
+    });
+    updateBackToTop();
 
     themeToggle.addEventListener("click", function () {
       applyTheme(root.dataset.theme === "dark" ? "light" : "dark", true);
