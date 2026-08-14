@@ -1,0 +1,94 @@
+hero:
+  eyebrow: BUSINESS GROWTH · MARKETING · APPLIED AI
+  title: Từ marketing rời rạc đến một hệ tăng trưởng có người chịu trách nhiệm.
+  description: PoB giúp Founder, người làm Marketing và đội ngũ SME nối chiến lược, dữ liệu, nội dung, quảng cáo, AI và vận hành thành một cách làm chung — rõ đầu ra, rõ người duyệt và rõ nhịp cải tiến.
+
+technology:
+  - name: Meta
+    note: Ads & Live
+  - name: Google
+    note: Ads & Workspace
+  - name: TikTok
+    note: Ads & Live
+  - name: Shopee
+    note: Commerce
+  - name: Zalo
+    note: Ads & OA
+  - name: ChatGPT
+    note: Applied AI
+  - name: Claude
+    note: Applied AI
+  - name: Notion
+    note: Knowledge OS
+  - name: GitHub
+    note: Build & Publish
+  - name: Looker Studio
+    note: Analytics
+
+milestones:
+  - number: 01
+    label: Campaign craft
+    title: Từ việc chạy kênh đến hiểu logic chiến dịch
+    description: Học cách nối mục tiêu, khách hàng, offer, creative, media và đo lường thay vì tối ưu từng chỉ số rời rạc.
+  - number: 02
+    label: Multi-social
+    title: Mở rộng sang hệ sinh thái quảng cáo đa kênh
+    description: Meta, TikTok, Google, Shopee và Zalo được đặt vào cùng một media plan và một bộ tiêu chuẩn quyết định.
+  - number: 03
+    label: Data loop
+    title: Biến dashboard thành nhịp review
+    description: Dữ liệu chỉ có giá trị khi gắn với owner, cadence, ngưỡng cảnh báo và hành động tiếp theo.
+  - number: 04
+    label: Live commerce
+    title: Nối nội dung, vận hành và chuyển đổi trong phiên live
+    description: Từ setup kỹ thuật, run of show, phân vai đến hậu kiểm retention và chuyển đổi.
+  - number: 05
+    label: Applied AI
+    title: Đưa AI vào công việc có lớp kiểm tra
+    description: Context, knowledge base, workflow, review gate và tiêu chuẩn đầu ra thay cho việc dùng prompt rời rạc.
+  - number: 06
+    label: ProOptiBusiness
+    title: Đóng gói thành hệ học và đồng hành triển khai
+    description: Learn · Apply · Review · Grow — kiến thức đi cùng template, case, công cụ và cách đội ngũ tiếp tục vận hành.
+
+audience_cases:
+  - role: Founder SME
+    situation: Team làm nhiều nhưng mình vẫn phải đứng giữa mọi quyết định.
+    outcome: Cần một bản đồ ưu tiên và nhịp vận hành có owner.
+  - role: Marketing Lead
+    situation: Báo cáo đủ số nhưng chưa trả lời được tuần tới nên làm gì.
+    outcome: Cần dashboard gắn decision rule và review cadence.
+  - role: Performance Executive
+    situation: Biết bấm nền tảng nhưng thiếu khung media plan và creative testing.
+    outcome: Cần hệ giả thuyết, test log và tiêu chuẩn giữ–sửa–dừng.
+  - role: Content Marketer
+    situation: Dùng AI nhanh hơn nhưng đầu ra thiếu giọng thương hiệu và tính nhất quán.
+    outcome: Cần brand context, content system và checklist biên tập.
+  - role: Người trái ngành
+    situation: Học nhiều thuật ngữ nhưng chưa thấy toàn cảnh Marketing liên kết ra sao.
+    outcome: Cần nền tảng dễ hiểu, case nhỏ và một đầu ra dùng được.
+  - role: Chủ shop / Seller
+    situation: Livestream phụ thuộc người dẫn, kịch bản và vận hành mỗi buổi một kiểu.
+    outcome: Cần runbook, phân vai, scene map và dashboard hậu kiểm.
+  - role: Marketing Manager
+    situation: File, prompt, lịch và dữ liệu nằm rải rác ở nhiều nơi.
+    outcome: Cần knowledge base, workspace và nguyên tắc bàn giao.
+  - role: Đội ngũ in-house
+    situation: Mỗi người hiểu một kiểu, không cùng ngôn ngữ và tiêu chuẩn đầu ra.
+    outcome: Cần workshop theo case thật và playbook dùng chung.
+  - role: Startup team
+    situation: Nguồn lực ít nhưng đang chạy quá nhiều kênh cùng lúc.
+    outcome: Cần health check và thứ tự ưu tiên 30/60/90 ngày.
+  - role: Người đã dùng AI
+    situation: Có nhiều công cụ nhưng chưa hình thành workflow ổn định.
+    outcome: Cần đi từ chatbot đến hệ thống AI có người kiểm duyệt.
+
+founder_stats:
+  - value: 4+
+    label: năm thực chiến Digital Marketing
+  - value: 5
+    label: hệ quảng cáo trong năng lực đa kênh
+  - value: 6
+    label: tuyến năng lực được kết nối tại PoB
+  - value: 1
+    label: logic chung từ chiến lược đến review
