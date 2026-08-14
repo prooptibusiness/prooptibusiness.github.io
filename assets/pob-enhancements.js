@@ -152,12 +152,43 @@
     });
   }
 
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", function () {
-      window.requestAnimationFrame(buildFloatingTools);
-    }, { once: true });
-  } else {
+  function buildBlogNavigation() {
+    var blogHref = "/blog";
+    var desktopMenu = document.querySelector(".site-header nav details > div");
+
+    if (desktopMenu && !desktopMenu.querySelector('a[href="/blog"], a[href="/blog/"]')) {
+      var desktopLink = document.createElement("a");
+      desktopLink.href = blogHref;
+      desktopLink.innerHTML = "<strong>Bài viết</strong><small>Marketing, AI, Growth &amp; Operations</small>";
+      desktopMenu.insertBefore(desktopLink, desktopMenu.firstChild);
+    }
+
+    var mobileMenu = document.querySelector(".mobile-menu > div");
+    if (mobileMenu && !mobileMenu.querySelector('a[href="/blog"], a[href="/blog/"]')) {
+      var mobileLink = document.createElement("a");
+      mobileLink.href = blogHref;
+      mobileLink.innerHTML = "Bài viết <i aria-hidden=\"true\">→</i>";
+      mobileMenu.insertBefore(mobileLink, mobileMenu.querySelector('a[href="/insights"]'));
+    }
+
+    var footerLinks = document.querySelector(".site-footer > div");
+    if (footerLinks && !footerLinks.querySelector('a[href="/blog"], a[href="/blog/"]')) {
+      var footerLink = document.createElement("a");
+      footerLink.href = blogHref;
+      footerLink.textContent = "Bài viết";
+      footerLinks.insertBefore(footerLink, footerLinks.querySelector('a[href="/insights"]'));
+    }
+  }
+
+  function initializeEnhancements() {
+    buildBlogNavigation();
     window.requestAnimationFrame(buildFloatingTools);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initializeEnhancements, { once: true });
+  } else {
+    initializeEnhancements();
   }
 
   var colorPreference = window.matchMedia("(prefers-color-scheme: dark)");
