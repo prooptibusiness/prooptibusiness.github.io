@@ -159,14 +159,18 @@
           {{ content }}
         </div>
 
-        <nav class="post-cluster" aria-label="Chuyên mục AI nên đọc tiếp">
-          <span>AI KNOWLEDGE CLUSTER</span>
+        <nav class="post-cluster" aria-label="Bài cùng chuyên mục {{ page.category_label }} nên đọc tiếp">
+          <span>CỤM KIẾN THỨC {{ page.category_label | upcase }}</span>
           <h2>Đọc theo hệ thống, không đọc rời từng bài</h2>
           <div>
-            <a href="/blog/ai-workspace-lop-context-cong-ty/"><small>01 · CONTEXT</small><strong>AI Workspace &amp; context công ty</strong><i>→</i></a>
-            <a href="/blog/ban-do-model-ai-2026/"><small>02 · MODELS</small><strong>Bản đồ model AI 2026</strong><i>→</i></a>
-            <a href="/blog/cac-lop-van-hanh-ai-agent-2026/"><small>03 · OPERATIONS</small><strong>7 lớp vận hành AI agent</strong><i>→</i></a>
-            <a href="/blog/quan-tri-frontier-ai-2026/"><small>04 · GOVERNANCE</small><strong>Bản đồ quản trị Frontier AI</strong><i>→</i></a>
+            {% assign cluster_count = 0 %}
+            {% assign cluster_posts = site.posts | where: 'category', page.category %}
+            {% for cluster_post in cluster_posts %}
+              {% if cluster_post.url != page.url and cluster_count < 4 %}
+              <a href="{{ cluster_post.url }}"><small>{{ cluster_count | plus: 1 }} · {{ cluster_post.read_time }} PHÚT</small><strong>{{ cluster_post.title }}</strong><i>→</i></a>
+              {% assign cluster_count = cluster_count | plus: 1 %}
+              {% endif %}
+            {% endfor %}
           </div>
         </nav>
 

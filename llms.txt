@@ -16,7 +16,7 @@ permalink: /llms.txt
 
 ## Bài viết mới
 
-{% for post in site.posts limit: 20 %}{% if post.published != false %}- [{{ post.title }}]({{ post.url | absolute_url }}): {{ post.description }}
+{% for post in site.posts limit: 50 %}{% if post.published != false %}- [{{ post.title }}]({{ post.url | absolute_url }}): {{ post.description }}
 {% endif %}{% endfor %}
 
 ## Thông tin xuất bản
