@@ -87,12 +87,12 @@ Chiến lược content-led cần nghiên cứu, chuyên gia, quy trình xuất 
 
 Một đơn vị đào tạo B2B từng định “đăng 20 bài/tháng, chạy lead ads và tổ chức webinar”. Viết lại theo khung 7 quyết định:
 
-- ưu tiên doanh nghiệp dịch vụ 20–100 người đang thiếu quản lý Marketing trung gian;
-- bán chương trình triển khai theo cohort thay vì khóa học quay sẵn;
-- dùng case study và workshop chẩn đoán làm bằng chứng;
-- tập trung LinkedIn, referral và email nuôi dưỡng;
-- đo số tài khoản đủ điều kiện, tỷ lệ tham dự workshop, tỷ lệ proposal và gross margin;
-- chưa chạy lead form đại trà và chưa mở B2C trong 90 ngày.
+- Ưu tiên doanh nghiệp dịch vụ 20–100 người đang thiếu quản lý Marketing trung gian;
+- Bán chương trình triển khai theo cohort thay vì khóa học quay sẵn;
+- Dùng case study và workshop chẩn đoán làm bằng chứng;
+- Tập trung LinkedIn, referral và email nuôi dưỡng;
+- Đo số tài khoản đủ điều kiện, tỷ lệ tham dự workshop, tỷ lệ proposal và gross margin;
+- Chưa chạy lead form đại trà và chưa mở B2C trong 90 ngày.
 
 Lúc này, từng chiến dịch có thể bị loại nếu không phục vụ lựa chọn chung. Đó là dấu hiệu chiến lược đang làm đúng nhiệm vụ.
 

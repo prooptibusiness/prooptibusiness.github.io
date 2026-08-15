@@ -2809,6 +2809,20 @@ function yamlString(value) {
   return JSON.stringify(value);
 }
 
+function capitalizeListStarts(markdown) {
+  return markdown.split("\n").map((line) => {
+    const match = line.match(/^(\s*(?:[-*+]|\d+\.)\s+)(.*)$/u);
+    if (!match) return line;
+
+    const characters = Array.from(match[2]);
+    const firstLetter = characters.findIndex((character) => /\p{L}/u.test(character));
+    if (firstLetter === -1) return line;
+
+    characters[firstLetter] = characters[firstLetter].toLocaleUpperCase("vi-VN");
+    return `${match[1]}${characters.join("")}`;
+  }).join("\n");
+}
+
 function postSource(article, index) {
   const faq = article.faq.map(([question, answer]) => `  - question: ${yamlString(question)}\n    answer: ${yamlString(answer)}`).join("\n");
   const minute = String(index + 1).padStart(2, "0");
@@ -2835,7 +2849,7 @@ faq:
 ${faq}
 ---
 
-${article.body.trim()}
+${capitalizeListStarts(article.body.trim())}
 `;
 }
 
@@ -2895,7 +2909,11 @@ fs.mkdirSync(imagesDir, { recursive: true });
 
 for (const [index, article] of articles.entries()) {
   fs.writeFileSync(path.join(postsDir, `2026-08-15-${article.slug}.md`), postSource(article, index));
-  createThumbnail(article, index);
+
+  const thumbnailPath = path.join(imagesDir, `${article.slug}.webp`);
+  if (!fs.existsSync(thumbnailPath) || fs.statSync(thumbnailPath).size === 0) {
+    throw new Error(`Missing editorial thumbnail for ${article.slug}.`);
+  }
 }
 
-console.log(`Generated ${articles.length} articles and ${articles.length} unique thumbnails.`);
+console.log(`Generated ${articles.length} articles; preserved ${articles.length} editorial thumbnails.`);

@@ -101,13 +101,13 @@ Link từ homepage sang pricing gắn `utm_source=homepage` có thể ghi đè c
 
 ## Các lỗi gây dữ liệu “(not set)” hoặc Unassigned
 
-- medium không khớp rule;
+- Medium không khớp rule;
 - URL bị redirect bỏ query string;
-- campaign link chưa gắn đủ field bắt buộc;
-- link bị copy/sửa thủ công;
-- consent hoặc tag không chạy;
-- source/medium được ghi ở scope khác kỳ vọng;
-- shortener/QR không bảo toàn tham số.
+- Campaign link chưa gắn đủ field bắt buộc;
+- Link bị copy/sửa thủ công;
+- Consent hoặc tag không chạy;
+- Source/medium được ghi ở scope khác kỳ vọng;
+- Shortener/QR không bảo toàn tham số.
 
 ## Registry và vòng đời campaign link
 

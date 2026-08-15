@@ -52,11 +52,11 @@ Checklist launch:
 
 - TikTok Pixel hoạt động ở browser;
 - Events API nếu stack hỗ trợ và có quy trình consent;
-- event_id/dedup cho sự kiện gửi hai nguồn;
-- purchase value/currency chính xác;
-- lead stage hoặc quality signal quay lại nền tảng nếu khả thi;
-- landing page event và conversion không bắn sớm;
-- test event trên thiết bị thật.
+- Event_id/dedup cho sự kiện gửi hai nguồn;
+- Purchase value/currency chính xác;
+- Lead stage hoặc quality signal quay lại nền tảng nếu khả thi;
+- Landing page event và conversion không bắn sớm;
+- Test event trên thiết bị thật.
 
 Một `CompletePayment` bắn khi người dùng chỉ mở trang cảm ơn cache sẽ làm mọi tối ưu sau đó mất nghĩa.
 
@@ -76,12 +76,12 @@ Cấu trúc Smart+ mới có thể hỗ trợ tới nhiều creative asset trong
 
 [TikTok — Placement Split Testing](https://ads.tiktok.com/help/article/about-placement-split-testing-for-your-upgraded-smart-experience) cho phép so auto-selected với manual placement ở các campaign type đủ điều kiện. Quy tắc test:
 
-- một giả thuyết và một biến chính;
-- hai nhóm cùng thời gian, offer, page và measurement;
-- không chỉnh giữa test trừ sự cố;
-- chọn primary metric trước khi xem kết quả;
-- giữ cả quality/profit guardrail;
-- không scale kết quả chênh nhỏ nếu mẫu quá ít.
+- Một giả thuyết và một biến chính;
+- Hai nhóm cùng thời gian, offer, page và measurement;
+- Không chỉnh giữa test trừ sự cố;
+- Chọn primary metric trước khi xem kết quả;
+- Giữ cả quality/profit guardrail;
+- Không scale kết quả chênh nhỏ nếu mẫu quá ít.
 
 TikTok từng khuyến nghị test đủ thời gian và budget dựa trên CPA lịch sử trong [Test, Learn and Scale](https://ads.tiktok.com/business/en/blog/test-learn-performance-marketing). Dùng các con số đó như điểm khởi đầu, rồi điều chỉnh theo conversion lag và volatility riêng.
 

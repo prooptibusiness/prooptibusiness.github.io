@@ -62,10 +62,10 @@ Giả sử NSM là **số khách hàng nhận báo cáo lợi nhuận đúng h�
 
 Mỗi nhánh lại có input:
 
-- khách đủ điều kiện phụ thuộc lead quality và win rate;
-- kết nối dữ liệu phụ thuộc onboarding và tracking completeness;
-- đúng hạn phụ thuộc pipeline dữ liệu và SLA;
-- hành động phụ thuộc tính rõ ràng của insight và nhịp review.
+- Khách đủ điều kiện phụ thuộc lead quality và win rate;
+- Kết nối dữ liệu phụ thuộc onboarding và tracking completeness;
+- Đúng hạn phụ thuộc pipeline dữ liệu và SLA;
+- Hành động phụ thuộc tính rõ ràng của insight và nhịp review.
 
 Đừng coi công thức là quan hệ nhân quả đã được chứng minh. Nó là bản đồ giả thuyết để đội ngũ đo và thử nghiệm.
 
@@ -73,11 +73,11 @@ Mỗi nhánh lại có input:
 
 Một NSM có thể bị “game”. Tăng số báo cáo bằng cách tạo nhiều báo cáo vô nghĩa; tăng đơn bằng giảm giá; tăng lead bằng traffic rác. Vì vậy cần guardrail:
 
-- tỷ lệ lỗi dữ liệu;
-- gross margin hoặc contribution margin;
-- refund/churn;
-- khiếu nại hoặc chất lượng;
-- rủi ro quyền riêng tư.
+- Tỷ lệ lỗi dữ liệu;
+- Gross margin hoặc contribution margin;
+- Refund/churn;
+- Khiếu nại hoặc chất lượng;
+- Rủi ro quyền riêng tư.
 
 ## Dùng OKR để cải thiện nút thắt, không sao chép dashboard
 

@@ -26,3 +26,14 @@ Pages CMS lưu nội dung trực tiếp thành tệp Markdown trong `_posts/`. G
 - Câu trả lời ngắn nên tự trả lời được câu hỏi chính trong khoảng 40–60 từ.
 - Tên tệp bài viết có dạng `YYYY-MM-DD-slug.md`.
 - Không hứa hẹn rich result. Structured data phải khớp với nội dung người đọc nhìn thấy.
+- Chữ cái đầu tiên có thể nhìn thấy trong mỗi bullet hoặc mục đánh số phải viết hoa.
+
+## Quy chuẩn ảnh đại diện bài viết
+
+- Dùng ảnh WebP 1200×675, phong cách editorial/futuristic có chiều sâu, chủ thể và bối cảnh bám sát nội dung bài.
+- Không dùng thumbnail hình học phẳng, icon placeholder, chữ, logo, nhãn hiệu hoặc watermark trong ảnh.
+- Tuyệt đối không dùng quốc kỳ, quốc huy, bản đồ, mảng lục địa, đường biên, hình dáng quốc gia hoặc biểu tượng chính trị–địa chính trị.
+- Kiểm tra trực quan toàn ảnh để phát hiện chữ rác, chi tiết méo, biểu tượng nhạy cảm hoặc nội dung ngoài brief trước khi xuất bản.
+- Viết alt text mô tả nội dung ảnh; không nhồi từ khóa.
+
+Với bộ bài Marketing ngày 15/08/2026, chạy `node scripts/validate-marketing-library.mjs` trước khi commit để kiểm tra số bài, viết hoa đầu danh sách, kích thước/khả năng đọc ảnh và ảnh trùng.

@@ -90,14 +90,14 @@ So cycle time, error, rework và chất lượng trước–sau. Mọi thay đ�
 
 ## Definition of Done cho một landing page
 
-- copy và claim đã đúng approval;
-- desktop/mobile QA;
-- form có validation và thank-you state;
-- event view/submit/purchase test đúng một lần;
+- Copy và claim đã đúng approval;
+- Desktop/mobile QA;
+- Form có validation và thank-you state;
+- Event view/submit/purchase test đúng một lần;
 - UTM được giữ qua funnel nếu cần;
-- canonical, title, description, robots phù hợp;
-- owner monitoring và rollback đã chỉ định;
-- dashboard có data trong latency kỳ vọng.
+- Canonical, title, description, robots phù hợp;
+- Owner monitoring và rollback đã chỉ định;
+- Dashboard có data trong latency kỳ vọng.
 
 ## Dùng công cụ mà không để SOP bị khóa vào công cụ
 
@@ -105,13 +105,13 @@ So cycle time, error, rework và chất lượng trước–sau. Mọi thay đ�
 
 ## Chỉ số sức khỏe SOP
 
-- adoption rate;
-- first-pass yield (qua QA lần đầu);
-- cycle time và wait time;
-- exception rate;
-- số lỗi theo mức độ;
-- rework hours;
-- thời gian onboard người mới.
+- Adoption rate;
+- First-pass yield (qua QA lần đầu);
+- Cycle time và wait time;
+- Exception rate;
+- Số lỗi theo mức độ;
+- Rework hours;
+- Thời gian onboard người mới.
 
 Nếu SOP làm cycle time tăng nhưng lỗi không giảm, hãy bỏ bớt approval hoặc chuyển kiểm tra thành tự động.
 

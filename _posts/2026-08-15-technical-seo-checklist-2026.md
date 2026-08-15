@@ -45,10 +45,10 @@ faq:
 
 ## Checklist 2 — Status code và redirect
 
-- 200 cho nội dung hợp lệ.
-- 301/308 cho di chuyển lâu dài; 302/307 cho tạm thời đúng nghĩa.
+- 200 Cho nội dung hợp lệ.
+- 301/308 Cho di chuyển lâu dài; 302/307 cho tạm thời đúng nghĩa.
 - Không redirect chain/loop.
-- 404/410 thật cho nội dung mất.
+- 404/410 Thật cho nội dung mất.
 - Soft 404 không trả 200 với trang rỗng.
 - Redirect old URL đến trang liên quan, không dồn mọi thứ về homepage.
 
@@ -56,48 +56,48 @@ faq:
 
 ## Checklist 3 — robots, noindex và quyền truy cập
 
-- robots.txt không chặn asset cần render.
-- staging/admin/cart/search/filter được kiểm soát đúng.
-- noindex chỉ dùng trên trang crawler có thể đọc.
-- nội dung riêng tư dùng authentication, không dựa vào robots.txt.
-- kiểm tra rule theo user-agent và môi trường.
+- Robots.txt không chặn asset cần render.
+- Staging/admin/cart/search/filter được kiểm soát đúng.
+- Noindex chỉ dùng trên trang crawler có thể đọc.
+- Nội dung riêng tư dùng authentication, không dựa vào robots.txt.
+- Kiểm tra rule theo user-agent và môi trường.
 
 ## Checklist 4 — Sitemap XML
 
 [Google — Build and submit a sitemap](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap) quy định format/giới hạn và cách khai báo. Thực hành:
 
-- chỉ URL canonical, indexable, status 200;
-- dùng absolute URL cùng host/protocol;
-- lastmod phản ánh cập nhật đáng kể;
-- chia sitemap theo loại/nếu vượt giới hạn;
-- khai báo trong robots/Search Console;
-- monitor submitted vs indexed, không coi index gap luôn là lỗi kỹ thuật.
+- Chỉ URL canonical, indexable, status 200;
+- Dùng absolute URL cùng host/protocol;
+- Lastmod phản ánh cập nhật đáng kể;
+- Chia sitemap theo loại/nếu vượt giới hạn;
+- Khai báo trong robots/Search Console;
+- Monitor submitted vs indexed, không coi index gap luôn là lỗi kỹ thuật.
 
 ## Checklist 5 — Canonical và duplicate
 
-- self-canonical cho URL chính.
-- internal links và sitemap trỏ canonical.
-- redirect protocol/www/trailing slash nhất quán.
-- hreflang (nếu có) trỏ URL canonical và reciprocal.
-- parameter, print, sort, tracking không tạo duplicate indexable.
-- canonical không trỏ trang khác intent/ngôn ngữ.
+- Self-canonical cho URL chính.
+- Internal links và sitemap trỏ canonical.
+- Redirect protocol/www/trailing slash nhất quán.
+- Hreflang (nếu có) trỏ URL canonical và reciprocal.
+- Parameter, print, sort, tracking không tạo duplicate indexable.
+- Canonical không trỏ trang khác intent/ngôn ngữ.
 
 ## Checklist 6 — Rendering và JavaScript
 
-- nội dung/links quan trọng tồn tại sau render.
-- server/client error không để trang trắng.
-- title/meta/canonical không bị JS ghi đè sai.
-- lazy-loaded content kích hoạt bằng viewport đúng, không cần click.
-- blocked API/CORS/auth không phá bot render.
-- test URL Inspection/rendered HTML khi release lớn.
+- Nội dung/links quan trọng tồn tại sau render.
+- Server/client error không để trang trắng.
+- Title/meta/canonical không bị JS ghi đè sai.
+- Lazy-loaded content kích hoạt bằng viewport đúng, không cần click.
+- Blocked API/CORS/auth không phá bot render.
+- Test URL Inspection/rendered HTML khi release lớn.
 
 ## Checklist 7 — Metadata và structured data
 
-- title/description riêng và đúng intent.
+- Title/description riêng và đúng intent.
 - H1 cùng ngôn ngữ với nội dung.
-- canonical, robots, OG/Twitter nhất quán.
-- structured data hợp lệ, phản ánh nội dung hiển thị.
-- author/dateModified/image đầy đủ cho article khi phù hợp.
+- Canonical, robots, OG/Twitter nhất quán.
+- Structured data hợp lệ, phản ánh nội dung hiển thị.
+- Author/dateModified/image đầy đủ cho article khi phù hợp.
 
 Schema tăng khả năng hệ thống hiểu/đủ điều kiện cho feature, không bảo đảm hiển thị. Tuân [Google structured data policies](https://developers.google.com/search/docs/appearance/structured-data/sd-policies).
 
@@ -114,11 +114,11 @@ Schema tăng khả năng hệ thống hiểu/đủ điều kiện cho feature, k
 ## Checklist 9 — Monitoring và release QA
 
 - Search Console indexing/CWV/security/manual actions.
-- sitemap errors và crawl stats.
-- log sampling cho bot/status nếu có.
-- alert 5xx, robots/canonical/noindex thay đổi.
-- regression test template trước deploy.
-- annotate migration/release trên dashboard.
+- Sitemap errors và crawl stats.
+- Log sampling cho bot/status nếu có.
+- Alert 5xx, robots/canonical/noindex thay đổi.
+- Regression test template trước deploy.
+- Annotate migration/release trên dashboard.
 
 ## Kết luận
 

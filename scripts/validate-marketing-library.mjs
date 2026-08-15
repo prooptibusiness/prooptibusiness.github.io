@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
+import { spawnSync } from "node:child_process";
 
 const root = path.resolve(import.meta.dirname, "..");
 const postsDir = path.join(root, "_posts");
@@ -45,6 +46,7 @@ for (const file of files) {
   const faqCount = (front.match(/^  - question:/gm) || []).length;
   const sourceCount = (body.match(/https?:\/\//g) || []).length;
   const h2Count = (body.match(/^## /gm) || []).length;
+  const lines = body.split("\n");
 
   if (words < 700) errors.push(`${file}: only ${words} body words.`);
   if (summaryWords < 40 || summaryWords > 75) errors.push(`${file}: answer summary has ${summaryWords} words.`);
@@ -53,11 +55,26 @@ for (const file of files) {
   if (h2Count < 5) errors.push(`${file}: only ${h2Count} H2 sections.`);
   if (category === "ai-marketing") errors.push(`${file}: AI Marketing article was added unexpectedly.`);
 
+  for (const [index, line] of lines.entries()) {
+    const listItem = line.match(/^\s*(?:[-*+]|\d+\.)\s+(.*)$/u);
+    if (!listItem) continue;
+    const firstLetter = Array.from(listItem[1]).find((character) => /\p{L}/u.test(character));
+    if (firstLetter && firstLetter !== firstLetter.toLocaleUpperCase("vi-VN")) {
+      errors.push(`${file}:${index + 1}: list item must start with an uppercase letter.`);
+    }
+  }
+
   if (image) {
     const imagePath = path.join(root, image.replace(/^\//, ""));
     if (!fs.existsSync(imagePath)) {
       errors.push(`${file}: missing image ${image}.`);
     } else {
+      const imageSize = fs.statSync(imagePath).size;
+      const identify = spawnSync("identify", ["-format", "%wx%h", imagePath], { encoding: "utf8" });
+      if (imageSize < 30000) errors.push(`${file}: thumbnail is unexpectedly small (${imageSize} bytes).`);
+      if (identify.status !== 0) errors.push(`${file}: invalid image ${image}.`);
+      else if (identify.stdout !== "1200x675") errors.push(`${file}: expected a 1200x675 thumbnail, found ${identify.stdout}.`);
+
       const hash = crypto.createHash("sha256").update(fs.readFileSync(imagePath)).digest("hex");
       if (imageHashes.has(hash)) errors.push(`${file}: duplicate image with ${imageHashes.get(hash)}.`);
       imageHashes.set(hash, file);

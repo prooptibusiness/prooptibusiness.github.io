@@ -79,11 +79,11 @@ Nếu câu hỏi không dẫn tới quyết định, cân nhắc không thu dữ
 
 ## Naming convention không nên biến thành mê cung
 
-- dùng chữ thường và underscore;
-- đặt tên hành động + đối tượng: `form_submit` nếu không có event đề xuất phù hợp;
-- không nhét channel/campaign vào tên event — dùng parameter;
-- enum có danh sách cho phép, ví dụ `form_type: demo|contact|download`;
-- không đổi ngữ nghĩa event cũ; tạo version hoặc ngày hiệu lực.
+- Dùng chữ thường và underscore;
+- Đặt tên hành động + đối tượng: `form_submit` nếu không có event đề xuất phù hợp;
+- Không nhét channel/campaign vào tên event — dùng parameter;
+- Enum có danh sách cho phép, ví dụ `form_type: demo|contact|download`;
+- Không đổi ngữ nghĩa event cũ; tạo version hoặc ngày hiệu lực.
 
 GA4 có giới hạn tên, số parameter và custom definitions thay đổi theo sản phẩm; kiểm tra tài liệu hiện hành trước implementation thay vì dựa vào checklist cũ.
 
@@ -91,11 +91,11 @@ GA4 có giới hạn tên, số parameter và custom definitions thay đổi the
 
 UI có thể thay đổi, nên event quan trọng nên dựa trên business state/data layer hoặc backend confirmation thay vì CSS selector dễ vỡ. Xác định nguồn sự thật:
 
-- frontend cho impression/click;
-- backend cho payment/order status;
+- Frontend cho impression/click;
+- Backend cho payment/order status;
 - CRM cho qualified/won lead;
 - ERP cho net revenue/refund;
-- consent platform cho trạng thái đồng ý.
+- Consent platform cho trạng thái đồng ý.
 
 Không ép GA4 thành kho tài chính. Dùng transaction ID để reconcile với hệ thống đơn hàng.
 
@@ -114,12 +114,12 @@ Test happy path, reload, back button, lỗi thanh toán, refund, nhiều tab, ad
 
 ## Governance sau khi launch
 
-- change request có owner và impact;
-- event catalog công khai cho team;
-- alert volume rơi/tăng bất thường;
-- audit hàng tháng cho conversion quan trọng;
-- deprecate event có thời hạn;
-- metric dictionary nối event với dashboard.
+- Change request có owner và impact;
+- Event catalog công khai cho team;
+- Alert volume rơi/tăng bất thường;
+- Audit hàng tháng cho conversion quan trọng;
+- Deprecate event có thời hạn;
+- Metric dictionary nối event với dashboard.
 
 ## Kết luận
 

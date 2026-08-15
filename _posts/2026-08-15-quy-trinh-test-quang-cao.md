@@ -104,12 +104,12 @@ Nếu concept yếu, việc tạo 30 màu thumbnail không cứu được. Nếu
 
 ## Những bẫy làm “winner” giả
 
-- dừng khi vừa thấy kết quả mong muốn;
-- test trong hai giai đoạn seasonality khác nhau;
-- platform tự phân phối nhiều hơn cho mẫu thắng sớm rồi so như A/B thuần;
-- primary metric được đổi sau khi xem dữ liệu;
-- creative thắng nhờ một đơn hàng giá trị ngoại lệ;
-- scale vượt capacity sale/delivery.
+- Dừng khi vừa thấy kết quả mong muốn;
+- Test trong hai giai đoạn seasonality khác nhau;
+- Platform tự phân phối nhiều hơn cho mẫu thắng sớm rồi so như A/B thuần;
+- Primary metric được đổi sau khi xem dữ liệu;
+- Creative thắng nhờ một đơn hàng giá trị ngoại lệ;
+- Scale vượt capacity sale/delivery.
 
 ## Kết luận
 

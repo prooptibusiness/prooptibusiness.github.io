@@ -81,14 +81,14 @@ Margin, refund, spam lead, consent rate, event loss, data freshness. Dashboard k
 
 Mỗi KPI cần:
 
-- định nghĩa và công thức;
-- source và timestamp refresh;
-- scope/filter;
-- target và owner;
-- so sánh phù hợp;
-- threshold/cảnh báo;
-- link drill-down;
-- known limitation.
+- Định nghĩa và công thức;
+- Source và timestamp refresh;
+- Scope/filter;
+- Target và owner;
+- So sánh phù hợp;
+- Threshold/cảnh báo;
+- Link drill-down;
+- Known limitation.
 
 [Google Analytics Data API schema](https://developers.google.com/analytics/devguides/reporting/data/v1/api-schema) cho thấy mỗi dimension/metric có tên và compatibility riêng. Đừng trộn metric từ scope không tương thích hoặc gọi cùng tên nhưng công thức khác giữa GA, ad platform và finance.
 
@@ -110,13 +110,13 @@ Không bắt CEO dùng dashboard 80 cột của analyst, cũng không bắt medi
 
 ## Thiết kế cảnh báo để tránh alert fatigue
 
-- ngưỡng absolute + relative;
-- minimum volume;
-- seasonality baseline;
-- persistence 2–3 kỳ nếu không khẩn cấp;
-- severity và owner;
-- runbook/link điều tra;
-- cooldown sau alert.
+- Ngưỡng absolute + relative;
+- Minimum volume;
+- Seasonality baseline;
+- Persistence 2–3 kỳ nếu không khẩn cấp;
+- Severity và owner;
+- Runbook/link điều tra;
+- Cooldown sau alert.
 
 Ví dụ purchase rơi 90% trong 30 phút là incident tracking; CPA tăng 12% một buổi có thể chỉ là noise.
 

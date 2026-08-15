@@ -60,11 +60,11 @@ GTM không đồng nghĩa chạy chiến dịch quảng cáo. [OpenStax — Purp
 
 ### Tín hiệu nên đo
 
-- tỷ lệ người xác nhận vấn đề đang ưu tiên;
-- tỷ lệ đồng ý bước tiếp theo sau thông điệp;
-- phản đối lặp lại về giá, niềm tin, timing;
-- số khách chấp nhận pilot hoặc đặt cọc;
-- capacity thực tế để giao kết quả.
+- Tỷ lệ người xác nhận vấn đề đang ưu tiên;
+- Tỷ lệ đồng ý bước tiếp theo sau thông điệp;
+- Phản đối lặp lại về giá, niềm tin, timing;
+- Số khách chấp nhận pilot hoặc đặt cọc;
+- Capacity thực tế để giao kết quả.
 
 Không dùng lượt like làm bằng chứng product-market fit. Với B2B, một cam kết thời gian, dữ liệu hoặc tiền thường mạnh hơn lời khen.
 
@@ -85,11 +85,11 @@ Ví dụ kênh partner cho dịch vụ tài chính có thể hiệu quả hơn a
 
 ### Chuẩn hóa phần đã có tín hiệu
 
-- script qualify và discovery;
-- proposal, case study và xử lý phản đối;
-- onboarding checklist và SLA;
-- tracking từ nguồn đến doanh thu;
-- review pipeline hàng tuần.
+- Script qualify và discovery;
+- Proposal, case study và xử lý phản đối;
+- Onboarding checklist và SLA;
+- Tracking từ nguồn đến doanh thu;
+- Review pipeline hàng tuần.
 
 ### Tính economics tối thiểu
 
