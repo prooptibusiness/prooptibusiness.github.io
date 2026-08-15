@@ -83,10 +83,10 @@ Trong ví dụ trên: `1 / (35% − 10%) = 4,0`. Mục tiêu ROAS 4 cho phép d�
 
 Với subscription hoặc sản phẩm mua lặp, có thể đánh giá payback theo 30/60/90 ngày:
 
-- gross profit tích lũy theo cohort;
-- tỷ lệ giữ chân thực, không lấy trung bình toàn bộ lịch sử;
-- hoàn/hủy và chi phí chăm sóc sau mua;
-- thời gian hoàn vốn phù hợp dòng tiền.
+- Gross profit tích lũy theo cohort;
+- Tỷ lệ giữ chân thực, không lấy trung bình toàn bộ lịch sử;
+- Hoàn/hủy và chi phí chăm sóc sau mua;
+- Thời gian hoàn vốn phù hợp dòng tiền.
 
 Chỉ hạ target ROAS lần mua đầu khi cohort gần đây chứng minh phần lợi nhuận tương lai lặp lại. LTV không phải giấy phép để mua mọi khách hàng.
 

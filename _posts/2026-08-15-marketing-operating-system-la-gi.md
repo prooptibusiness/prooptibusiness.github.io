@@ -73,11 +73,11 @@ Mỗi trạng thái cần entry criteria, owner, SLA và exit criteria. [Asana �
 
 [Atlassian — Roles and Responsibilities](https://www.atlassian.com/team-playbook/plays/roles-and-responsibilities) khuyến nghị làm rõ trách nhiệm và phần chưa có owner. Với từng quyết định, ghi:
 
-- ai chuẩn bị và kéo công việc;
-- ai duyệt cuối;
-- ai bắt buộc được tham vấn;
-- ai chỉ cần được thông báo;
-- ai có quyền dừng vì pháp lý, brand hoặc ngân sách.
+- Ai chuẩn bị và kéo công việc;
+- Ai duyệt cuối;
+- Ai bắt buộc được tham vấn;
+- Ai chỉ cần được thông báo;
+- Ai có quyền dừng vì pháp lý, brand hoặc ngân sách.
 
 Nếu hai người cùng “duyệt cuối”, thời gian chờ và feedback mâu thuẫn thường tăng.
 
@@ -89,12 +89,12 @@ Metric dictionary cần có tên, định nghĩa, công thức, nguồn, scope, 
 
 Post-mortem không phải buổi tìm lỗi cá nhân. Nó ghi:
 
-- mục tiêu và kết quả;
-- giả định đúng/sai;
-- quyết định quan trọng;
-- lỗi hệ thống và tác động;
-- thay đổi nhỏ cho SOP/template/tracking;
-- owner và ngày áp dụng.
+- Mục tiêu và kết quả;
+- Giả định đúng/sai;
+- Quyết định quan trọng;
+- Lỗi hệ thống và tác động;
+- Thay đổi nhỏ cho SOP/template/tracking;
+- Owner và ngày áp dụng.
 
 [Atlassian Team Playbook](https://www.atlassian.com/team-playbook) cung cấp nhiều “plays” cho health check, decision và retrospective; SME nên chọn play giải đúng điểm đau, không triển khai toàn bộ nghi thức cùng lúc.
 

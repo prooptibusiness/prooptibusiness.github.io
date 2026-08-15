@@ -49,11 +49,11 @@ Nếu tối ưu cho “submit form” nhưng 70% là spam, PMax sẽ tìm thêm 
 
 [Google Ads — About asset groups](https://support.google.com/google-ads/answer/10724748) mô tả asset group là tập creative xoay quanh một theme hoặc audience liên quan. Hãy tách khi có khác biệt đáng kể:
 
-- dòng sản phẩm và landing page;
-- margin hoặc mục tiêu giá trị;
-- use case/thông điệp;
-- vùng địa lý cần asset riêng;
-- feed listing group khác.
+- Dòng sản phẩm và landing page;
+- Margin hoặc mục tiêu giá trị;
+- Use case/thông điệp;
+- Vùng địa lý cần asset riêng;
+- Feed listing group khác.
 
 Không tách chỉ để “đẹp báo cáo”. Quá nhiều group giống nhau làm creative và dữ liệu bị loãng.
 
@@ -73,12 +73,12 @@ Tạo signal theo **giá trị**, không chỉ theo volume. Danh sách 5.000 lea
 
 ## Creative checklist theo asset group
 
-- nhiều tỷ lệ ảnh theo tài liệu hiện hành;
-- logo rõ trên nền phù hợp;
-- video dọc/ngang có hook sớm, subtitle và CTA;
-- text ngắn/dài không lặp nguyên câu;
-- proof cụ thể, giá/điều kiện không gây hiểu nhầm;
-- asset phù hợp landing page và feed.
+- Nhiều tỷ lệ ảnh theo tài liệu hiện hành;
+- Logo rõ trên nền phù hợp;
+- Video dọc/ngang có hook sớm, subtitle và CTA;
+- Text ngắn/dài không lặp nguyên câu;
+- Proof cụ thể, giá/điều kiện không gây hiểu nhầm;
+- Asset phù hợp landing page và feed.
 
 [Google Ads — Image asset requirements](https://support.google.com/google-ads/answer/14530211) là nguồn nên kiểm tra ngay trước khi upload vì yêu cầu có thể thay đổi. Không ghi cứng kích thước từ một blog cũ vào SOP.
 
@@ -104,13 +104,13 @@ Nếu bật, loại các trang không có mục tiêu quảng cáo như tuyển 
 
 So sánh:
 
-- conversion value và contribution, không chỉ revenue gộp;
-- new vs returning customer nếu mục tiêu acquisition;
-- brand vs non-brand contribution;
-- search/Shopping cannibalization;
-- blended revenue và geo/seasonality;
-- lead quality từ CRM;
-- experiment khi Google Ads cung cấp loại test phù hợp.
+- Conversion value và contribution, không chỉ revenue gộp;
+- New vs returning customer nếu mục tiêu acquisition;
+- Brand vs non-brand contribution;
+- Search/Shopping cannibalization;
+- Blended revenue và geo/seasonality;
+- Lead quality từ CRM;
+- Experiment khi Google Ads cung cấp loại test phù hợp.
 
 Platform attribution trả lời “hệ thống ghi nhận gì”; không tự động trả lời “bao nhiêu doanh thu chỉ xuất hiện nhờ PMax”.
 

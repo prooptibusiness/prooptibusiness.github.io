@@ -73,11 +73,11 @@ Pillar không cần nhắm từ khóa volume lớn nhất; nó cần là điểm
 
 ### 5. Thiết kế link trước khi viết
 
-- pillar → support theo nhóm;
-- support → pillar khi cần bối cảnh;
-- support ↔ support theo bước trước/sau;
-- definition → how-to;
-- guide → tool/service khi phù hợp.
+- Pillar → support theo nhóm;
+- Support → pillar khi cần bối cảnh;
+- Support ↔ support theo bước trước/sau;
+- Definition → how-to;
+- Guide → tool/service khi phù hợp.
 
 ### 6. Viết anchor và surrounding text rõ
 

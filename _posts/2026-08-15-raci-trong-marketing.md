@@ -43,12 +43,12 @@ faq:
 
 ## Khi nào campaign cần RACI?
 
-- nhiều hơn một phòng tham gia;
-- ngân sách/claim/brand có rủi ro;
-- approval thường trễ hoặc feedback mâu thuẫn;
-- deliverable qua nhiều handoff;
-- có vendor/agency;
-- không rõ ai ra quyết định khi dữ liệu xấu.
+- Nhiều hơn một phòng tham gia;
+- Ngân sách/claim/brand có rủi ro;
+- Approval thường trễ hoặc feedback mâu thuẫn;
+- Deliverable qua nhiều handoff;
+- Có vendor/agency;
+- Không rõ ai ra quyết định khi dữ liệu xấu.
 
 Không cần RACI cho “đổi typo trong caption”. Ma trận quá chi tiết nhanh chóng biến thành tài liệu không ai đọc.
 
@@ -97,12 +97,12 @@ Gắn RACI vào brief, project template và approval rule. Khi một item sang �
 
 ## Đo RACI có thực sự tốt hơn
 
-- approval lead time;
-- số vòng feedback;
-- tỷ lệ task không có owner;
-- số quyết định bị đảo sau launch;
-- on-time rate;
-- rework do yêu cầu mâu thuẫn.
+- Approval lead time;
+- Số vòng feedback;
+- Tỷ lệ task không có owner;
+- Số quyết định bị đảo sau launch;
+- On-time rate;
+- Rework do yêu cầu mâu thuẫn.
 
 Review sau 2–3 campaign. Nếu mọi người vẫn hỏi trong chat “ai duyệt cái này?”, ma trận chưa đủ cụ thể hoặc chưa tích hợp vào cách làm việc.
 

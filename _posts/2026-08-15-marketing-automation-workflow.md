@@ -83,13 +83,13 @@ Delay “chờ 3 ngày” khác “chờ đến khi có sự kiện hoặc tối
 
 Tối thiểu phải có:
 
-- execution log theo record;
-- success/failure count và latency;
-- alert khi failure rate hoặc queue vượt ngưỡng;
-- dead-letter/manual review queue;
-- retry có backoff và số lần tối đa;
-- rollback/disable procedure;
-- owner nhận incident.
+- Execution log theo record;
+- Success/failure count và latency;
+- Alert khi failure rate hoặc queue vượt ngưỡng;
+- Dead-letter/manual review queue;
+- Retry có backoff và số lần tối đa;
+- Rollback/disable procedure;
+- Owner nhận incident.
 
 [HubSpot Webhooks](https://developers.hubspot.com/docs/apps/developer-platform/add-features/configure-webhooks) dùng subscription để nhận thay đổi thay vì polling liên tục. Khi tích hợp webhook, hãy xác minh request, xử lý event trùng/out-of-order và trả response nhanh trước xử lý nặng.
 
@@ -107,13 +107,13 @@ Test happy path, missing data, duplicate, timeout, unsubscribe, owner unavailabl
 
 ## Metric cần theo dõi
 
-- enrollment count và eligible-to-enrolled rate;
-- success/failure/retry;
-- time-to-owner và SLA attainment;
-- duplicate/send error;
-- conversion theo cohort workflow;
-- unsubscribe/complaint;
-- số case manual và lý do.
+- Enrollment count và eligible-to-enrolled rate;
+- Success/failure/retry;
+- Time-to-owner và SLA attainment;
+- Duplicate/send error;
+- Conversion theo cohort workflow;
+- Unsubscribe/complaint;
+- Số case manual và lý do.
 
 ## Kết luận
 

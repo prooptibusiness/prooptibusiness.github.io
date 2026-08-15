@@ -38,10 +38,10 @@ Meta công bố [Andromeda](https://engineering.fb.com/2024/12/02/production-eng
 
 Broad nghĩa là giảm các ràng buộc sở thích/nhóm nhỏ không cần thiết, để delivery dùng tín hiệu conversion, creative và hành vi trong hệ thống. Broad không có nghĩa:
 
-- bỏ qua địa lý, độ tuổi hoặc giới hạn pháp lý;
-- dùng một thông điệp cho tất cả;
-- gửi event chất lượng thấp;
-- để thuật toán tự sửa offer và landing page yếu.
+- Bỏ qua địa lý, độ tuổi hoặc giới hạn pháp lý;
+- Dùng một thông điệp cho tất cả;
+- Gửi event chất lượng thấp;
+- Để thuật toán tự sửa offer và landing page yếu.
 
 | Điều kiện | Broad có lợi thế hơn | Cần thận trọng |
 |---|---|---|
@@ -55,11 +55,11 @@ Broad nghĩa là giảm các ràng buộc sở thích/nhóm nhỏ không cần t
 
 [Meta — Performance Marketing](https://www.facebook.com/business/ads/performance-marketing) khuyến nghị đơn giản hóa tài khoản, kết hợp ad set và giảm thay đổi trong learning phase. Một cấu trúc SME có thể bắt đầu:
 
-- 1 campaign cho một mục tiêu kinh doanh và vùng thị trường;
-- 1–2 ad set theo khác biệt thật về funnel/địa lý/offer;
-- 4–8 creative hoạt động, đại diện nhiều concept;
-- một event tối ưu đủ gần doanh thu và có volume;
-- một test riêng khi cần kết luận nhân quả hơn.
+- 1 Campaign cho một mục tiêu kinh doanh và vùng thị trường;
+- 1–2 Ad set theo khác biệt thật về funnel/địa lý/offer;
+- 4–8 Creative hoạt động, đại diện nhiều concept;
+- Một event tối ưu đủ gần doanh thu và có volume;
+- Một test riêng khi cần kết luận nhân quả hơn.
 
 Không có “con số thần”. Mật độ conversion, ngân sách và khác biệt giữa nhóm mới quyết định có nên tách.
 
@@ -88,12 +88,12 @@ Meta nêu các ad set đi qua giai đoạn học ban đầu và khuyến nghị 
 
 [Meta — About Conversions API](https://www.facebook.com/business/help/AboutConversionsAPI) cho biết CAPI tạo kết nối trực tiếp hơn từ server, website, app, CRM hoặc offline tới hệ thống Meta và có thể dùng cùng Pixel. Checklist:
 
-- event name và thời điểm nhất quán;
-- event_id để deduplicate browser/server;
-- value/currency đúng doanh thu doanh nghiệp giữ lại;
-- lead stage từ CRM nếu mục tiêu là qualified lead/sale;
-- consent và data minimization;
-- kiểm tra event match quality nhưng không gửi dư dữ liệu.
+- Event name và thời điểm nhất quán;
+- Event_id để deduplicate browser/server;
+- Value/currency đúng doanh thu doanh nghiệp giữ lại;
+- Lead stage từ CRM nếu mục tiêu là qualified lead/sale;
+- Consent và data minimization;
+- Kiểm tra event match quality nhưng không gửi dư dữ liệu.
 
 ## Scorecard không dừng ở CPA
 

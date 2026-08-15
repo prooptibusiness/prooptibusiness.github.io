@@ -47,15 +47,15 @@ faq:
 
 ## Dữ liệu cần trước khi quyết định
 
-- query, impression, click và position theo thời gian;
-- traffic/conversion/assisted action;
-- backlinks/referring pages;
-- internal links và vai trò trong cluster;
-- freshness/accuracy/author/source;
-- index/canonical/status;
-- content quality và intent match;
-- sales/support usage;
-- effort và business relevance.
+- Query, impression, click và position theo thời gian;
+- Traffic/conversion/assisted action;
+- Backlinks/referring pages;
+- Internal links và vai trò trong cluster;
+- Freshness/accuracy/author/source;
+- Index/canonical/status;
+- Content quality và intent match;
+- Sales/support usage;
+- Effort và business relevance.
 
 Không dùng một threshold như “dưới 100 view thì xóa”. Một bài hỗ trợ proposal giá trị cao có thể đáng giữ dù ít organic traffic.
 
@@ -83,11 +83,11 @@ Nhiều URL cùng nhận impression cho cluster không? So intent, backlinks, co
 
 ### 6. Chọn hành động kỹ thuật
 
-- giữ URL khi intent không đổi;
-- update title/H1 có cân nhắc CTR và promise;
-- merge phần độc đáo trước redirect;
-- update canonical, sitemap, structured data, internal links;
-- không redirect nội dung không liên quan về homepage.
+- Giữ URL khi intent không đổi;
+- Update title/H1 có cân nhắc CTR và promise;
+- Merge phần độc đáo trước redirect;
+- Update canonical, sitemap, structured data, internal links;
+- Không redirect nội dung không liên quan về homepage.
 
 [Google — Site moves with URL changes](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes) khuyến nghị redirect URL cũ sang URL mới liên quan và tránh dồn nhiều URL cũ về đích không phù hợp.
 
@@ -110,11 +110,11 @@ Theo dõi crawl/index, query mix, click, conversion, internal navigation và lin
 
 ## Trigger review date theo độ biến động
 
-- platform/feature/pricing: 1–3 tháng hoặc khi changelog đổi;
-- luật/chính sách: theo sự kiện và chuyên gia review;
-- benchmark/số liệu: khi nguồn ra kỳ mới;
-- evergreen framework: 6–12 tháng;
-- event/news: archive hoặc contextualize khi hết giá trị.
+- Platform/feature/pricing: 1–3 tháng hoặc khi changelog đổi;
+- Luật/chính sách: theo sự kiện và chuyên gia review;
+- Benchmark/số liệu: khi nguồn ra kỳ mới;
+- Evergreen framework: 6–12 tháng;
+- Event/news: archive hoặc contextualize khi hết giá trị.
 
 ## Kết luận
 

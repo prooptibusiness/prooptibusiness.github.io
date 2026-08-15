@@ -58,13 +58,13 @@ Dùng naming convention, source-of-truth link, owner và status. Tách master kh
 
 ### 6. QA theo rủi ro
 
-- brand/visual/copy;
-- claim và legal;
-- spelling, price, dates;
-- ratio, safe zone, subtitle;
+- Brand/visual/copy;
+- Claim và legal;
+- Spelling, price, dates;
+- Ratio, safe zone, subtitle;
 - URL, UTM, event;
-- rights/license/talent expiration;
-- accessibility cơ bản.
+- Rights/license/talent expiration;
+- Accessibility cơ bản.
 
 ### 7. Approval có SLA
 
@@ -101,15 +101,15 @@ Metadata bổ sung: usage rights, talent, region, expiry, source file, approver,
 
 ## Scorecard Creative Ops
 
-- intake completeness;
-- median cycle time và wait time;
-- on-time delivery;
-- first-pass approval;
-- rework hours;
-- asset utilization/reuse;
-- concept hit rate;
-- cost per usable asset;
-- fatigue time và incremental contribution.
+- Intake completeness;
+- Median cycle time và wait time;
+- On-time delivery;
+- First-pass approval;
+- Rework hours;
+- Asset utilization/reuse;
+- Concept hit rate;
+- Cost per usable asset;
+- Fatigue time và incremental contribution.
 
 Không thưởng team vì sản xuất nhiều file nếu nền tảng không tiêu, campaign không dùng hoặc người mua không phản hồi.
 

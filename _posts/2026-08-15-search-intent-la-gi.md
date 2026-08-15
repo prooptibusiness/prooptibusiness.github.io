@@ -76,11 +76,11 @@ Chấm relevance, expertise, evidence và business fit. Không mở rộng sang 
 
 Một URL nên có:
 
-- một primary job;
-- cluster truy vấn đồng nghĩa/gần nhau;
-- format khớp intent;
-- unique value/proof;
-- internal links đến bước trước/sau.
+- Một primary job;
+- Cluster truy vấn đồng nghĩa/gần nhau;
+- Format khớp intent;
+- Unique value/proof;
+- Internal links đến bước trước/sau.
 
 Khi hai URL cùng job, chọn giữ, hợp nhất hoặc tái định vị. Khi cùng keyword nhưng một bài định nghĩa, một trang công cụ phục vụ tác vụ khác, cả hai có thể tồn tại.
 
@@ -97,12 +97,12 @@ Với AEO/GEO, đoạn trả lời phải tự chứa đủ ngữ cảnh và ngu
 
 ## Đo intent match sau khi xuất bản
 
-- query mix trong Search Console;
+- Query mix trong Search Console;
 - CTR theo query/page nhưng đọc cùng vị trí;
-- scroll/engagement và action phù hợp;
-- pogo/back-to-SERP không quan sát trực tiếp đầy đủ, nên dùng proxy thận trọng;
-- conversion hỗ trợ;
-- query mới ngoài phạm vi;
+- Scroll/engagement và action phù hợp;
+- Pogo/back-to-SERP không quan sát trực tiếp đầy đủ, nên dùng proxy thận trọng;
+- Conversion hỗ trợ;
+- Query mới ngoài phạm vi;
 - URL nào cùng nhận impression cho một cluster.
 
 Không đánh giá intent chỉ bằng time on page: người dùng nhận câu trả lời trong 30 giây có thể rất hài lòng.

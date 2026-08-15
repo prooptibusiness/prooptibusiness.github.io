@@ -53,12 +53,12 @@ Phân khúc tốt không chỉ “trông khác nhau”; các nhóm phải có nh
 
 ### B2B cần thêm bối cảnh tổ chức
 
-- quy mô doanh thu/nhân sự và ngành;
-- mức trưởng thành của quy trình;
-- hệ thống công nghệ đang dùng;
-- trigger như mở chi nhánh, đổi lãnh đạo, gọi vốn;
-- vai trò người dùng, người duyệt, người trả tiền;
-- mức độ cấp bách và chi phí của việc không hành động.
+- Quy mô doanh thu/nhân sự và ngành;
+- Mức trưởng thành của quy trình;
+- Hệ thống công nghệ đang dùng;
+- Trigger như mở chi nhánh, đổi lãnh đạo, gọi vốn;
+- Vai trò người dùng, người duyệt, người trả tiền;
+- Mức độ cấp bách và chi phí của việc không hành động.
 
 Đừng tạo 20 nhóm chỉ vì dữ liệu cho phép. Bắt đầu bằng giả thuyết 3–7 nhóm, rồi kiểm tra bằng CRM, phỏng vấn, search query, dữ liệu thắng/thua và ticket hỗ trợ.
 

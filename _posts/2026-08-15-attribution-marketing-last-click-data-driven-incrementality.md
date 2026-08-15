@@ -44,10 +44,10 @@ faq:
 
 Last click phù hợp khi:
 
-- cần metric đơn giản cho vận hành;
-- quyết định ở điểm thu nhu cầu cuối;
-- identity/journey data hạn chế;
-- muốn một baseline dễ audit.
+- Cần metric đơn giản cho vận hành;
+- Quyết định ở điểm thu nhu cầu cuối;
+- Identity/journey data hạn chế;
+- Muốn một baseline dễ audit.
 
 Nó dễ đánh giá thấp video, content, creator hoặc offline exposure nếu các kênh này tạo nhu cầu nhưng conversion kết thúc bằng brand search/direct.
 
@@ -55,12 +55,12 @@ Nó dễ đánh giá thấp video, content, creator hoặc offline exposure nế
 
 Mô hình data-driven dùng patterns hành trình/conversion để phân bổ credit khác last-click. Chất lượng phụ thuộc:
 
-- event và identity coverage;
-- conversion volume;
-- cửa sổ lookback;
-- consent và modeled data;
-- scope/report đang dùng;
-- thay đổi thuật toán không hoàn toàn quan sát được.
+- Event và identity coverage;
+- Conversion volume;
+- Cửa sổ lookback;
+- Consent và modeled data;
+- Scope/report đang dùng;
+- Thay đổi thuật toán không hoàn toàn quan sát được.
 
 Không cộng credit từ Meta + Google + TikTok rồi xem như tổng conversion duy nhất; mỗi nền tảng có thể cùng nhận công cho một đơn hàng.
 
@@ -93,16 +93,16 @@ Một doanh nghiệp trưởng thành không chọn **một** mô hình cho mọ
 
 ## Reconciliation sheet tối thiểu
 
-- timezone;
-- currency và revenue gross/net;
-- conversion event và timestamp;
-- click/view window;
-- attribution model;
-- identity/cross-device;
-- refunds/cancellations;
-- date of event vs date of interaction;
-- source scope;
-- data latency.
+- Timezone;
+- Currency và revenue gross/net;
+- Conversion event và timestamp;
+- Click/view window;
+- Attribution model;
+- Identity/cross-device;
+- Refunds/cancellations;
+- Date of event vs date of interaction;
+- Source scope;
+- Data latency.
 
 Chỉ so số sau khi các dòng này được căn chỉnh.
 
