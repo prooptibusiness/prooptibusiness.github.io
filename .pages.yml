@@ -64,10 +64,10 @@ content:
         label: Câu trả lời ngắn AEO/GEO
         type: text
         required: true
-        description: Trả lời trực tiếp câu hỏi chính trong 40–60 từ; đoạn này hiển thị ngay đầu bài.
+        description: Trả lời trực tiếp câu hỏi chính trong 40–75 từ; đoạn này hiển thị ngay đầu bài.
         options:
           minlength: 80
-          maxlength: 420
+          maxlength: 520
       - name: target_query
         label: Truy vấn trọng tâm
         type: string
@@ -112,10 +112,9 @@ content:
         description: "Ví dụ: Content & SEO."
       - name: tags
         label: Thẻ chủ đề
-        type: select
-        options:
-          multiple: true
-          values: [SEO, AEO, GEO, AI, Growth, Performance, Analytics, Content, SME, Operations, Live Commerce]
+        type: string
+        list: true
+        description: Thêm, sửa hoặc xóa tag tự do; ưu tiên tag thật sự giúp phân loại và tìm kiếm nội dung.
       - name: image
         label: Ảnh đại diện
         type: image
@@ -123,7 +122,7 @@ content:
         default: /pob-learning-lab.webp
         options:
           media: blog_images
-          extensions: [jpg, jpeg, png, webp]
+          extensions: [jpg, jpeg, png, webp, svg]
           rename: true
       - name: image_alt
         label: Mô tả ảnh
@@ -178,6 +177,7 @@ content:
         options:
           format: markdown
           media: blog_images
+          extensions: [jpg, jpeg, png, webp, svg]
           rename: true
           switcher: true
 
