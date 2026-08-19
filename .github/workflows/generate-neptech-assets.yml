@@ -1,0 +1,33 @@
+name: Generate Nếp Tech Assets
+
+on:
+  push:
+    branches: [neptech-assets]
+    paths:
+      - 'scripts/generate_neptech_social.py'
+      - '.github/workflows/generate-neptech-assets.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build-assets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: neptech-assets
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pillow requests
+      - run: python scripts/generate_neptech_social.py
+      - name: Commit generated assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add media/neptech/2026-08-19/*.png
+          if ! git diff --cached --quiet; then
+            git commit -m "Generate sharp Nếp Tech social assets"
+            git push origin neptech-assets
+          fi
