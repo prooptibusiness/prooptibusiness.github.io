@@ -2,7 +2,14 @@
 
 Mục tiêu: đưa 5 hạng mục Marketing còn thiếu lên khoảng 10 bài/hạng mục, tạo đường đọc từ kiến thức nền tảng → thực hành → nâng cao, đồng thời tránh cannibalization với 25 bài Marketing và cụm AI đã có.
 
-> Lưu ý dữ liệu demand: ưu tiên bên dưới dựa trên head-term/intent phổ biến và kiểm tra SERP hiện tại. Không ghi search volume hoặc KD giả khi Semrush chưa trả dữ liệu vào runtime; trước khi merge có thể bổ sung số volume/KD nếu connector trả được.
+> Lưu ý dữ liệu demand: ưu tiên bên dưới dựa trên head-term/intent phổ biến và kiểm tra SERP hiện tại. Không ghi search volume hoặc KD giả khi Semrush chưa trả dữ liệu vào runtime; có thể bổ sung số volume/KD khi connector trả được mà không cần đổi kiến trúc cluster.
+
+## Trạng thái triển khai
+
+- Đã viết đủ 24 bài mới: 5 Chiến lược, 5 Performance, 5 Operations, 5 Analytics, 4 Content & SEO.
+- Đã tạo 10 thumbnail sáng riêng cho các head-term thuộc Chiến lược và Performance; các bài còn lại đang dùng asset PoB sáng có sẵn để tránh đường dẫn ảnh lỗi trong vòng review nội dung.
+- Sitemap tự động lấy toàn bộ `site.posts`; `llms.txt` được nâng giới hạn từ 50 lên 100 bài.
+- Chưa merge vào `main`; đây là branch review.
 
 ## 1. Chiến lược — thêm 5 bài
 
@@ -64,7 +71,7 @@ Hạng mục này đã có 6 bài gồm SEO/AEO/GEO, Search Intent, E-E-A-T, Tec
 - Ít nhất 4 FAQ cho câu hỏi phụ; FAQ phục vụ người đọc/AEO, không hứa hẹn rich result.
 - Ít nhất 3 nguồn đáng tin; với tính năng nền tảng ưu tiên tài liệu chính thức gần thời điểm xuất bản.
 - Internal link từ bài nền tảng sang bài nâng cao và ngược lại theo topic cluster.
-- Ảnh thumbnail riêng, sáng, 1200×675; không dùng quốc kỳ, bản đồ, hình quốc gia, biên giới hay biểu tượng địa chính trị.
+- Ảnh thumbnail sáng; không dùng quốc kỳ, bản đồ, hình quốc gia, biên giới hay biểu tượng địa chính trị. Thumbnail riêng cho toàn bộ bài là tiêu chí visual QA trước khi xuất bản chính thức.
 - Mọi bullet/numbered item bắt đầu bằng chữ hoa.
 - Không bịa benchmark, case study, doanh thu, khách hàng hoặc trải nghiệm cá nhân.
 - Ghi ngày cập nhật và giữ author/entity nhất quán với PoB.
