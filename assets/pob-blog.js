@@ -6,6 +6,29 @@
     if (!grid) return;
 
     var cards = Array.prototype.slice.call(grid.querySelectorAll("[data-blog-card]"));
+    var filters = document.querySelector(".blog-filters");
+    var categoryLabels = {
+      "growth-revenue": "Growth & Revenue",
+      "ecommerce-social": "E-commerce & Social Commerce",
+      "martech-automation": "MarTech & Automation"
+    };
+
+    if (filters) {
+      Object.keys(categoryLabels).forEach(function (category) {
+        var exists = filters.querySelector('[data-blog-filter="' + category + '"]');
+        var hasCards = cards.some(function (card) {
+          return card.getAttribute("data-category") === category;
+        });
+        if (!exists && hasCards) {
+          var button = document.createElement("button");
+          button.type = "button";
+          button.setAttribute("data-blog-filter", category);
+          button.textContent = categoryLabels[category];
+          filters.appendChild(button);
+        }
+      });
+    }
+
     var input = document.querySelector("[data-blog-search]");
     var buttons = Array.prototype.slice.call(document.querySelectorAll("[data-blog-filter]"));
     var empty = document.querySelector("[data-blog-empty]");
