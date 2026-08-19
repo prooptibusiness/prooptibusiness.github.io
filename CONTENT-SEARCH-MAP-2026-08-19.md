@@ -7,9 +7,12 @@ Mục tiêu: đưa 5 hạng mục Marketing còn thiếu lên khoảng 10 bài/h
 ## Trạng thái triển khai
 
 - Đã viết đủ 24 bài mới: 5 Chiến lược, 5 Performance, 5 Operations, 5 Analytics, 4 Content & SEO.
-- Đã tạo 10 thumbnail sáng riêng cho các head-term thuộc Chiến lược và Performance; các bài còn lại đang dùng asset PoB sáng có sẵn để tránh đường dẫn ảnh lỗi trong vòng review nội dung.
+- Đã có thumbnail sáng riêng cho toàn bộ 24 bài; không dùng quốc kỳ, bản đồ, hình quốc gia, biên giới hoặc biểu tượng địa chính trị.
+- Pages CMS đọc trực tiếp toàn bộ `_posts`, nên 24 bài sẽ tự xuất hiện trong mục “Bài viết” sau khi merge vào `main`.
+- CMS đã cho phép tag tự do, JPG/JPEG/PNG/WebP/SVG và rich-text media; `settings.content.merge: true` tiếp tục bảo toàn front matter ngoài schema.
+- Với 14 bài trước đó dùng ảnh fallback, lớp hiển thị tự chọn thumbnail hệ thống riêng. Nếu người biên tập chọn ảnh mới trong CMS, ảnh mới sẽ override thumbnail hệ thống.
 - Sitemap tự động lấy toàn bộ `site.posts`; `llms.txt` được nâng giới hạn từ 50 lên 100 bài.
-- Chưa merge vào `main`; đây là branch review.
+- Batch đã sẵn sàng merge vào `main`.
 
 ## 1. Chiến lược — thêm 5 bài
 
@@ -71,7 +74,7 @@ Hạng mục này đã có 6 bài gồm SEO/AEO/GEO, Search Intent, E-E-A-T, Tec
 - Ít nhất 4 FAQ cho câu hỏi phụ; FAQ phục vụ người đọc/AEO, không hứa hẹn rich result.
 - Ít nhất 3 nguồn đáng tin; với tính năng nền tảng ưu tiên tài liệu chính thức gần thời điểm xuất bản.
 - Internal link từ bài nền tảng sang bài nâng cao và ngược lại theo topic cluster.
-- Ảnh thumbnail sáng; không dùng quốc kỳ, bản đồ, hình quốc gia, biên giới hay biểu tượng địa chính trị. Thumbnail riêng cho toàn bộ bài là tiêu chí visual QA trước khi xuất bản chính thức.
+- Ảnh thumbnail riêng, sáng; không dùng quốc kỳ, bản đồ, hình quốc gia, biên giới hay biểu tượng địa chính trị.
 - Mọi bullet/numbered item bắt đầu bằng chữ hoa.
 - Không bịa benchmark, case study, doanh thu, khách hàng hoặc trải nghiệm cá nhân.
 - Ghi ngày cập nhật và giữ author/entity nhất quán với PoB.
