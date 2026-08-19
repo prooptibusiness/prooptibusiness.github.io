@@ -1,0 +1,42 @@
+marketing-operations-la-gi:
+  fallback: /pob-learning-lab.webp
+  image: /assets/blog/marketing-operations-la-gi-2026.svg
+quy-trinh-marketing:
+  fallback: /pob-learning-lab.webp
+  image: /assets/blog/quy-trinh-marketing-2026.svg
+content-calendar-la-gi:
+  fallback: /pob-learning-lab.webp
+  image: /assets/blog/content-calendar-la-gi-2026.svg
+ngan-sach-marketing-la-gi:
+  fallback: /pob-learning-lab.webp
+  image: /assets/blog/ngan-sach-marketing-la-gi-2026.svg
+crm-la-gi-trong-marketing:
+  fallback: /pob-learning-lab.webp
+  image: /assets/blog/crm-la-gi-trong-marketing-2026.svg
+marketing-analytics-la-gi:
+  fallback: /pob-learning-lab.webp
+  image: /assets/blog/marketing-analytics-la-gi-2026.svg
+ga4-la-gi:
+  fallback: /pob-learning-lab.webp
+  image: /assets/blog/ga4-la-gi-2026.svg
+google-tag-manager-la-gi:
+  fallback: /pob-learning-lab.webp
+  image: /assets/blog/google-tag-manager-la-gi-2026.svg
+conversion-rate-la-gi:
+  fallback: /pob-learning-lab.webp
+  image: /assets/blog/conversion-rate-la-gi-2026.svg
+cac-ltv-la-gi:
+  fallback: /pob-learning-lab.webp
+  image: /assets/blog/cac-ltv-la-gi-2026.svg
+seo-la-gi:
+  fallback: /assets/blog/seo-aeo-geo-2026.webp
+  image: /assets/blog/seo-la-gi-2026.svg
+nghien-cuu-tu-khoa-la-gi:
+  fallback: /assets/blog/search-intent-la-gi.webp
+  image: /assets/blog/nghien-cuu-tu-khoa-la-gi-2026.svg
+seo-onpage-la-gi:
+  fallback: /assets/blog/technical-seo-checklist-2026.webp
+  image: /assets/blog/seo-onpage-la-gi-2026.svg
+seo-offpage-la-gi:
+  fallback: /assets/blog/eeat-la-gi.webp
+  image: /assets/blog/seo-offpage-la-gi-2026.svg
