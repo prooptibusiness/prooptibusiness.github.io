@@ -1,0 +1,31 @@
+/* Article hero cover: preserve the full 16:9 thumbnail without forced cropping. */
+.post-cover {
+  aspect-ratio: 16 / 9;
+  min-height: 0;
+  background: #f7f6fc;
+}
+
+.post-cover img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.post-cover::after {
+  background: linear-gradient(180deg, transparent 72%, rgba(16, 18, 42, 0.42));
+}
+
+@media (max-width: 1120px) {
+  .post-cover {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .post-cover {
+    min-height: 0;
+    border-radius: 22px;
+  }
+}
