@@ -11,13 +11,17 @@
   <link rel="canonical" href="{{ page.url | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="PoB Bài viết" href="{{ '/feed.xml' | absolute_url }}">
 
+  {% assign display_image = page.image %}
+  {% assign image_rule = site.data.article_images[page.slug] %}
+  {% if image_rule and page.image == image_rule.fallback %}{% assign display_image = image_rule.image %}{% endif %}
+
   <meta property="og:locale" content="vi_VN">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="ProOptiBusiness">
   <meta property="og:title" content="{{ page.title | escape }}">
   <meta property="og:description" content="{{ page.description | strip_html | strip_newlines | escape }}">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
-  <meta property="og:image" content="{{ page.image | absolute_url }}">
+  <meta property="og:image" content="{{ display_image | absolute_url }}">
   <meta property="og:image:alt" content="{{ page.image_alt | escape }}">
   <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
   <meta property="article:modified_time" content="{{ page.date_modified | default: page.date | date_to_xmlschema }}">
@@ -28,7 +32,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ page.title | escape }}">
   <meta name="twitter:description" content="{{ page.description | strip_html | strip_newlines | escape }}">
-  <meta name="twitter:image" content="{{ page.image | absolute_url }}">
+  <meta name="twitter:image" content="{{ display_image | absolute_url }}">
 
   <link rel="icon" href="/favicon.ico?v=2" sizes="any">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2">
@@ -52,7 +56,7 @@
         "mainEntityOfPage": {"@type": "WebPage", "@id": {{ page.url | absolute_url | jsonify }}},
         "headline": {{ page.title | jsonify }},
         "description": {{ page.description | strip_html | strip_newlines | jsonify }},
-        "image": {"@type": "ImageObject", "url": {{ page.image | absolute_url | jsonify }}},
+        "image": {"@type": "ImageObject", "url": {{ display_image | absolute_url | jsonify }}},
         "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
         "dateModified": {{ page.date_modified | default: page.date | date_to_xmlschema | jsonify }},
         "timeRequired": {{ page.read_time | prepend: 'PT' | append: 'M' | jsonify }},
@@ -121,7 +125,7 @@
           </div>
         </div>
         <figure class="post-cover">
-          <img src="{{ page.image }}" alt="{{ page.image_alt | escape }}">
+          <img src="{{ display_image }}" alt="{{ page.image_alt | escape }}">
           <figcaption>{{ page.image_alt }}</figcaption>
         </figure>
       </div>
