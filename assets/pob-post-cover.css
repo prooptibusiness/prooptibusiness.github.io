@@ -84,6 +84,23 @@
   color: var(--blog-muted);
 }
 
+/* Long-form reading typography: Word-style justified paragraphs.
+   Keep headings, metadata and labels left-aligned for hierarchy. */
+.post-deck,
+.post-answer p,
+.post-content p,
+.post-content li,
+.post-content blockquote,
+.post-faq details p,
+.post-author-card p {
+  text-align: justify;
+  text-align-last: left;
+  text-justify: inter-word;
+  word-break: normal;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
 @media (max-width: 1120px) {
   .post-hero-grid {
     gap: 30px;
@@ -165,6 +182,18 @@
     gap: 10px 14px;
     margin-top: 15px;
     font-size: 9px;
+  }
+
+  .post-deck,
+  .post-answer p,
+  .post-content p,
+  .post-content li,
+  .post-content blockquote,
+  .post-faq details p,
+  .post-author-card p {
+    text-justify: inter-word;
+    letter-spacing: normal;
+    word-spacing: normal;
   }
 }
 
