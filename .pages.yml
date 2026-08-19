@@ -105,6 +105,12 @@ content:
               label: Analytics
             - name: content-seo
               label: Content & SEO
+            - name: growth-revenue
+              label: Growth & Revenue
+            - name: ecommerce-social
+              label: E-commerce & Social Commerce
+            - name: martech-automation
+              label: MarTech & Automation
       - name: category_label
         label: Tên chuyên mục hiển thị
         type: string
