@@ -65,11 +65,16 @@ Internal linking chính: Marketing Operations, CRM, Tracking Plan, GA4, GTM, Mar
 - Không bịa benchmark, case study, doanh thu, khách hàng hoặc trải nghiệm cá nhân.
 - Mọi bullet/list item bắt đầu bằng chữ hoa.
 - Thumbnail 2D graph/diagram sáng, sạch, chuyên môn; không người thật AI/3D, không quốc kỳ, bản đồ, biên giới hoặc biểu tượng địa chính trị.
-- Ảnh ưu tiên 1200×675, nhẹ và dùng được trực tiếp trong Pages CMS.
-- CMS phải cho phép tự sửa title, slug, description, answer_summary, query, category, tags, image, FAQ và body.
+- Ảnh 1200×675, nhẹ và dùng trực tiếp trong Pages CMS.
+- CMS cho phép tự sửa title, slug, description, answer_summary, query, category, tags, image, FAQ và body.
 
-## Trạng thái
+## Trạng thái triển khai
 
-- Branch triển khai: `codex/growth-commerce-martech-clusters`.
-- Mục tiêu batch: 30 bài + 30 thumbnail + 3 category trong CMS/blog filter.
-- Chưa merge vào `main`; chỉ merge sau QA và duyệt.
+- Đã viết đủ 30/30 bài: 10 Growth & Revenue, 10 E-commerce & Social Commerce, 10 MarTech & Automation.
+- Đã tạo đủ 30/30 thumbnail riêng theo style 2D graph/diagram sáng.
+- Đã thêm 3 category vào Pages CMS và 3 filter tương ứng trên thư viện Blog.
+- Bộ lọc Blog dùng `data-blog-filter` động nên không cần hard-code JavaScript cho category mới.
+- `llms.txt` tăng coverage từ 100 lên 150 bài; sitemap vẫn tự lấy toàn bộ `site.posts`.
+- Branch `codex/growth-commerce-martech-clusters` đang ahead `main`, behind 0.
+- Semrush hiện không đủ API units nên batch không ghi volume/KD giả; có thể bổ sung sau mà không cần đổi topic architecture.
+- Chưa merge vào `main`; sẵn sàng PR review.
