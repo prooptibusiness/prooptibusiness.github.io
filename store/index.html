@@ -1,0 +1,134 @@
+---
+layout: null
+permalink: /store/
+---
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script data-pob-theme-init>(function(){try{var t=localStorage.getItem("pob-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.dataset.theme=t;document.documentElement.style.colorScheme=t}catch(e){}})();</script>
+  <title>Template Store | Kế hoạch Marketing, Content, Ads, Livestream & Operations | PoB</title>
+  <meta name="description" content="Thư viện 25 template thực chiến của ProOptiBusiness: Marketing Plan, Content Plan, Paid Media, Livestream, CRM, Automation và Growth. File Excel có cấu trúc sẵn, dùng được trên Excel hoặc Google Sheets.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+  <link rel="canonical" href="{{ '/store/' | absolute_url }}">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ProOptiBusiness">
+  <meta property="og:title" content="PoB Template Store — 25 template Marketing & Growth thực chiến">
+  <meta property="og:description" content="Không bắt đầu từ trang trắng. Chọn một hệ thống đã được thiết kế sẵn cho Marketing, Content, Ads, Live Commerce và Operations.">
+  <meta property="og:url" content="{{ '/store/' | absolute_url }}">
+  <link rel="icon" href="/favicon.ico?v=2" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2">
+  <link rel="stylesheet" href="/assets/index-CFmk_res.css">
+  <link rel="stylesheet" href="/assets/pob-enhancements.css?v=20260814-2">
+  <link rel="stylesheet" href="/assets/pob-store.css?v=20260820-1">
+  <script defer src="/assets/pob-enhancements.js?v=20260820-store"></script>
+  <script defer src="/assets/pob-store.js?v=20260820-1"></script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"CollectionPage",
+    "name":"PoB Template Store",
+    "description":"Thư viện template Marketing, Content, Performance, Live Commerce và Operations của ProOptiBusiness.",
+    "url":{{ '/store/' | absolute_url | jsonify }},
+    "inLanguage":"vi-VN",
+    "mainEntity":{
+      "@type":"ItemList",
+      "numberOfItems":{{ site.data.template_store.templates | size }},
+      "itemListElement":[{% for item in site.data.template_store.templates %}{"@type":"ListItem","position":{{ forloop.index }},"item":{"@type":"CreativeWork","name":{{ item.title | jsonify }},"description":{{ item.summary | jsonify }},"inLanguage":"vi-VN"}}{% unless forloop.last %},{% endunless %}{% endfor %}]
+    }
+  }
+  </script>
+</head>
+<body class="pob-store-page">
+  {% include pob-header.html %}
+  <main>
+    <section class="store-hero">
+      <div class="store-hero-copy">
+        <p class="store-eyebrow">POB TEMPLATE STORE · 25 HỆ THỐNG LÀM VIỆC</p>
+        <h1>Đừng bắt đầu từ <em>trang trắng.</em></h1>
+        <p>Template ở đây không phải vài ô Excel để điền cho có. Mỗi file được thiết kế như một hệ thống làm việc nhỏ: có mục tiêu, bảng triển khai, lớp review và phần tổng hợp để đội ngũ biết <strong>đang làm gì, vì sao làm và khi nào cần đổi quyết định.</strong></p>
+        <div class="store-hero-actions">
+          <a class="store-button store-button-primary" href="#thu-vien">Xem 25 template <span>↓</span></a>
+          <a class="store-button store-button-ghost" href="https://m.me/Prooptibusiness" target="_blank" rel="noreferrer">Hỏi gói phù hợp <span>↗</span></a>
+        </div>
+        <div class="store-proof" aria-label="Thông tin thư viện">
+          <span><strong>25</strong> template</span><i></i><span><strong>5</strong> nhóm nghiệp vụ</span><i></i><span>Excel · Google Sheets</span>
+        </div>
+      </div>
+      <div class="store-hero-visual" aria-hidden="true">
+        <div class="store-sheet-stack store-sheet-back"></div>
+        <div class="store-sheet-stack store-sheet-mid"></div>
+        <div class="store-workbook">
+          <div class="store-workbook-top"><span>PoB TEMPLATE SYSTEM</span><b>LIVE</b></div>
+          <div class="store-kpi-row"><i></i><i></i><i></i></div>
+          <div class="store-chart"><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="store-table-lines"><i></i><i></i><i></i><i></i></div>
+          <div class="store-workbook-foot">PLAN → RUN → REVIEW → IMPROVE</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="store-principles">
+      <article><span>01</span><h2>Viết như tài liệu doanh nghiệp</h2><p>Ưu tiên tiếng Việt rõ, tự nhiên; chỉ giữ thuật ngữ tiếng Anh khi đó là chuẩn ngành và giúp người dùng hiểu nhanh hơn.</p></article>
+      <article><span>02</span><h2>Có dữ liệu mẫu, không giả case</h2><p>Dữ liệu mẫu chỉ minh hoạ cấu trúc. Mọi file đều nhắc người dùng thay bằng dữ liệu thật trước khi đưa ra quyết định.</p></article>
+      <article><span>03</span><h2>Dùng được, không chỉ đẹp</h2><p>Mỗi template có phần Bắt đầu, Bảng làm việc, Review & Control và Tổng hợp; có dropdown, trạng thái và KPI vận hành.</p></article>
+    </section>
+
+    <section class="store-library" id="thu-vien">
+      <header class="store-library-head">
+        <div><p class="store-eyebrow">TEMPLATE LIBRARY</p><h2>Chọn theo <em>bài toán cần giải.</em></h2></div>
+        <label class="store-search"><span class="sr-only">Tìm template</span><input type="search" placeholder="Tìm: content plan, ads, CRM, livestream…" data-store-search><i>⌕</i></label>
+      </header>
+      <div class="store-filters" role="group" aria-label="Lọc template theo chuyên mục">
+        <button type="button" class="is-active" data-store-filter="all">Tất cả · 25</button>
+        {% for category in site.data.template_store.categories %}<button type="button" data-store-filter="{{ category.key }}">{{ category.label }}</button>{% endfor %}
+      </div>
+
+      {% for category in site.data.template_store.categories %}
+      <section class="store-category" data-store-category-section="{{ category.key }}">
+        <div class="store-category-head"><div><span>0{{ forloop.index }}</span><h2>{{ category.label }}</h2></div><p>{{ category.description }}</p></div>
+        <div class="store-grid">
+          {% assign category_items = site.data.template_store.templates | where: 'category', category.key %}
+          {% for item in category_items %}
+          <article class="store-card" data-store-card data-category="{{ item.category }}" data-search="{{ item.title | downcase }} {{ item.summary | downcase }} {{ item.focus | join: ' ' | downcase }}">
+            <div class="store-card-preview store-card-preview--{{ item.category }}" aria-hidden="true">
+              <div class="store-mini-header"><i></i><b></b><b></b><b></b></div>
+              <div class="store-mini-kpis"><span></span><span></span><span></span></div>
+              <div class="store-mini-grid"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="store-mini-bars"><span></span><span></span><span></span><span></span></div>
+            </div>
+            <div class="store-card-copy">
+              <div class="store-card-meta"><span>{{ item.level }}</span><span>XLSX · 4 TABS</span>{% if item.revised %}<b>REVISED</b>{% endif %}</div>
+              <h3>{{ item.title }}</h3>
+              <p>{{ item.summary }}</p>
+              <div class="store-focus">{% for focus in item.focus %}<span>{{ focus }}</span>{% endfor %}</div>
+              <a href="https://m.me/Prooptibusiness" target="_blank" rel="noreferrer" data-template-title="{{ item.title | escape }}">Trao đổi để nhận template <i>↗</i></a>
+            </div>
+          </article>
+          {% endfor %}
+        </div>
+      </section>
+      {% endfor %}
+      <p class="store-empty" data-store-empty hidden>Chưa có template khớp từ khoá này. Thử tìm theo tên nghiệp vụ như “content”, “ads”, “CRM” hoặc “live”.</p>
+    </section>
+
+    <section class="store-bundle">
+      <div><p class="store-eyebrow">KHÔNG BIẾT BẮT ĐẦU TỪ FILE NÀO?</p><h2>Nói bài toán. PoB giúp chọn <em>đúng hệ template.</em></h2><p>Nếu đội ngũ đang có nhiều vấn đề cùng lúc — plan, content, ads, live, CRM hoặc automation — đừng mua theo tên file. Hãy bắt đầu từ điểm nghẽn cần giải quyết trước.</p></div>
+      <a href="https://m.me/Prooptibusiness" target="_blank" rel="noreferrer">Trao đổi với PoB <span>↗</span></a>
+    </section>
+
+    <section class="store-faq">
+      <div><p class="store-eyebrow">FAQ</p><h2>Trước khi nhận template.</h2></div>
+      <div class="store-faq-list">
+        <details><summary>Template dùng được trên Google Sheets không?<i>+</i></summary><p>Có. File giao ở định dạng XLSX và có thể mở bằng Excel hoặc Google Sheets. Bản master của PoB được quản lý tập trung trên Drive để dễ cập nhật.</p></details>
+        <details><summary>File có phải chỉ là bảng trống không?<i>+</i></summary><p>Không. Mỗi file có hướng dẫn, dữ liệu mẫu để hiểu cách dùng, bảng triển khai, lớp review/control và phần tổng hợp. Dữ liệu mẫu không được xem là benchmark thật.</p></details>
+        <details><summary>Có thể chỉnh lại theo doanh nghiệp của mình không?<i>+</i></summary><p>Có. Template được thiết kế để tuỳ biến. Phần owner, KPI, SLA, ngưỡng quyết định và workflow nên được thay theo mô hình kinh doanh và dữ liệu lịch sử của doanh nghiệp.</p></details>
+        <details><summary>Vì sao Store chưa hiển thị giá cố định?<i>+</i></summary><p>PoB đang tách rõ template lẻ, bundle và nhu cầu tuỳ biến. Giá và hình thức giao file sẽ được chốt theo gói phù hợp thay vì gắn một mức giá giả định lên website.</p></details>
+      </div>
+    </section>
+  </main>
+  {% include pob-footer.html %}
+</body>
+</html>
