@@ -1,0 +1,46 @@
+---
+layout: null
+permalink: /template-store/
+title: Template Store PoB — File mẫu Marketing, Growth & Operations
+description: Bộ template thực chiến của ProOptiBusiness cho Marketing Planning, Content & SEO, Performance Ads, Operations, Analytics, Growth, E-commerce, CRM và Automation.
+---
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script data-pob-theme-init>(function(){try{var t=localStorage.getItem('pob-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.dataset.theme=t;document.documentElement.style.colorScheme=t}catch(e){}})();</script>
+  <title>{{ page.title | escape }}</title>
+  <meta name="description" content="{{ page.description | escape }}">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta property="og:type" content="website"><meta property="og:site_name" content="ProOptiBusiness"><meta property="og:title" content="{{ page.title | escape }}"><meta property="og:description" content="{{ page.description | escape }}"><meta property="og:url" content="{{ page.url | absolute_url }}">
+  <link rel="icon" href="/favicon.ico?v=2" sizes="any">
+  <link rel="stylesheet" href="/assets/index-CFmk_res.css">
+  <link rel="stylesheet" href="/assets/pob-enhancements.css?v=20260814-2">
+  <link rel="stylesheet" href="/assets/pob-template-store.css?v=20260820-1">
+  <script defer src="/assets/pob-enhancements.js?v=20260814-2"></script>
+  <script defer src="/assets/pob-article-dock.js?v=20260820-1"></script>
+  <script defer src="/assets/pob-template-store.js?v=20260820-1"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Template Store PoB","description":{{ page.description | jsonify }},"url":{{ page.url | absolute_url | jsonify }},"mainEntity":{"@type":"ItemList","numberOfItems":{{ site.data.template_store.templates | size }},"itemListElement":[{% for t in site.data.template_store.templates %}{"@type":"ListItem","position":{{ forloop.index }},"name":{{ t.title | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}]}}</script>
+</head>
+<body class="pob-template-store-page">
+  {% include pob-header.html %}
+  <main>
+    <section class="ts-hero">
+      <div class="ts-hero-copy"><p class="ts-kicker">POB TEMPLATE STORE · 2026</p><h1>File mẫu để đội ngũ <em>làm việc thật</em>, không chỉ để nhìn đẹp.</h1><p>Bộ workbook được thiết kế theo logic triển khai: có mục tiêu, owner, deadline, KPI, review và decision log. Câu chữ dùng văn phong làm việc chuyên nghiệp, đủ rõ để đội ngũ dùng chung mà không phải đoán ý nhau.</p><div class="ts-actions"><a class="ts-primary" href="#template-catalog">Xem 30 template <span>↓</span></a><a class="ts-secondary" href="https://m.me/Prooptibusiness" target="_blank" rel="noreferrer">Trao đổi bộ phù hợp <span>↗</span></a></div></div>
+      <div class="ts-hero-visual" aria-hidden="true"><div class="ts-workbook ts-workbook-main"><span>MASTER PLAN</span><strong>Plan → Execute → Review</strong><div class="ts-bars"><i></i><i></i><i></i><i></i></div></div><div class="ts-workbook ts-workbook-float"><small>30 TEMPLATE</small><b>6 nhóm công việc</b><div><span>Owner</span><span>KPI</span><span>Decision</span></div></div></div>
+    </section>
+    <section class="ts-proof"><article><strong>30</strong><span>Workbook XLSX</span></article><article><strong>6</strong><span>Nhóm công việc</span></article><article><strong>5–8</strong><span>Sheet mỗi file</span></article><article><strong>2026</strong><span>Phiên bản hiện hành</span></article></section>
+    <section class="ts-catalog" id="template-catalog">
+      <div class="ts-heading"><div><span>THƯ VIỆN TEMPLATE</span><h2>Tìm đúng file cho <em>bài toán đang làm.</em></h2></div><p>Không cần tải cả đống rồi bỏ đó. Chọn theo workstream, xem cấu trúc và trao đổi để nhận đúng template hoặc bundle phù hợp.</p></div>
+      <div class="ts-toolbar"><label class="ts-search"><span class="sr-only">Tìm template</span><input type="search" placeholder="Tìm: content plan, ads, live, KPI, CRM..." data-template-search><i>⌕</i></label><div class="ts-filters" role="group" aria-label="Lọc template"><button class="active" type="button" data-template-filter="all">Tất cả</button>{% for c in site.data.template_store.categories %}<button type="button" data-template-filter="{{ c.id }}">{{ c.label }}</button>{% endfor %}</div></div>
+      <div class="ts-grid" data-template-grid>{% for t in site.data.template_store.templates %}{% assign cat = site.data.template_store.categories | where: 'id', t.category | first %}<article class="ts-card" data-category="{{ t.category }}" data-search="{{ t.title | downcase }} {{ t.description | downcase }} {{ cat.label | downcase }}"><div class="ts-preview ts-preview--{{ cat.accent }}"><div class="ts-sheet-top"><span>{{ cat.label }}</span><i>XLSX</i></div><div class="ts-sheet-kpis"><b></b><b></b><b></b></div><div class="ts-sheet-chart"><i></i><i></i><i></i><i></i><i></i></div><div class="ts-sheet-rows"><span></span><span></span><span></span><span></span></div></div><div class="ts-card-body"><div class="ts-card-meta"><span>{{ t.level }}</span><span>XLSX · {{ t.tabs }} tabs</span></div>{% if t.upgraded %}<div class="ts-upgraded">ĐÃ NÂNG CẤP TỪ BẢN CŨ</div>{% endif %}<h3>{{ t.title }}</h3><p>{{ t.description }}</p><ul><li>Hướng dẫn sử dụng & quy ước</li><li>Owner, status, review & decision</li><li>Dashboard/scorecard theo bài toán</li></ul><a href="https://m.me/Prooptibusiness" target="_blank" rel="noreferrer" data-template-contact="{{ t.title | escape }}">Nhận template <span>↗</span></a></div></article>{% endfor %}</div>
+      <p class="ts-empty" hidden data-template-empty>Không thấy template khớp từ khóa này. Thử một từ ngắn hơn như “ads”, “content”, “live”, “KPI” hoặc “CRM”.</p>
+    </section>
+    <section class="ts-quality"><div><span>CHUẨN POB</span><h2>Mỗi template phải giúp đội ngũ <em>ra quyết định tốt hơn.</em></h2></div><div class="ts-quality-grid"><article><b>01</b><h3>Không viết kiểu robot</h3><p>Nhãn cột, hướng dẫn và ghi chú dùng ngôn ngữ làm việc tự nhiên, ngắn, rõ nghĩa và có ngữ cảnh.</p></article><article><b>02</b><h3>Không chỉ có ô để điền</h3><p>Mỗi file có logic vận hành: input → plan → execution → measurement → review → decision.</p></article><article><b>03</b><h3>Dùng chung được trong team</h3><p>Owner, deadline, status, evidence và decision log giúp file trở thành một cách làm chung chứ không phải tài liệu cá nhân.</p></article></div></section>
+    <section class="ts-bundle"><span>BUNDLE · TEAM SYSTEM</span><h2>Cần cả bộ thay vì từng file?</h2><p>PoB có thể gom theo nhu cầu: Marketing Planning, Performance, Content, Livestream, Growth/Analytics hoặc bộ vận hành đầy đủ 30 template.</p><a href="https://m.me/Prooptibusiness" target="_blank" rel="noreferrer">Trao đổi bộ phù hợp <i>↗</i></a></section>
+  </main>
+  {% include pob-footer.html %}
+</body>
+</html>
