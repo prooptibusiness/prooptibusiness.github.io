@@ -4,12 +4,12 @@ permalink: /sitemap.xml
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% assign static_pages = "/|/about/|/courses/|/services/|/membership/|/elearning/|/resources/|/workshops/|/circle/|/insights/|/blog/" | split: "|" %}
+  {% assign static_pages = "/|/about/|/courses/|/services/|/membership/|/elearning/|/resources/|/store/|/workshops/|/circle/|/insights/|/blog/" | split: "|" %}
   {% for item in static_pages %}
   <url>
     <loc>{{ item | absolute_url }}</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    {% if item == "/" %}<priority>1.0</priority>{% elsif item == "/blog/" %}<priority>0.9</priority>{% else %}<priority>0.7</priority>{% endif %}
+    {% if item == "/" %}<priority>1.0</priority>{% elsif item == "/blog/" or item == "/store/" %}<priority>0.9</priority>{% else %}<priority>0.7</priority>{% endif %}
   </url>
   {% endfor %}
   {% for post in site.posts %}
