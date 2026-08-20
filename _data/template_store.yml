@@ -1,0 +1,56 @@
+categories:
+  - id: marketing-planning
+    label: Marketing Planning
+    accent: purple
+  - id: content-seo
+    label: Content & SEO
+    accent: teal
+  - id: performance
+    label: Performance Ads
+    accent: orange
+  - id: operations-live
+    label: Operations & Livestream
+    accent: pink
+  - id: analytics-growth
+    label: Analytics & Growth
+    accent: blue
+  - id: ecom-crm-automation
+    label: E-commerce, CRM & Automation
+    accent: lime
+
+templates:
+  - {slug: marketing-master-plan, category: marketing-planning, title: "Marketing Master Plan Tổng Thể", level: "Foundation → Advanced", tabs: 7, description: "Lập kế hoạch marketing từ mục tiêu kinh doanh, phân khúc, kênh, ngân sách, timeline đến KPI trong một workbook."}
+  - {slug: 90-day-growth-plan, category: marketing-planning, title: "90-Day Growth Plan", level: "Intermediate", tabs: 7, description: "Chuyển mục tiêu tăng trưởng thành ba chu kỳ 30 ngày với growth lever, experiment, sprint và review rõ ràng."}
+  - {slug: go-to-market-launch-plan, category: marketing-planning, title: "Go-To-Market Launch Plan", level: "Intermediate → Advanced", tabs: 7, description: "Điều phối launch từ ICP, positioning và offer đến channel plan, readiness, risk và post-launch review."}
+  - {slug: marketing-budget-forecast, category: marketing-planning, title: "Marketing Budget & Forecast", level: "Intermediate", tabs: 7, description: "Lập ngân sách, forecast kết quả và theo dõi pacing theo kênh với scenario Base, Stretch và Downside."}
+  - {slug: customer-journey-channel-plan, category: marketing-planning, title: "Customer Journey & Channel Plan", level: "Foundation → Intermediate", tabs: 7, description: "Xây customer journey theo stage, nhu cầu, message, touchpoint và measurement để tránh kế hoạch kênh rời rạc."}
+
+  - {slug: content-marketing-master-plan, category: content-seo, title: "Content Marketing Master Plan", level: "Foundation → Advanced", tabs: 7, description: "Plan content marketing tổng thể từ audience, pillar, format, distribution, production workflow đến KPI."}
+  - {slug: editorial-calendar-content-ops, category: content-seo, title: "Editorial Calendar & Content Ops", level: "Foundation → Intermediate", tabs: 7, description: "Quản trị backlog, lịch xuất bản, production, asset library và weekly review trong một workflow thống nhất."}
+  - {slug: seo-topic-cluster-keyword-map, category: content-seo, title: "SEO Topic Cluster & Keyword Map", level: "Intermediate → Advanced", tabs: 7, description: "Xây topic cluster, keyword map, content brief, internal linking và refresh queue để giảm cannibalization."}
+  - {slug: social-content-production-tracker, category: content-seo, title: "Social Content Production Tracker", level: "Foundation → Intermediate", tabs: 7, description: "Theo dõi social content từ idea đến sản xuất, duyệt, đăng và đo hiệu quả trên nhiều nền tảng."}
+  - {slug: content-performance-refresh, category: content-seo, title: "Content Performance & Refresh Planner", level: "Intermediate", tabs: 7, description: "Audit content inventory bằng performance, quality và freshness để quyết định keep, update, merge hoặc remove."}
+
+  - {slug: multi-channel-ads-master-plan, category: performance, title: "Multi-Channel Ads Master Plan", level: "Foundation → Advanced", tabs: 7, description: "Plan quảng cáo đa kênh với objective, audience, campaign map, creative, ngân sách, pacing và KPI."}
+  - {slug: performance-ads-decision-tracker, category: performance, title: "Performance Ads Decision Tracker", level: "Intermediate", tabs: 7, upgraded: true, description: "Bản nâng cấp: campaign data, daily review, rule table, experiment log, learning log và dashboard quyết định."}
+  - {slug: creative-testing-matrix, category: performance, title: "Creative Testing Matrix", level: "Intermediate", tabs: 7, description: "Quản trị hypothesis, angle, hook, format, audience và kết quả creative test theo từng cell."}
+  - {slug: media-budget-pacing-roas, category: performance, title: "Media Budget Pacing & ROAS Forecast", level: "Intermediate → Advanced", tabs: 7, description: "Theo dõi budget pacing, forecast conversion/revenue và scenario reallocation theo platform."}
+  - {slug: campaign-experiment-postmortem, category: performance, title: "Campaign Experiment Log & Postmortem", level: "Advanced", tabs: 7, description: "Chuẩn hóa test design, change log và postmortem để tối ưu quảng cáo dựa trên bằng chứng thay vì cảm tính."}
+
+  - {slug: marketing-operating-system-starter, category: operations-live, title: "Marketing Operating System Starter", level: "Foundation → Intermediate", tabs: 7, upgraded: true, description: "Bản nâng cấp: Process Map, Weekly Sprint, RACI, Decision Log, Risk/Issue và Dashboard vận hành marketing."}
+  - {slug: live-commerce-runbook, category: operations-live, title: "Live Commerce Runbook", level: "Intermediate → Advanced", tabs: 8, upgraded: true, description: "Bản nâng cấp: Run of Show, Team RACI, Tech Check, Product Block, Metrics by Block và Post-mortem."}
+  - {slug: marketing-raci-sop-library, category: operations-live, title: "Marketing RACI & SOP Library", level: "Foundation → Advanced", tabs: 7, description: "Xây thư viện quy trình chuẩn, phân vai RACI, checklist và change log để đội ngũ làm việc nhất quán."}
+  - {slug: weekly-marketing-sprint-os, category: operations-live, title: "Weekly Marketing Sprint & Meeting OS", level: "Foundation → Intermediate", tabs: 7, description: "Quản trị backlog, sprint, blockers, decisions và weekly score trong một nhịp vận hành rõ ràng."}
+  - {slug: campaign-launch-checklist-qa, category: operations-live, title: "Campaign Launch Checklist & QA", level: "Intermediate", tabs: 8, description: "Chuẩn hóa launch từ brief, asset, tracking, channel QA đến go-live và post-launch verification."}
+
+  - {slug: kpi-tree-north-star-dashboard, category: analytics-growth, title: "KPI Tree & North Star Dashboard", level: "Foundation → Advanced", tabs: 7, description: "Kết nối North Star, driver KPI và operational KPI với định nghĩa dữ liệu, target và weekly scorecard."}
+  - {slug: funnel-conversion-diagnostic, category: analytics-growth, title: "Funnel & Conversion Diagnostic", level: "Intermediate", tabs: 7, description: "Đo và chẩn đoán leak theo funnel stage, conversion rate, volume, cohort và giá trị kinh doanh."}
+  - {slug: cac-ltv-unit-economics, category: analytics-growth, title: "CAC LTV Unit Economics Model", level: "Intermediate → Advanced", tabs: 7, description: "Mô hình hóa CAC, retention, gross margin, LTV và payback để đánh giá chất lượng tăng trưởng."}
+  - {slug: experiment-growth-scorecard, category: analytics-growth, title: "Experiment Backlog & Growth Scorecard", level: "Intermediate", tabs: 7, description: "Xếp hạng experiment bằng impact, confidence, effort và theo dõi learning theo sprint."}
+  - {slug: tracking-plan-data-dictionary, category: analytics-growth, title: "Tracking Plan & Data Dictionary", level: "Intermediate → Advanced", tabs: 7, description: "Chuẩn hóa event, property, UTM, data dictionary, ownership và QA để analytics có thể tin cậy."}
+
+  - {slug: ecommerce-trading-plan, category: ecom-crm-automation, title: "E-commerce Trading Plan", level: "Foundation → Advanced", tabs: 7, description: "Lập trading calendar, promo, SKU, traffic, conversion, stock và KPI theo tuần/tháng."}
+  - {slug: crm-lifecycle-segmentation, category: ecom-crm-automation, title: "CRM Lifecycle & Segmentation Planner", level: "Intermediate", tabs: 7, description: "Thiết kế segment, lifecycle journey, message matrix, campaign calendar và retention measurement."}
+  - {slug: martech-stack-automation-map, category: ecom-crm-automation, title: "MarTech Stack & Automation Map", level: "Intermediate → Advanced", tabs: 7, description: "Kiểm kê stack, data flow, automation, ownership và rủi ro để tránh tool chồng chéo."}
+  - {slug: ai-agent-workflow-blueprint, category: ecom-crm-automation, title: "AI Agent Workflow Blueprint", level: "Advanced", tabs: 7, description: "Thiết kế use case, agent spec, policy, workflow, evaluation và incident log cho AI Agent vận hành thật."}
+  - {slug: affiliate-creator-commerce, category: ecom-crm-automation, title: "Affiliate & Creator Commerce Tracker", level: "Foundation → Intermediate", tabs: 7, description: "Quản lý creator/affiliate từ sourcing, outreach, content, commission đến sales và performance review."}
