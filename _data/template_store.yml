@@ -1,0 +1,150 @@
+categories:
+  - key: strategy
+    label: Chiến lược & Kế hoạch
+    description: Từ mục tiêu kinh doanh đến GTM, funnel, campaign và ngân sách.
+  - key: content
+    label: Content & Brand
+    description: Quy hoạch content, lịch xuất bản, topic cluster, creative và SEO production.
+  - key: performance
+    label: Performance & Media
+    description: Media plan, decision tracker, creative testing, budget pacing và attribution.
+  - key: live
+    label: Live & Social Commerce
+    description: Kế hoạch live, run of show, KPI, hậu kiểm và creator commerce.
+  - key: ops
+    label: Operations & Growth Systems
+    description: Operating system, sprint, CRM, automation và growth experiment.
+
+templates:
+  - title: Kế hoạch Marketing Tổng thể 12 Tháng
+    category: strategy
+    level: Foundation → Advanced
+    summary: Từ mục tiêu kinh doanh đến ưu tiên Marketing, kênh, KPI, ngân sách và nhịp review theo tháng.
+    focus: [Business goal, Channel plan, KPI & review]
+  - title: Kế hoạch Go-to-Market 90 Ngày
+    category: strategy
+    level: Intermediate
+    summary: Khung 90 ngày cho sản phẩm hoặc dịch vụ mới: problem, ICP, offer, proof, thử nghiệm kênh và tiêu chuẩn scale.
+    focus: [ICP & problem, Offer test, Scale rule]
+  - title: Bản đồ Hành trình Khách hàng & Funnel
+    category: strategy
+    level: Foundation → Intermediate
+    summary: Nối nhu cầu, touchpoint, nội dung, CTA và KPI theo từng giai đoạn của hành trình khách hàng.
+    focus: [Journey map, Funnel KPI, CTA theo stage]
+  - title: Kế hoạch Ra mắt Chiến dịch
+    category: strategy
+    level: Intermediate
+    summary: Brief, timeline, asset, media, tracking và checklist go-live để chiến dịch không phụ thuộc trí nhớ.
+    focus: [Launch timeline, Asset matrix, Go-live QA]
+  - title: Ngân sách Marketing & Dự báo
+    category: strategy
+    level: Intermediate → Advanced
+    summary: Phân bổ ngân sách theo kênh và mục tiêu, ghi rõ giả định hiệu quả cùng điều kiện tăng hoặc giảm chi.
+    focus: [Budget allocation, Scenario, Forecast]
+
+  - title: Kế hoạch Content Marketing Tổng thể
+    category: content
+    level: Foundation → Advanced
+    summary: Từ business goal đến audience, content pillar, format, CTA, kênh và KPI; tránh làm content chỉ để đủ lịch.
+    focus: [Content pillar, Audience, KPI]
+  - title: Lịch Nội dung 90 Ngày
+    category: content
+    level: Foundation
+    summary: Lịch 90 ngày có pillar, angle, format, CTA, owner và trạng thái để đội ngũ vận hành thực tế.
+    focus: [Calendar, Production, Owner]
+  - title: Bản đồ Content Pillar & Topic Cluster
+    category: content
+    level: Intermediate
+    summary: Quy hoạch pillar, cluster, intent và internal link để nội dung hỗ trợ nhau thay vì cạnh tranh keyword.
+    focus: [Topic cluster, Search intent, Internal link]
+  - title: Thư viện Creative Brief, Hook & Angle
+    category: content
+    level: Intermediate
+    summary: Chuẩn hoá creative brief và lưu hook, angle theo insight để không phải nghĩ lại từ đầu ở mỗi campaign.
+    focus: [Creative brief, Hook, Angle]
+  - title: Theo dõi Sản xuất Content SEO
+    category: content
+    level: Intermediate → Advanced
+    summary: Theo dõi query, intent, outline, fact-check, on-page, internal link, FAQ/schema và lịch refresh.
+    focus: [SEO workflow, QA, Refresh]
+
+  - title: Kế hoạch Quảng cáo Đa kênh Tổng thể
+    category: performance
+    level: Intermediate → Advanced
+    summary: Plan Meta, Google, TikTok theo vai trò funnel, ngân sách, KPI và rule tối ưu; không gom mọi kênh vào một mục tiêu.
+    focus: [Meta · Google · TikTok, Budget, Decision rule]
+  - title: Performance Ads Decision Tracker
+    category: performance
+    level: Intermediate
+    revised: true
+    summary: Bản Revised của tracker cũ: biến số đo thành tín hiệu, giả thuyết và quyết định ở mốc ngày 3 và ngày 7.
+    focus: [3D/7D review, Quality, Decision log]
+  - title: Ma trận Creative Testing
+    category: performance
+    level: Intermediate
+    summary: Quản lý giả thuyết test theo audience, angle, hook, proof và format; mỗi test chỉ thay một biến chính.
+    focus: [Hypothesis, Test matrix, Learning]
+  - title: Media Budget Pacing & ROAS Forecast
+    category: performance
+    level: Advanced
+    summary: Theo dõi ngân sách thực tế so kế hoạch, pacing, ROAS và hành động điều chỉnh theo ngày hoặc tuần.
+    focus: [Pacing, Break-even, Forecast]
+  - title: Attribution & UTM Governance
+    category: performance
+    level: Intermediate → Advanced
+    summary: Chuẩn hoá source, medium, campaign và content để dữ liệu đi xuyên Ads, GA4 và CRM mà không vỡ naming.
+    focus: [UTM, Source mapping, Attribution]
+
+  - title: Live Commerce Runbook
+    category: live
+    level: Intermediate → Advanced
+    revised: true
+    summary: Bản Revised: chiến lược, Run of Show, RACI, kỹ thuật, KPI theo block và hậu kiểm cho từng phiên live.
+    focus: [Run of Show, Tech check, Post-mortem]
+  - title: Kế hoạch Chiến dịch Livestream Tổng thể
+    category: live
+    level: Intermediate
+    summary: Plan theo campaign: mục tiêu, offer, lịch live, traffic source, ngân sách, teaser, KPI và owner.
+    focus: [Campaign, Offer, Traffic]
+  - title: Run of Show & Kịch bản Livestream
+    category: live
+    level: Foundation → Intermediate
+    summary: Kịch bản theo block, cue, demo, objection và CTA để host nói tự nhiên nhưng vẫn kiểm soát nhịp phiên live.
+    focus: [Script, Cue, CTA]
+  - title: Dashboard KPI & Hậu kiểm Livestream
+    category: live
+    level: Advanced
+    summary: Đọc retention, click, add-to-cart, order và revenue theo block để biết đoạn nào nên giữ, sửa, test hoặc dừng.
+    focus: [Retention, Conversion, Learning]
+  - title: Tracker Affiliate & Creator Commerce
+    category: live
+    level: Intermediate
+    summary: Quản lý creator, sample, nội dung, link, click, order, revenue, commission và quyết định hợp tác tiếp.
+    focus: [Creator, Tracking, Revenue]
+
+  - title: Marketing Operating System Starter
+    category: ops
+    level: Foundation → Intermediate
+    revised: true
+    summary: Bản Revised: process map, sprint tuần, RACI, decision log và dashboard theo cùng một chuẩn vận hành.
+    focus: [Process, RACI, Dashboard]
+  - title: Weekly Marketing Sprint & RACI
+    category: ops
+    level: Foundation
+    summary: Chốt 7 ngày làm gì, ai thực hiện, ai chịu trách nhiệm cuối và blocker nào phải được xử lý.
+    focus: [Sprint, RACI, Blocker]
+  - title: CRM Lead Pipeline & SLA
+    category: ops
+    level: Intermediate
+    summary: Theo dõi lead từ nguồn đến outcome, kèm SLA phản hồi, owner, giá trị cơ hội và lý do mất lead.
+    focus: [Pipeline, SLA, Lead quality]
+  - title: Marketing Automation Workflow Map
+    category: ops
+    level: Intermediate → Advanced
+    summary: Thiết kế trigger, condition, action, data, owner, fallback và logging trước khi chọn công cụ automation.
+    focus: [Trigger, Workflow, Fallback]
+  - title: Growth Experiment Backlog & Learning Log
+    category: ops
+    level: Intermediate → Advanced
+    summary: Ưu tiên thử nghiệm theo impact, confidence, effort và bắt buộc lưu learning sau mỗi test.
+    focus: [Experiment, ICE, Learning]
