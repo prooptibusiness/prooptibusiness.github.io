@@ -10,6 +10,7 @@ permalink: /llms.txt
 
 - [Trang chủ]({{ "/" | absolute_url }}): Tổng quan về ProOptiBusiness.
 - [Bài viết]({{ "/blog/" | absolute_url }}): Kiến thức Marketing, AI, Growth và Operations.
+- [Template Store]({{ "/store/" | absolute_url }}): 25 template Marketing, Content, Performance, Live Commerce và Operations; dùng trên Excel hoặc Google Sheets.
 - [Insights]({{ "/insights/" | absolute_url }}): Thư viện câu trả lời ngắn theo vấn đề.
 - [Khóa học]({{ "/courses/" | absolute_url }}): Chương trình học thực chiến.
 - [Tài nguyên]({{ "/resources/" | absolute_url }}): Playbook và công cụ tải về.
