@@ -5,8 +5,8 @@ slug: reach-va-impressions-khac-nhau-the-nao
 description: "Reach và Impressions khác nhau thế nào, cách tính frequency từ impressions/reach và cách đọc độ phủ quảng cáo mà không nhầm số người với số lần hiển thị."
 answer_summary: "Reach là số người hoặc unique users mà quảng cáo tiếp cận được, còn Impressions là tổng số lần quảng cáo được hiển thị. Một người có thể tạo nhiều impressions, nên impressions thường lớn hơn reach. Khi đọc cùng nhau, hai metric giúp hiểu độ phủ và mức lặp phân phối; frequency gần đúng bằng impressions chia cho reach trong cùng phạm vi đo."
 target_query: "Reach và Impressions khác nhau thế nào?"
-date: 2026-08-23T14:10:00+07:00
-date_modified: 2026-08-23T14:10:00+07:00
+date: 2026-08-23T13:51:00+07:00
+date_modified: 2026-08-23T13:51:00+07:00
 category: performance
 category_label: "Performance"
 tags: ["Reach","Impressions","Frequency","Awareness","Media Buying"]
