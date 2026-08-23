@@ -5,8 +5,8 @@ slug: conversion-rate-quang-cao-la-gi
 description: "Conversion Rate trong quảng cáo là gì, cách tính conversions/eligible interactions và cách tách vấn đề traffic quality, landing page, offer, tracking."
 answer_summary: "Conversion Rate trong quảng cáo là tỷ lệ các tương tác đủ điều kiện dẫn đến conversion. Trong Google Ads, conversion rate được tính bằng số conversions chia cho tổng eligible ad interactions có thể theo dõi conversion. Metric này giúp đọc chất lượng sau click hoặc sau tương tác, nhưng phải đảm bảo conversion action và tracking được định nghĩa đúng."
 target_query: "Conversion Rate trong quảng cáo là gì?"
-date: 2026-08-23T14:08:00+07:00
-date_modified: 2026-08-23T14:08:00+07:00
+date: 2026-08-23T13:50:00+07:00
+date_modified: 2026-08-23T13:50:00+07:00
 category: performance
 category_label: "Performance"
 tags: ["Conversion Rate","CVR","CPA","Landing Page","Performance Marketing"]
