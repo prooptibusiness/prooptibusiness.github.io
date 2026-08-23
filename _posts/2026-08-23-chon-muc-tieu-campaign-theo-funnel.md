@@ -5,8 +5,8 @@ slug: chon-muc-tieu-campaign-theo-funnel
 description: "Cách chọn campaign objective theo funnel, business outcome và dữ liệu conversion thay vì chọn mục tiêu chỉ vì CPM, CPC hoặc CPA nhìn đẹp."
 answer_summary: "Campaign objective nên được chọn theo outcome mà doanh nghiệp thực sự muốn hệ thống tối ưu, không chỉ theo vị trí TOF–MOF–BOF. Awareness phù hợp khi cần độ phủ, Traffic khi cần visit có chủ đích, Leads/Sales khi có conversion tracking đủ tốt. Funnel giúp định hướng nhưng objective cuối phải bám business goal, dữ liệu và khả năng đo lường."
 target_query: "Chọn mục tiêu campaign theo funnel như thế nào?"
-date: 2026-08-23T14:18:00+07:00
-date_modified: 2026-08-23T14:18:00+07:00
+date: 2026-08-23T13:55:00+07:00
+date_modified: 2026-08-23T13:55:00+07:00
 category: performance
 category_label: "Performance"
 tags: ["Campaign Objective","Funnel","TOF MOF BOF","Paid Ads","Media Strategy"]

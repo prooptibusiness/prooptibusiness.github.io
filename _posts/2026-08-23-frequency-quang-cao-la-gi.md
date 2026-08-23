@@ -5,8 +5,8 @@ slug: frequency-quang-cao-la-gi
 description: "Frequency quảng cáo là gì, cách đọc số lần trung bình một người thấy quảng cáo và cách phát hiện saturation, creative fatigue trước khi CPA xấu."
 answer_summary: "Frequency là số lần trung bình một người hoặc unique user được nhìn thấy quảng cáo trong một khoảng thời gian. Frequency cao không tự động xấu vì mức lặp cần thiết phụ thuộc mục tiêu, audience, creative và chu kỳ mua; vấn đề xuất hiện khi frequency tăng nhưng reach gần đứng yên và CTR, CPC, CPA hoặc phản hồi người dùng xấu đi."
 target_query: "Frequency quảng cáo là gì?"
-date: 2026-08-23T14:12:00+07:00
-date_modified: 2026-08-23T14:12:00+07:00
+date: 2026-08-23T13:52:00+07:00
+date_modified: 2026-08-23T13:52:00+07:00
 category: performance
 category_label: "Performance"
 tags: ["Frequency","Reach","Impressions","Creative Fatigue","Paid Ads"]

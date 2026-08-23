@@ -5,8 +5,8 @@ slug: ad-relevance-la-gi
 description: "Ad Relevance là gì, vì sao quảng cáo phải khớp intent, audience và landing page; cách dùng relevance như diagnostic thay vì chạy theo một điểm số."
 answer_summary: "Ad Relevance là mức độ quảng cáo phù hợp với nhu cầu, intent hoặc bối cảnh của người dùng. Trên Google Search, Ad relevance là một thành phần của Quality Score cùng Expected CTR và Landing Page Experience. Relevance nên được dùng để chẩn đoán message–intent fit, không phải tối ưu một điểm số tách rời conversion, CPA hoặc business outcome."
 target_query: "Ad Relevance là gì?"
-date: 2026-08-23T14:16:00+07:00
-date_modified: 2026-08-23T14:16:00+07:00
+date: 2026-08-23T13:54:00+07:00
+date_modified: 2026-08-23T13:54:00+07:00
 category: performance
 category_label: "Performance"
 tags: ["Ad Relevance","Quality Score","Creative","Search Intent","Landing Page"]

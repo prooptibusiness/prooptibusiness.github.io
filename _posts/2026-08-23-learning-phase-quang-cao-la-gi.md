@@ -5,8 +5,8 @@ slug: learning-phase-quang-cao-la-gi
 description: "Learning Phase quảng cáo là gì, vì sao hệ thống phân phối cần dữ liệu và cách tránh chỉnh sửa liên tục khiến campaign mất ổn định."
 answer_summary: "Learning Phase là giai đoạn hệ thống quảng cáo còn thu thập tín hiệu và khám phá cách phân phối để tối ưu theo mục tiêu đã chọn. Trong Meta Ads, trạng thái Learning cho biết ad set vẫn đang trong giai đoạn hệ thống khám phá; hiệu suất thường kém ổn định hơn. Các nền tảng khác cũng dùng machine learning nhưng tên và cơ chế hiển thị trạng thái có thể khác."
 target_query: "Learning Phase quảng cáo là gì?"
-date: 2026-08-23T14:14:00+07:00
-date_modified: 2026-08-23T14:14:00+07:00
+date: 2026-08-23T13:53:00+07:00
+date_modified: 2026-08-23T13:53:00+07:00
 category: performance
 category_label: "Performance"
 tags: ["Learning Phase","Meta Ads","Smart Bidding","Machine Learning","Performance Marketing"]
